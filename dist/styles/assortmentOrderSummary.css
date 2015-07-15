@@ -1,0 +1,157 @@
+/* line 1, assortmentOrderSummary.scss */
+#AssortmentOrderSummary {
+  overflow-y: scroll;
+  padding: 30px 0 0 30px;
+  background-color: #e3e3e3;
+  width: 100%;
+  height: 100%;
+}
+/* line 8, assortmentOrderSummary.scss */
+#AssortmentOrderSummary h3.ostop {
+  text-align: left;
+  padding-top: 0;
+  padding-bottom: 20px;
+  margin-top: 0;
+  line-height: 20px;
+}
+/* line 15, assortmentOrderSummary.scss */
+#AssortmentOrderSummary h3.narrow {
+  font-weight: normal;
+}
+/* line 18, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 26, assortmentOrderSummary.scss */
+#AssortmentOrderSummary textarea {
+  resize: none;
+}
+/* line 29, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .span4.os-wide {
+  text-align: right;
+}
+/* line 32, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .span4.os-wide > span {
+  font-size: 0.8em;
+}
+/* line 35, assortmentOrderSummary.scss */
+#AssortmentOrderSummary #ls-topbar-ext .span4.os-wide > span {
+  font-size: 1em;
+  line-height: 2em;
+}
+/* line 40, assortmentOrderSummary.scss */
+#AssortmentOrderSummary hr {
+  border-top: 1px solid black;
+  border-bottom: 1px solid white;
+  margin: 10px 0;
+}
+/* line 45, assortmentOrderSummary.scss */
+#AssortmentOrderSummary hr.second {
+  margin-bottom: 0;
+}
+/* line 48, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .ls-takesize > div {
+  text-align: center;
+}
+/* line 51, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .table.big td {
+  text-align: center;
+}
+/* line 54, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .counter {
+  color: #000000;
+  line-height: 1.5em;
+  padding-top: 5px;
+}
+/* line 59, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .small-caption {
+  position: relative;
+  height: 0;
+}
+/* line 63, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .small-caption span {
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 100%;
+  margin-top: -8px;
+}
+/* line 71, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .modal-order-submit {
+  top: 25%;
+  height: 50%;
+  text-align: center;
+}
+/* line 75, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .modal-order-submit .modal-footer {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  bottom: 0px;
+}
+/* line 83, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .modal-order-submit .large-button {
+  width: 60%;
+}
+/* line 87, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .ecatalog .modal .close-button {
+  float: right;
+  margin-right: 10%;
+}
+/* line 96, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .order-fields-container .labels {
+  font-size: 18px;
+  font-weight: bolder;
+  margin-left: 2%;
+}
+/* line 102, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .order-fields-container .values {
+  float: right;
+}
+/* line 106, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .order-fields-container .email-data {
+  word-wrap: break-word;
+}
+/* line 111, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .orderSummaryHeader {
+  padding: 13px;
+  font-size: 30px;
+  top: -30px;
+  text-align: center;
+  background-color: rgba(51, 51, 51, 0.9);
+  color: white;
+  position: relative;
+}
+/* line 121, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .orderSummaryHeader .resendEmail {
+  position: absolute;
+  top: 7px;
+  right: 30px;
+}
+/* line 127, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .orderSummaryHeader .form-error {
+  color: red;
+  font-style: italic;
+}
+/* line 133, assortmentOrderSummary.scss */
+#AssortmentOrderSummary .text-data {
+  font-weight: normal;
+  font-size: 18px !important;
+}
+/* line 137, assortmentOrderSummary.scss */
+#AssortmentOrderSummary #orderedProductStylesInCurrentAssortmentForOrderContainer {
+  float: left;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 10px;
+  background-color: #FFF;
+}

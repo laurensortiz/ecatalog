@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/ecatalog/!svn/ver/3/trunk/app/components/es5-shim/tests/lib
+END
+jasmine.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/ecatalog/!svn/ver/3/trunk/app/components/es5-shim/tests/lib/jasmine.js
+END
+jasmine-html.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/ecatalog/!svn/ver/3/trunk/app/components/es5-shim/tests/lib/jasmine-html.js
+END
+json2.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/ecatalog/!svn/ver/3/trunk/app/components/es5-shim/tests/lib/json2.js
+END
+jasmine.css
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/ecatalog/!svn/ver/3/trunk/app/components/es5-shim/tests/lib/jasmine.css
+END
+jasmine_favicon.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/ecatalog/!svn/ver/3/trunk/app/components/es5-shim/tests/lib/jasmine_favicon.png
+END

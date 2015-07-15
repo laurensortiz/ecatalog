@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repos/ecatalog/!svn/ver/1670/trunk/app/views
+END
+assortmentEdit.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/ecatalog/!svn/ver/1418/trunk/app/views/assortmentEdit.html
+END
+productSearch.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/ecatalog/!svn/ver/1482/trunk/app/views/productSearch.html
+END
+catalogCreate.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/ecatalog/!svn/ver/1418/trunk/app/views/catalogCreate.html
+END
+assortmentEditLinesheet.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/ecatalog/!svn/ver/1529/trunk/app/views/assortmentEditLinesheet.html
+END
+customCatalogBrowse.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/ecatalog/!svn/ver/49/trunk/app/views/customCatalogBrowse.html
+END
+_catalog-list.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/ecatalog/!svn/ver/1670/trunk/app/views/_catalog-list.html
+END
+assortmentEditCatalogListModal.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/ecatalog/!svn/ver/369/trunk/app/views/assortmentEditCatalogListModal.html
+END
+order.html
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/ecatalog/!svn/ver/1418/trunk/app/views/order.html
+END
+catalogCreateSubmit.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/ecatalog/!svn/ver/7/trunk/app/views/catalogCreateSubmit.html
+END
+draftOrder.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/ecatalog/!svn/ver/698/trunk/app/views/draftOrder.html
+END
+orderList.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/ecatalog/!svn/ver/1534/trunk/app/views/orderList.html
+END
+assortmentWhiteboard.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/ecatalog/!svn/ver/1418/trunk/app/views/assortmentWhiteboard.html
+END
+assortmentCreate.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/ecatalog/!svn/ver/29/trunk/app/views/assortmentCreate.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/ecatalog/!svn/ver/1418/trunk/app/views/login.html
+END
+assortmentLinkCustomer.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/ecatalog/!svn/ver/1418/trunk/app/views/assortmentLinkCustomer.html
+END
+masterCatalogPage.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/ecatalog/!svn/ver/1418/trunk/app/views/masterCatalogPage.html
+END
+assortmentOrderSummary.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/ecatalog/!svn/ver/1584/trunk/app/views/assortmentOrderSummary.html
+END
+futureConcept.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/ecatalog/!svn/ver/1418/trunk/app/views/futureConcept.html
+END
+assortmentEditBrowse.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/ecatalog/!svn/ver/1418/trunk/app/views/assortmentEditBrowse.html
+END
+catalogCreateBrowse.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/ecatalog/!svn/ver/5/trunk/app/views/catalogCreateBrowse.html
+END
+assortmentEditCatalogList.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/ecatalog/!svn/ver/590/trunk/app/views/assortmentEditCatalogList.html
+END
+_browse-catalogs-modal.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/ecatalog/!svn/ver/1418/trunk/app/views/_browse-catalogs-modal.html
+END
+catalogCreateImport.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/ecatalog/!svn/ver/5/trunk/app/views/catalogCreateImport.html
+END
+404.html
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/ecatalog/!svn/ver/1418/trunk/app/views/404.html
+END
+catalogList.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/ecatalog/!svn/ver/1670/trunk/app/views/catalogList.html
+END
+_order_summary_header.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/1418/trunk/app/views/_order_summary_header.html
+END
+assortmentEditWhiteboard.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/ecatalog/!svn/ver/1529/trunk/app/views/assortmentEditWhiteboard.html
+END
+assortmentEditLinkCustomer.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/ecatalog/!svn/ver/1418/trunk/app/views/assortmentEditLinkCustomer.html
+END
+loadTenant.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/ecatalog/!svn/ver/1418/trunk/app/views/loadTenant.html
+END
+numpad.html
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/ecatalog/!svn/ver/1418/trunk/app/views/numpad.html
+END
+assortmentList.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/ecatalog/!svn/ver/1529/trunk/app/views/assortmentList.html
+END
+assortmentEditBrowseModal.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/ecatalog/!svn/ver/1418/trunk/app/views/assortmentEditBrowseModal.html
+END
+salesDashboard.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/ecatalog/!svn/ver/31/trunk/app/views/salesDashboard.html
+END
+masterCatalogBrowse.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/ecatalog/!svn/ver/1418/trunk/app/views/masterCatalogBrowse.html
+END
+homeMenu.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/ecatalog/!svn/ver/1534/trunk/app/views/homeMenu.html
+END

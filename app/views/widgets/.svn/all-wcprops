@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/ecatalog/!svn/ver/1529/trunk/app/views/widgets
+END
+placeholder.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/ecatalog/!svn/ver/455/trunk/app/views/widgets/placeholder.html
+END
+productWidget.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/1529/trunk/app/views/widgets/productWidget.html
+END
+textWidget.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/ecatalog/!svn/ver/548/trunk/app/views/widgets/textWidget.html
+END
+imageWidget.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/ecatalog/!svn/ver/458/trunk/app/views/widgets/imageWidget.html
+END

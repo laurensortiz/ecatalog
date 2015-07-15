@@ -1,0 +1,33 @@
+/* Let's get this party started */
+/* line 2, webkitScrollbar.scss */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+/* line 8, webkitScrollbar.scss */
+::-webkit-scrollbar-track {
+  background: black;
+  visibility: hidden;
+}
+
+/* line 13, webkitScrollbar.scss */
+::-webkit-scrollbar-track-piece {
+  background: rgba(0, 0, 0, 0);
+  visibility: hidden;
+}
+
+/* Handle */
+/* line 19, webkitScrollbar.scss */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  border: 1px rgba(150, 150, 150, 0.2) solid;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 26, webkitScrollbar.scss */
+::-webkit-scrollbar-thumb:window-inactive, ::selection {
+  background: rgba(0, 0, 0, 0);
+}

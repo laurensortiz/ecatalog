@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/ecatalog/!svn/ver/199/trunk/app/components/jquery-tmpl/tests
+END
+core.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/ecatalog/!svn/ver/199/trunk/app/components/jquery-tmpl/tests/core.js
+END
+qunit.css
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/ecatalog/!svn/ver/199/trunk/app/components/jquery-tmpl/tests/qunit.css
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/ecatalog/!svn/ver/199/trunk/app/components/jquery-tmpl/tests/index.html
+END
+qunit.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/ecatalog/!svn/ver/199/trunk/app/components/jquery-tmpl/tests/qunit.js
+END

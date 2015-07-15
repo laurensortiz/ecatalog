@@ -1,0 +1,43 @@
+<!-- Dialog Box for Renaming the assortment starts -->
+
+    <div modal="RenamingDialogShouldBeOpen" close="closeRenamingDialog()" options="renameAssortmentPopupOptions">
+        <div class="newAssortment">
+            <div class="modal-header ui-bar-c ui-corner-top modal-header-text-align">
+                <button type="button" class="close" ng-click="closeRenamingDialog()"></button>
+                <h3>
+                    {{languagesJSON['assortmentList.rename']}}
+                </h3>
+            </div>
+            <div class="modal-body">
+                <h4>{{languagesJSON['assortmentList.rename.description']}}</h4>
+                <form name="rename_assortment_form" novalidate ng-submit="renameAction()">
+                    <div>
+                        <div class="control-group">
+
+                            <input name="description" type="text" id="inputEmail" placeholder="Assortment Name"
+                                   ng-model="selectedAssortment.newName"
+                                   ng-required="true"
+                                   ng-minlength="1" ng-maxlength="100"
+                                   class="big-box ui-input-text ui-body-c ng-pristine ng-valid" ng-enter>
+                            <input type="reset" id="reset-name" ng-click="$parent.newAsssortmentDescription = ''"/>
+                        </div>
+                        <div class="form-error-message">
+                            <p>Field Cannot Contain Special Characters  <span></span></p>
+                        </div>
+                    </div>
+
+                    <button type="submit" ng-disabled="rename_assortment_form.$invalid"
+                            class="btn btn-large btn-block btn-primary"
+                            value="Save">
+                        {{languagesJSON['assortmentList.rename.save']}}
+                    </button>
+                    <button type="button" class="btn btn-large btn-block btn-inverse" ng-click="closeRenamingDialog()">
+                        {{languagesJSON['assortmentList.rename.cancel']}}
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Dialog Box for Renaming the assortment ends -->

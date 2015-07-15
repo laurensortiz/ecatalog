@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/ecatalog/!svn/ver/1708/trunk/test/spec/services
+END
+assortmentService.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/ecatalog/!svn/ver/1657/trunk/test/spec/services/assortmentService.js
+END
+orderService.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/ecatalog/!svn/ver/1703/trunk/test/spec/services/orderService.js
+END
+productService.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/1703/trunk/test/spec/services/productService.js
+END
+displayStyleService.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/ecatalog/!svn/ver/1703/trunk/test/spec/services/displayStyleService.js
+END
+virtualProduct.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/1681/trunk/test/spec/services/virtualProduct.js
+END
+productStyleService.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/ecatalog/!svn/ver/1703/trunk/test/spec/services/productStyleService.js
+END
+assortmentServiceTab.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/ecatalog/!svn/ver/1657/trunk/test/spec/services/assortmentServiceTab.js
+END
+catalogService.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/1673/trunk/test/spec/services/catalogService.js
+END
+assortmentCurrentService.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/ecatalog/!svn/ver/1707/trunk/test/spec/services/assortmentCurrentService.js
+END
+UserService.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/ecatalog/!svn/ver/1708/trunk/test/spec/services/UserService.js
+END

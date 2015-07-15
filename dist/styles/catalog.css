@@ -1,0 +1,63 @@
+/* line 1, catalog.scss */
+.catalog-page {
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+/* line 7, catalog.scss */
+.catalog-page .gray-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  vertical-align: middle;
+}
+
+/* line 15, catalog.scss */
+.single-page-render .catalog-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  max-width: 800px;
+}
+
+/* line 23, catalog.scss */
+.catalog-page.paired {
+  float: left;
+  width: 50%;
+}
+
+/* line 28, catalog.scss */
+.catalog-page.paired:last-child {
+  left: 50%;
+}
+
+/* line 32, catalog.scss */
+.emptyCatalogAlert {
+  text-align: center;
+  color: #F00;
+}
+
+/* line 37, catalog.scss */
+.catalog-navigation-link {
+  position: absolute;
+  font-size: 1.8em;
+  top: 50%;
+  margin-top: -.9em;
+  color: #333;
+}
+
+/* line 45, catalog.scss */
+.catalog-navigation-link:hover {
+  color: #0088cc;
+}
+
+/* line 49, catalog.scss */
+.catalog-navigation-link.next {
+  right: .9em;
+}
+
+/* line 54, catalog.scss */
+.catalog-navigation-link.previous {
+  left: .9em;
+}

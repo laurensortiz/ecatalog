@@ -1,0 +1,12 @@
+<div ng-controller="AssortmentEditCatalogListCtrl">
+    <div id="showCatalogListModal" modal="showCatalogListModal" options="modalOpts" close="closeCatalogListModal()">
+        <div class="modal-header ui-bar-c ui-corner-top center">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                    ng-click="closeCatalogListModal()"></button>
+            <h3>{{languagesJSON['browseCatalogModal.title']}}</h3>
+        </div>
+        <div class="modal-body">
+            <ng-include src="'views/_catalog-list.html'"></ng-include>
+        </div>
+    </div>
+</div>

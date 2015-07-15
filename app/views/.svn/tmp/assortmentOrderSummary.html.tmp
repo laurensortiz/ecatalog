@@ -1,0 +1,60 @@
+<div id="AssortmentLinesheetFeature" class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <div ui-if="assortment" class="bg-color">
+                <div id="AssortmentOrderSummary">
+                    <ng-include src="'views/_order_summary_header.html'"></ng-include>
+                    <hr class="second"/>
+                    <div id="orderedProductStylesInCurrentAssortmentForOrderContainer">
+
+                        <div ng-repeat="productCodeAndStylePair in orderedProductStylesInCurrentAssortment">
+                            <div class="row-fluid orderItems">
+                                <div class="span12">
+                                    <div class="span2">
+                                        <img ng-src="{{productCodeAndStylePair[1][0].links.image}}" class="img-width"/>
+                                    </div>
+                                    <div class="span5 product-style-info">
+                                        <p class="virtual-product-style-name-container">
+
+                                        <h3>
+                                            {{productCodeAndStylePair[1][0].name}}
+                                        </h3>
+                                        </p>
+                                    </div>
+                                    <div class="span2"></div>
+                                    <div class="span3"></div>
+                                </div>
+                            </div>
+                            <div class="row-fluid orderItems" ng-repeat="productStyle in productCodeAndStylePair[1]">
+                                <div ng-hide="productStyle">
+                                    <img src="images/bx_loader.gif"/>
+                                </div>
+                                <div ng-include src="'partials/ordersummaryProductStyle.html'"
+                                     ui-if="productStyle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-include src="'partials/resendingOrderEmail.html'"></div>
+<div id="showOrderSubmitModal" modal="showOrderSubmitModal" options="orderSubmitModalOptions">
+    <div class="modal-header ui-bar-c ui-corner-top center">
+        <button type="button" class="close" ng-click="redirectAfterOrderSent()"></button>
+        <h3>Order Submitted</h3>
+    </div>
+    <div class="modal-body">
+        <div>
+            <b>PO# :</b>{{formFields.po}}<br/>
+            was completed and email sent to <br/>
+            {{formFields.email}}
+        </div>
+    </div>
+    <div class="modal-footer bottom modal-footer-width">
+        <div class="row-fluid">
+            <button class="btn btn-large btn-block btn-primary" ng-click="redirectAfterOrderSent()">Ok</button>
+        </div>
+    </div>
+</div>

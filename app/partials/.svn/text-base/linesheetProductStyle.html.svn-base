@@ -1,0 +1,75 @@
+<div class="row-fluid">
+    <div class="span12" ng-click="toggleProductStyleColorDrillDown(productStyle.id,$event)"
+         hm-swipeleft="showDeleteButton[productStyle.id] = false"
+         hm-swiperight="showDeleteButton[productStyle.id] = true">
+        <div class="span1">
+            <img class="product-image" ng-src="{{productStyle.links.image}}">
+        </div>
+        <div class="span7">
+            <div class="product-style-info">
+                <div>
+                    <h4>
+                        {{productStyle.name}}
+                    </h4>
+                </div>
+                <div>
+                    {{productStyle.styleCode}}
+                </div>
+            </div>
+        </div>
+        <div class="span1">
+            <div class="summary currQuantity" ng-bind="totalQuantityForProductStyle(productStyle)"></div>
+        </div>
+        <div class="span2">
+            <div class="summary currPrice" ng-bind="totalPriceForProductStyle(productStyle) | currency"></div>
+        </div>
+        <div class="span2">
+            <button ng-show="showDeleteButton[productStyle.id]"
+                    class="btn btn-danger delete-button"
+                    ng-click="removeVirtualSubProduct(productStyle)">Delete
+            </button>
+        </div>
+    </div>
+</div>
+<div class="row-fluid" ng-show="expandProductStyleColor[productStyle.id]">
+    <div class="span12 assortment-row">
+        <div class="span9">
+            <table class="table">
+                <thead>
+                <th ng-repeat="xFeature in getFeaturesInProductStyle(productStyle).size">
+                    {{xFeature}}
+                </th>
+                </thead>
+                <tbody>
+
+                <tr ng-repeat="yFeature in getFeaturesInProductStyle(productStyle).width">
+                    <td class="ls-takesize" ng-repeat="upcProduct in getProductsQty(productStyle)"
+                        ng-class="isProductActiveInVirtualNumpad(upcProduct)">
+                        <div id="product-{{upcProduct.size}}"
+                             ng-click="showNumpad(upcProduct)" ng-bind="upcProduct.quantity"></div>
+                </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        <div class="span3">
+            <table class="table">
+                <thead>
+                <td style="height: 1em">
+                </td>
+                <td>
+                </td>
+                </thead>
+                <tbody>
+                <td>
+          <span class="shorter"
+                ng-bind="pricePerUnitForProductStyle(productStyle) | currency"></span>
+                    <span class="shorter">ea</span>
+                </td>
+                <td></td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

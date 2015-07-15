@@ -1,0 +1,8 @@
+<div modal="productDetailPopupShouldBeOpen" close="closeProductDetailPopup()" options="productDetailPopupOpts" class="product-details-popup">
+        <button type="button" class="close" ng-click="closeProductDetailPopup()"></button>
+        <div ng-show="hasAnnotation" ng-include src="'partials/annotationContainer.html'"></div>
+    <div class="modal-body popup-body  ui-body-c ui-overlay-c">
+      <div ng-include src="productDetailsTemplate"></div>
+    </div>
+</div>
+

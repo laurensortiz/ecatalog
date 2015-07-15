@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/ecatalog/!svn/ver/3/trunk/app/components/angular-ui/test/lib/angular-1.0.1
+END
+angular.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/ecatalog/!svn/ver/3/trunk/app/components/angular-ui/test/lib/angular-1.0.1/angular.js
+END
+angular-mocks.js
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/ecatalog/!svn/ver/3/trunk/app/components/angular-ui/test/lib/angular-1.0.1/angular-mocks.js
+END

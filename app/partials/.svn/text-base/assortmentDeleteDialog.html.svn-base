@@ -1,0 +1,28 @@
+<!-- Dialog Box for Deleting the assortment starts -->
+<div class="modal-width" modal="DeletingDialogShouldBeOpen" close="closeDeletingDialog()" options="renameAssortmentPopupOptions">
+     <div class="delete">
+    <div class="modal-header ui-bar-c ui-corner-top modal-header-text-align">
+        <button type="button" class="close" ng-click="closeDeletingDialog()"></button>
+        <h3>
+            {{languagesJSON['assortmentList.delete']}}
+        </h3>
+    </div>
+    <div class="modal-body  ui-body-c ui-overlay-c">
+      <h4>
+          {{languagesJSON['assortmentList.delete.are.you.sure']}} {{selectedAssortment.description}}?
+      </h4>
+      <h4 ng-show="cantDeleteOneTab">
+        {{languagesJSON['assortmentList.delete.cant.only.one']}}
+      </h4>
+    </div>
+    <div class="modal-footer bottom">
+        <form ng-submit="deleteAction()">
+            <button type="submit" class="btn btn-large btn-block btn-primary">{{languagesJSON['assortmentList.delete.yes']}}</button>
+            <button type="button" class="btn btn-large btn-block btn-inverse" ng-click="closeDeletingDialog()">
+                {{languagesJSON['assortmentList.delete.no']}}
+            </button>
+        </form>
+    </div>
+     </div>
+</div>
+<!-- Dialog Box for Deleting the assortment ends -->

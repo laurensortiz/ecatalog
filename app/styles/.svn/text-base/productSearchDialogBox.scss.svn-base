@@ -1,0 +1,186 @@
+.ecatalog .modal-search-box {
+  bx-slider {
+    display: block;
+    height: 525px;
+    position: relative;
+    .slide-loading-screen .slide-loading-message {
+      background-color: #FFF;
+    }
+
+    .bx-viewport {
+      margin: 0px;
+    }
+  }
+
+  .product-search-box {
+    padding: 0px;
+    border-radius: 0px;
+    border-bottom-left-radius: 3px;
+    max-height: inherit;
+    overflow: hidden;
+    margin-left: 0%;
+
+    .select2-container {
+      max-height: 110px;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    @media only screen and (orientation: portrait) {
+      .span9 {
+        width: 66%
+      }
+    }
+    #product-filters {
+      height: 93%;
+      position: relative;
+      .row-fluid {
+        margin-bottom: 10px;
+      }
+    }
+    .filter-container {
+      background-color: #8F959D;
+      color: #FFFFFF;
+      padding: 0 15px;
+      margin-left: 0px;
+      overflow: hidden;
+      .ui-show {
+        opacity: 1;
+        height: auto;
+        -webkit-transition: all 1s ease-out;
+
+      }
+      .ui-hide {
+        display: block;
+        opacity: 0;
+        height: 0px;
+      }
+      .select2-offscreen {
+        position: fixed;
+      }
+    }
+    .search-result-container {
+      background-color: #FFFFFF;
+      overflow: hidden;
+      height: 100%;
+      margin: 0px;
+      .message-to-user {
+        font-size: 4em;
+        line-height: 1em;
+        text-align: center;
+        color: lightgray;
+        margin-top: 175px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .product-main-image {
+        margin: 40px auto 230px;
+        max-height: 190px;
+        max-width: 500px;
+        position: relative;
+      }
+      .added-to-assortment {
+        right: 5%;
+        top: 5%;
+        position: absolute;
+        width: 75px;
+      }
+      .product-search-description-container {
+        text-align: center;
+      }
+      .product-description {
+        position: relative;
+        display: block;
+        width: 100%;
+        top: -200px;
+        z-index: 10;
+        padding-left: 50px;
+        text-align: left;
+
+        .added-to-assortment, .loading {
+          position: absolute;
+          top: 0;
+        }
+
+        .loading {
+          right: 50%;
+        }
+      }
+
+      .bx-viewport {
+        height: 100%;
+      }
+    }
+
+    .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+      border: 0px solid #cccccc;
+      background: none;
+      font-weight: normal;
+      color: #222222;
+    }
+
+    .right-align {
+      float: right;
+    }
+
+    .filter-name {
+      line-height: 25px;
+    }
+    .span12.ng-pristine.ng-valid {
+      margin-bottom: 0px;
+    }
+    .actions {
+      position: absolute;
+      bottom: 3%;
+      width: 100%;
+
+      .message {
+        font-size: 16px;
+        padding: 5px;
+      }
+    }
+  }
+  .msgAddAll {
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: -5px;
+      top: 3px;
+      width: 20px;
+      height: 20px;
+      background: url(../images/ok.png) no-repeat;
+      background-size: 20px;
+    }
+
+    -webkit-animation-name: hideElement;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+
+  }
+}
+
+.modal-header.ui-bar-c.ui-corner-top.center {
+  padding-bottom: 2px;
+  border: 1px solid #B3B3B3;
+}
+
+.select-width {
+  width: 100%;
+}
+
+/* Animations */
+@-webkit-keyframes hideElement {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}

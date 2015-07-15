@@ -1,0 +1,66 @@
+<div class="row-fluid" vertically-center>
+    <div class="span12">
+        <div id="ct-form" class="ui-body-a ui-corner-all" role="dialog">
+            <div class="ui-bar-a ui-corner-top">
+                <span class="bar-text">{{languagesJSON['login.login']}}</span>
+            </div>
+            <div class="form-body-container">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <form ng-submit="authenticate()" class="form-horizontal" id="login-form">
+                            <div class="span6 logo-img-container">
+                                <img ng-src="{{tenantLogo()}}" alt="image">
+                            </div>
+                            <div class="span6">
+                                <div class="">
+                                    <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-a">
+                                        <input ng-model="loginInfo.username" name="ct-username" id="ct-username"
+                                               type="text"
+                                               placeholder="{{languagesJSON['login.placeholder.username']}}"
+                                               autocapitalize="off"
+                                               class="ui-input-text ui-body-a">
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-a">
+                                        <input ng-model="loginInfo.password" name="ct-password" id="ct-password"
+                                               type="password"
+                                               placeholder="{{languagesJSON['login.placeholder.password']}}"
+                                               class="ui-input-text ui-body-a"/>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-a">
+                                        <input ng-model="loginInfo.organization" name="ct-organization"
+                                               id="ct-organization" type="text"
+                                               placeholder="{{languagesJSON['login.placeholder.organization']}}"
+                                               class="ui-input-text ui-body-a"/>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <checkbox-button ng-model="loginInfo.rememberUsernameOrg">
+                                        <div class="align-left">&nbsp{{languagesJSON['login.remember.usr']}}</div>
+                                    </checkbox-button>
+                                </div>
+
+                                <div class="control-group" ng-show="loginInfo.rememberUsernameOrg">
+                                    <checkbox-button ng-model="loginInfo.rememberPass">
+                                        <div class="align-left">&nbsp{{languagesJSON['login.remember.pass']}}</div>
+                                    </checkbox-button>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <div class="error-message">{{loginInfo.error}}</div>
+                                <input type="submit" class="btn btn-large btn-block btn-inverse"
+                                       value="{{languagesJSON['login.login']}}"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

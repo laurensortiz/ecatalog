@@ -1,0 +1,195 @@
+<div class="container-fluid assortmentFeature" id="AssortmentWhiteboardFeature">
+    <!--
+    ************************************************
+    FILTER
+    ************************************************
+    -->
+    <div id="wb-assortment-filter">
+        <div id="wp-filter">
+            <div ng-repeat="ctg in filterdata">
+                <h1>
+                    {{ctg.cat}}
+                </h1>
+
+                <div ng-repeat="item in ctg.items" class="wp-filteritems">
+                    <label for="wb-filter-{{item.replace(' ', '-')}}">
+                        {{item.name}}</label>
+                    <input type="checkbox" checked="checked" id="wb-filter-{{item.replace(' ', '-')}}"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    ************************************************
+    END OF FILTER
+    ************************************************
+    -->
+    <div class="row-fluid">
+        <div class="span4" id="wb-left-column">
+            <div class="row-fluid">
+                <button ng-click="fill()" type="button" id="wb-filter" ng-model="singleModel" btn-checkbox
+                        btn-checkbox-true="1" btn-checkbox-false="0" popover-placement="right"
+                        popover="{{getPopoverdata()}}" class="btn btn-inverse row-fluid">
+                    <span class="pull-left">
+                        {{languagesJSON['whiteBoard.filter']}}
+                    </span>
+                    <i class="icon-chevron-right icon-white pull-right" ng-class="icon-chevron-left">
+                    </i>
+                </button>
+            </div>
+            <div class="wrapper">
+                <div class="wb-item-wrapper">
+                    <div class="row-fluid wb-item-panel">
+                        <div class="span3 procItems draggable-handle" ng-repeat="item in productStyles" draggableitem>
+                            <img
+                                    ng-src="{{item.links.image}}"
+                                    data-id="{{item.id}}"
+                                    data-quantity="{{item.quantity}}"
+                                    data-name="{{item.name}}"
+                                    data-code="{{item.code}}"
+                                    />
+                        </div>
+                    </div>
+                </div>
+                <div class="wb-bottom-panel">
+                    <a class="btn">
+                        {{languagesJSON['whiteBoard.import']}}
+                    </a>
+                    <a class="btn float-right" ng-click="clearAssortment()">
+                        {{languagesJSON['whiteBoard.erase']}}
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="span8" id="wb-right-column" droppable>
+            <div class="wrapper">
+                <div class="wb-item-wrapper">
+                    <div class="row-fluid">
+                        <div class="span12 wb-item-panel">
+                        </div>
+                    </div>
+                </div>
+                <div class="wb-bottom-panel">
+                    <a class="btn float-right" ng-click="clearProducts()">
+                        {{languagesJSON['whiteBoard.erase']}}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF ROW -->
+    <!--
+    ************************************************
+    EDITOR
+    ************************************************
+    -->
+    <div id="wb-editor">
+        <div id="wb-arrowContainer">
+            <div id="wb-arrow">
+            </div>
+        </div>
+        <div id="wb-detailContainer">
+            <div id="wb-detailTitle">
+                <span>HAWAIIAN) BLUE</span>
+                <a class="close closeUpdate float-right" href="#">
+                </a>
+            </div>
+            <div id="wb-detailStyle">
+                VN-oUAR8lQ
+            </div>
+            <div class="table">
+            </div>
+            <div class="table">
+            </div>
+            <div class="color-white">
+                Quantity:
+            </div>
+            <input type="text" value="0" class="input-width" ng-click="open()"/>
+
+            <div class="wb-grade">
+            </div>
+        </div>
+    </div>
+    <!--
+    ************************************************
+    NUMPAD
+    ************************************************
+    -->
+    <div modal="shouldBeOpen" close="close()" options="opts">
+        <div id="wb-numpad">
+            <div id="wb-numpadTitle">
+                Quantity
+            </div>
+            <table class="wb-buttons">
+                <tr>
+                    <td colspan="3">
+                        <input type="text" ng-model="updateValue" value="" class="input-text-align" id="updatevalue"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="numpad-number" ng-click="updateQty(1)">
+                        1
+                    </td>
+                    <td class="numpad-number" ng-click="updateQty(2)">
+                        2
+                    </td>
+                    <td class="numpad-number" ng-click="updateQty(3)">
+                        3
+                    </td>
+                </tr>
+                <tr>
+                    <td class="numpad-number" ng-click="updateQty(4)">
+                        4
+                    </td>
+                    <td class="numpad-number" ng-click="updateQty(5)">
+                        5
+                    </td>
+                    <td class="numpad-number" ng-click="updateQty(6)">
+                        6
+                    </td>
+                </tr>
+                <tr>
+                    <td class="numpad-number" ng-click="updateQty(7)">
+                        7
+                    </td>
+                    <td class="numpad-number" ng-click="updateQty(8)">
+                        8
+                    </td>
+                    <td class="numpad-number" ng-click="updateQty(9)">
+                        9
+                    </td>
+                </tr>
+                <tr>
+                    <td class="numpad-number" ng-click="clearQty()">
+                        C
+                    </td>
+                    <td class="numpad-number" ng-click="updateQty(0)">
+                        0
+                    </td>
+                    <td class="numpad-number" ng-click="clearOne()">
+                        X
+                    </td>
+                </tr>
+                <tr>
+                    <td class="numpad-graph">
+                        .:|:.
+                    </td>
+                    <td class="numpad-blank">
+                    </td>
+                    <td class="numpad-OK" ng-click="close()">
+                        OK
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="showCatalogListModal" modal="showCatalogList" options="catalogListModalOptions">
+    <div ng-controller="AssortmentEditCatalogListCtrl" ng-include src="'views/assortmentEditCatalogList.html'"
+         class="modal-body">
+    </div>
+    <button type="button" class="btn-large close-button" ng-click="closeCatalogListModal()">
+        Close
+    </button>
+
+</div>

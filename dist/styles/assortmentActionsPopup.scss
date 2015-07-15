@@ -1,0 +1,377 @@
+.modal-header .order-header{
+  font-size: 1.572em;
+  color: #f5f5f5;
+  text-align: center;
+  text-shadow: none;
+  cursor: pointer;
+  background-color: #ff5f2f;
+  margin: 0;
+  padding: 20px 15px;
+  border: 0;
+  position: relative;
+}
+.modal-header .order-header:before{
+  width: 23px;
+  height: 60px;
+  content: "";
+  background: url("../images/orderHeaderSaveArrow.png") no-repeat center left transparent;
+  position: absolute;
+  left: -23px;
+  top: 0;
+
+}
+.modal-header .order-header:disabled{
+  opacity: .6;
+  color: #e6e6e6;
+  cursor: default;
+}
+
+.mypopover .btn{
+  text-shadow: none;
+  border: 0;
+  margin: 2px 0;
+  font-weight: bold;
+}
+.btn-duplicate{
+  background: #e6e7e9;
+
+  &:hover{
+    background: #cfcfcf;
+  }
+
+}
+.btn-rename{
+  background: #7b95a2;
+
+  &:hover{
+    background: #5b707b;
+  }
+
+}
+.btn-danger{
+  color: #000;
+  background: #cc3f38;
+  &:hover{
+    color: #000;
+  }
+
+}
+/*
+   *Pop-over styling starts
+   */
+.assortment-pop-over-container {
+  background-color: transparent;
+  display: none;
+  opacity: 1;
+
+  .tier-box {
+    height: 40px;
+    width: 40px;
+    border: 5px;
+    background-color: green;
+  }
+}
+#assortment-actions{
+
+  .mypopover {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 130px;
+    width: 236px;
+    margin: 0 -118px;
+  }
+  .mypopover .mypopover-content {
+    border: 1px solid #000;
+    position: relative;
+    -moz-border-radius: 11px;
+    -webkit-border-radius: 11px;
+    border-radius: 11px;
+    background: #1f1f1f;
+
+    /* IE6-IE9 */
+    -webkit-box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37), 0px 6px 18px 0px rgba(0, 0, 0, 0.95);
+    -moz-box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37), 0px 6px 18px 0px rgba(0, 0, 0, 0.95);
+    box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37), 0px 6px 18px 0px rgba(0, 0, 0, 0.95);
+    padding: 15px;
+  }
+  .mypopover .mypopover-body {
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.4), inset 1px 1px 4px 0px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.4), inset 1px 1px 4px 0px rgba(0, 0, 0, 0.66);
+    box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.4), inset 1px 1px 4px 0px rgba(0, 0, 0, 0.66);
+  }
+  .mypopover .arrow {
+    position: absolute;
+    left: 107px;
+    top: -9px;
+    width: 25px;
+    height: 10px;
+    overflow: hidden;
+  }
+  .mypopover .arrow span {
+    display: block;
+    width: 14px;
+    height: 14px;
+    -webkit-transform: rotate(45deg) skew(-10deg, -10deg);
+    -webkit-transform: rotate(45deg) skew(-10deg, -10deg);
+    /* Saf3.1+, Chrome */
+    -moz-transform: rotate(45deg) skew(-10deg, -10deg);
+    /* FF3.5+ */
+    -ms-transform: rotate(45deg) skew(-10deg, -10deg);
+    /* IE9 */
+    -o-transform: rotate(45deg) skew(-10deg, -10deg);
+    /* Opera 10.5 */
+    transform: rotate(45deg) skew(-10deg, -10deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */ M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476, sizingMethod='auto expand');
+    zoom: 1;
+    margin: 1px 0 0 4px;
+    background: #1f1f1f;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    -webkit-box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37);
+    -moz-box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37);
+    box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37);
+  }
+  .mypopover .mypopover-body ul {
+    margin: 0;
+    padding: 0;
+  }
+  .mypopover .mypopover-body ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 46px;
+    padding: 0;
+    font-family: arial;
+  }
+  .mypopover .mypopover-body ul li:last-child {
+    border-bottom: 0;
+  }
+
+}
+
+/*
+ *Pop-over styling ends
+ */
+
+.newAssortment, .renameAssortment, .duplicate, .delete{
+  background: #144158;
+  .modal-header{
+    border:0;
+  }
+  .ui-bar-c, .bottom{
+    background: #144158;
+    border: 0;
+  }
+  .modal-body{
+    background: #144158;
+  }
+
+  h3{
+    font-size: 2em;
+    line-height: 1.7em;
+    color: #FF5F2D;
+    text-shadow: none;
+    margin: 0;
+  }
+  h4{
+    font-size: 1.4em;
+    color: #fff;
+    margin:0;
+
+    span{
+      color: #CD3F38;
+      font-size: .9em;
+    }
+  }
+  .btn{
+    margin: 1em 0;
+  }
+
+  input[type="text"], input#inputEmail{
+
+    padding: 0 7px;
+
+    border: 1px solid #123B50;
+    margin:.5em 0 0;
+    color: #fff;
+    text-shadow: none;
+    font-weight: normal;
+
+      background: #244f65;
+
+      -webkit-box-shadow: inset 4px 3px 6px rgba(0, 0, 0, 0.5);
+      box-shadow: inset 4px 3px 6px rgba(0, 0, 0, 0.2);
+      height: 26px;
+      width: 97%;
+
+
+
+    &:focus{
+      border:1px solid #FF5F2D;
+    }
+  }
+
+  .control-group{
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  #reset-name{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 10px; bottom: 14px;
+
+    border: 0 none;
+
+    text-indent: -99999px;
+
+    background-color: transparent;
+    background: url("../images/btn-close.png") 0 0 no-repeat;
+  }
+
+  .form-error-message{
+    padding: 1em 20% 1em 11%;
+    margin-top: 0.5em;
+    position: relative;
+    display: none;
+
+    background-image: url("../images/error-message.png");
+    background-repeat: no-repeat;
+    background-position: 3% 48%;
+    background-color: #000;
+
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+
+    &:before{
+      content: "";
+      position: absolute;
+      left: 46%; top: -16px;
+
+      width: 0;
+      border-left: 18px solid transparent;
+      border-right: 18px solid transparent;
+      border-bottom: 16px solid black;
+    }
+
+    p{
+      color: white;
+      font-size: 18px;
+      line-height: 1.125;
+      font-weight: 100;
+      margin: 0;
+
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+      border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+
+      span{
+        font-size: 24px;
+        line-height: 1;
+        color: $warning;
+      }
+    }
+  }
+
+  .btn-inverse{
+    background: #000;
+  }
+
+  .btn.disabled, .btn[disabled]{
+    background: #537384;
+    color:#3E5561;
+    opacity: 1;
+  }
+
+  .btn-primary{
+    background: #e6e7e9;
+    color: #000;
+    &:hover{
+      background: #cfcfcf;
+    }
+  }
+
+
+}
+
+.renameAssortment{
+  form{
+    height: 260px;
+    margin: 0;
+  }
+  .modal-footer{
+    border-top: 0;
+    box-shadow: none;
+  }
+  .ui-input-text{
+    padding: 0;
+  }
+}
+
+.duplicate{
+  form{
+    height: 345px;
+    margin: 0;
+    overflow: hidden;
+  }
+  .modal-footer{
+    margin-top: 10px;
+    border-top: 0;
+    box-shadow: none;
+  }
+  .modal-body{
+    overflow:hidden;
+  }
+  .ui-input-text{
+    padding: 0;
+  }
+  .modalH5{
+    margin: -17px 0 0 17px;
+    color: white;
+    text-shadow:none;
+  }
+  input[type="text"]{
+    padding: 0 7px!important;
+    border: 1px solid #123b50!important;
+    margin: 0.5em 0 0!important;
+    color: #fff;
+    text-shadow: none;
+    font-weight: normal;
+    background: #244f65!important;
+    -webkit-box-shadow: inset 4px 3px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 4px 3px 6px rgba(0, 0, 0, 0.2);
+    height: 26px!important;
+    width: 97%!important;
+  }
+}
+
+.delete{
+  .modal-body{
+    height: 200px;
+    margin: 0;
+    overflow: hidden;
+  }
+  .modal-footer{
+    margin-top: 10px;
+    border-top: 0;
+    box-shadow: none;
+  }
+  .modal-body{
+    overflow:hidden;
+  }
+  .ui-input-text{
+    padding: 0;
+  }
+  .modalH5{
+    margin: -17px 0 0 17px;
+    color: white;
+    text-shadow:none;
+  }
+}
+

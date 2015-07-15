@@ -1,0 +1,4 @@
+<!-- Apparel 2 -->
+<div class="apparel_page apparel_2 apparel_1">
+    <div class="apparel_right" base-path="{{pagedata.rootCatalogPath}}"></div>
+</div>

@@ -1,0 +1,14 @@
+<div class="grid productGroup product_2_grid_w_image">
+    <div class="product_story_mini_image" base-path="{{pagedata.rootCatalogPath}}">
+    </div>
+    <div class="productGrid">
+        <widget class="productWidget" widget-id="TopLeftProduct" debugWithPlaceholder="false">
+        </widget>
+        <widget class="productWidget" widget-id="TopRightProduct" debugWithPlaceholder="true">
+        </widget>
+    </div>
+    <widget class="textFooterSummary" widget-id="FeatureSummary" debugWithPlaceholder="true">
+    </widget>
+    <widget class="margins right-margin" widget-id="RightMargin">
+    </widget>
+</div>

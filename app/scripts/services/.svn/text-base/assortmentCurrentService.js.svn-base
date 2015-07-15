@@ -1,0 +1,53 @@
+'use strict';
+
+angular.module('conductivEcatalogApp')
+    .service('AssortmentCurrentService', function AssortmentCurrentService($http, httpCapi, SyncManager, $q, OfflineManager, AssortmentCurrent) {
+      var ENTITY_TYPE_PRODUCT = "Product";
+      var ENTITY_TYPE_ASSORTMENT = "Assortment";
+
+			var offlineStorage;
+			var getOfflineStorage = function (entity_type) {
+				if (offlineStorage === undefined) {
+					offlineStorage = OfflineManager.getStorage(entity_type)
+				}
+				return offlineStorage;
+			}
+
+      var service = {
+
+        findById: function(id){
+
+          var deferred = $q.defer();
+          getOfflineStorage(ENTITY_TYPE_ASSORTMENT).get(id, function (found) {
+
+            deferred.resolve(found);
+          });
+
+          return deferred.promise;
+        },
+        findProductById: function(id){
+          var deferred = $q.defer();
+	        AssortmentCurrent.findProductById(id).then(function (found) {
+		        deferred.resolve(found);
+	        });
+          return deferred.promise;
+        },
+	      bulkPersistProductQuantities : function(assortmentId, products){
+		      var deferred = $q.defer();
+
+
+		      return deferred.promise;
+	      },
+	      setProductQuantity: function(product, quantity){
+		      var deferred = $q.defer();
+
+					product.quantity = quantity;
+
+		      deferred.resolve(product)
+
+		      return deferred.promise;
+	      }
+
+      };
+      return service;
+    });

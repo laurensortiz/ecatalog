@@ -1,0 +1,19 @@
+/* line 1, order.scss */
+#order-summary {
+  margin-top: 60px;
+}
+
+/* line 5, order.scss */
+.bg-color {
+  background-color: #fffff;
+}
+
+/* line 9, order.scss */
+.image-width {
+  width: 75%;
+}
+
+/* line 13, order.scss */
+.modal-footer-width {
+  width: 94%;
+}

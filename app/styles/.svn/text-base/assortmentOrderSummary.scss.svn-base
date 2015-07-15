@@ -1,0 +1,146 @@
+#AssortmentOrderSummary {
+  overflow-y: scroll;
+  padding: 30px 0 0 30px;
+  background-color: #e3e3e3;
+  width: 100%;
+  height: 100%;
+
+  h3.ostop {
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 20px;
+    margin-top: 0;
+    line-height: 20px;
+  }
+  h3.narrow {
+    font-weight: normal;
+  }
+  .input-block-level {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  textarea {
+    resize: none;
+  }
+  .span4.os-wide {
+    text-align: right;
+  }
+  .span4.os-wide > span {
+    font-size: 0.8em;
+  }
+  #ls-topbar-ext .span4.os-wide > span {
+    font-size: 1em;
+    line-height: 2em;
+  }
+
+  hr {
+    border-top: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid white;
+    margin: 10px 0;
+  }
+  hr.second {
+    margin-bottom: 0;
+  }
+  .ls-takesize > div {
+    text-align: center;
+  }
+  .table.big td {
+    text-align: center;
+  }
+  .counter {
+    color: #000000;
+    line-height: 1.5em;
+    padding-top: 5px;
+  }
+  .small-caption {
+    position: relative;
+    height: 0;
+  }
+  .small-caption span {
+    text-align: center;
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin-top: -8px;
+  }
+
+  .modal-order-submit {
+    top: 25%;
+    height: 50%;
+    text-align: center;
+    .modal-footer {
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+      bottom: 0px;
+    }
+    .large-button {
+      width: 60%;
+    }
+  }
+  .ecatalog .modal .close-button {
+    float: right;
+    margin-right: 10%;
+  }
+
+  //end #AssortmentOrderSummary
+
+  .order-fields-container {
+
+    .labels {
+      font-size: 18px;
+      font-weight: bolder;
+      margin-left: 2%;
+    }
+
+    .values {
+      float: right;
+    }
+
+    .email-data {
+      word-wrap: break-word;
+    }
+  }
+
+  .orderSummaryHeader {
+
+    padding: 13px;
+    font-size: 30px;
+    top: -30px;
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    position: relative;
+
+    .resendEmail {
+      position: absolute;
+      top: 7px;
+      right: 30px;
+    }
+
+    .form-error {
+      color: red;
+      font-style: italic;
+    }
+
+  }
+  .text-data {
+    font-weight: normal;
+    font-size: 18px !important;
+  }
+  #orderedProductStylesInCurrentAssortmentForOrderContainer {
+    float: left;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+    background-color: #FFF;
+  }
+}

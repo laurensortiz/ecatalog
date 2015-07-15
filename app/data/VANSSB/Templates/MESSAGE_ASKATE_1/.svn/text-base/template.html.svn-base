@@ -1,0 +1,10 @@
+<!-- MESSAGE_ASKATE_1 -->
+<div class="askate_page askate_1">
+    <div class="askate_left" base-path="{{pagedata.rootCatalogPath}}">
+    </div>
+    <div class="askate_hero" base-path="{{pagedata.rootCatalogPath}}" catalog-nativation-action page-number="59">
+    </div>
+    <div class="askate_hero_caption" catalog-nativation-action page-number="56">
+        A.SKATE ERA LACELESS PRO PG.55
+    </div>
+</div>

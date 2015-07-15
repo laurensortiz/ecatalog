@@ -1,0 +1,71 @@
+<div ng-controller="ResendingOrderEmailCtrl">
+
+    <div id="showEmailConfirmationModal" modal="showEmailConfirmationModal" options="emailConfirmationModalOptns">
+        <div class="modal-header ui-bar-c ui-corner-top center">
+            <button type="button" class="close" ng-click="closeEmailConfirmationModal()"></button>
+            <h3>Email Sent Confirmation</h3>
+        </div>
+        <div class="modal-body">
+            <div>
+                <b>Email was sent to {{emails}} </b>
+            </div>
+        </div>
+        <div class="modal-footer bottom"  style="width:94%">
+            <div class="row-fluid">
+                <button class="btn btn-large btn-block btn-primary" hm-tap="closeEmailConfirmationModal()">Ok</button>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Dialog Box for resending Order Email starts -->
+<div modal="$parent.resendingOrderEmailDialogShouldBeOpen" close="closeResendingOrderEmailDialog()">
+
+    <div class="modal-header ui-bar-c ui-corner-top"  style="text-align: center">
+        <button type="button" class="close" ng-click="closeResendingOrderEmailDialog()"></button>
+        <h3>
+           Re-Send Email
+        </h3>
+    </div>
+
+        <div class="modal-body ui-body-c ui-overlay-c">
+            <form name="resendEmailForm" novalidate>
+
+            <div class="control-group">
+
+                <label class="control-label" for="emails">
+                    <h4>Enter E-Mail Address</h4></label>
+
+                <div class="controls">
+                    <div class="">
+                        <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-c">
+                            <input type="text" autocapitalize="off" autocorrect="off" id="emails" name="emails" ng-model='emails' ng-pattern="/^((\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)*([ ]*[,][ ]*)*)*$/"
+                                   class="big-box ui-input-text ui-body-c ng-pristine ng-valid" required />
+                        </div>
+                    </div>
+
+                </div>
+                <div ng-show="resendEmailForm.emails.$dirty && resendEmailForm.emails.$invalid">
+                    <span ng-show="resendEmailForm.emails.$error.required">Tell us your email.</span>
+                    <span class="form-error-message" ng-show="resendEmailForm.emails.$error.pattern">Invalid email. </span>
+                </div>
+            </div>
+
+                <button type="button"  ng-disabled="resendEmailForm.$invalid" class="btn btn-large btn-block btn-primary" ng-click="sendEmails()">
+                    Send
+                </button>
+
+                <button type="button"  class="btn btn-large btn-block btn-inverse" ng-click="$parent.closeResendingOrderEmailDialog()">
+                    Cancel
+                </button>
+
+            </form>
+        </div>
+</div>
+<!-- Dialog Box for resending Order Email ends -->
+
+
+
+
+
+ </div>

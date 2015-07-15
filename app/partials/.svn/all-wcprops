@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/ecatalog/!svn/ver/1537/trunk/app/partials
+END
+resendingOrderEmail.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/929/trunk/app/partials/resendingOrderEmail.html
+END
+assortmentDuplicateDialog.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/ecatalog/!svn/ver/1529/trunk/app/partials/assortmentDuplicateDialog.html
+END
+assortmentRenameDialog.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/ecatalog/!svn/ver/1529/trunk/app/partials/assortmentRenameDialog.html
+END
+annotationContainer.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/989/trunk/app/partials/annotationContainer.html
+END
+assortmentDeleteDialog.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/ecatalog/!svn/ver/1529/trunk/app/partials/assortmentDeleteDialog.html
+END
+orderPopup.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/ecatalog/!svn/ver/1537/trunk/app/partials/orderPopup.html
+END
+imageZoomPopup.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/ecatalog/!svn/ver/212/trunk/app/partials/imageZoomPopup.html
+END
+pageThumbnail.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/ecatalog/!svn/ver/104/trunk/app/partials/pageThumbnail.html
+END
+linesheetProductStyle.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/ecatalog/!svn/ver/1465/trunk/app/partials/linesheetProductStyle.html
+END
+assortmentActionsPopup.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/ecatalog/!svn/ver/1529/trunk/app/partials/assortmentActionsPopup.html
+END
+productDetailPopup.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/1529/trunk/app/partials/productDetailPopup.html
+END
+ordersummaryProductStyle.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/ecatalog/!svn/ver/1360/trunk/app/partials/ordersummaryProductStyle.html
+END
+assortmentNewPopup.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/1529/trunk/app/partials/assortmentNewPopup.html
+END

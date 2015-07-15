@@ -1,0 +1,307 @@
+.ecatalog .catalogBrowse {
+  #goToSlide {
+    background: #1c1c1c url(../images/ui-bg_glass_55_1c1c1c_1x400.png) 50% 50% repeat-x;
+    color: #FFF;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-left: 35px;
+    float: left;
+    padding: 0 5px;
+    input[type="number"] {
+      margin-bottom: 5px;
+      margin-top: 5px;
+      width: 40px;
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    #goToSlide {
+      margin-right: 10px;
+    }
+  }
+  .modal {
+    padding-bottom: 10px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: rgba(245, 245, 245, 0.2);
+    left: 1%;
+    margin-left: 0px;
+    width: 97%;
+  }
+
+  div.close-modal {
+    height: 10px;
+  }
+  .ui-thumbnails {
+    list-style: none;
+  }
+  .ui-thumbnail {
+    border-radius: 4px;
+    padding: 3px;
+    border: 3px solid white;
+    margin: 5px;
+    height: 121px;
+    width: 104px;
+    transition: border 0.2s;
+    float: left;
+  }
+  .ui-thumbnail:hover {
+    border-radius: 4px;
+    padding: 3px;
+    border: 3px solid #0088cc;
+    margin: 5px;
+    height: 121px;
+    width: 104px;
+    float: left;
+  }
+
+  #jqUISlider .icon {
+    border-radius: 5px;
+    padding: 1px;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    display: inline-block;
+    background: image-url('topBarHeader/grid.png') no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 2.5em;
+    height: 2.5em;
+    float: left;
+  }
+  #jqUISlider .grid-icon {
+    background-color: black;
+    border: 1px solid gray;
+  }
+  #jqUISlider .grid-icon:hover {
+    background-color: #0088cc;
+    border: 1px solid #0088cc;
+  }
+  .left-page-padding {
+    background-size: contain;
+    background-position: left top;
+    width: 33%;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+  }
+  #full-page-catalog {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    margin: 0px;
+    overflow: hidden;
+  }
+  #full-page-catalog li {
+    height: 100%;
+  }
+  .right-page-padding {
+    background-size: contain;
+    background-position: right top;
+    width: 33%;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+  }
+  .page-content {
+    width: 33%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+  }
+  jq-ui-slider {
+    width: 66%;
+    height: 0.7em;
+    margin-left: 60px;
+    margin-right: auto;
+    float: left;
+    margin-top: 14px;
+    display: block;
+  }
+
+  jq-ui-slider .ui-slider-handle {
+    width: 2.5em;
+    height: 2.5em;
+    top: -1em;
+    margin-left: -2em;
+  }
+
+  jq-ui-slider.ui-widget-content {
+    border: 1px solid darkslategray;
+  }
+
+  #jqUISlider:hover {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+
+  }
+  #jqUISlider.focused {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+  }
+  #jqUISlider {
+    transition: opacity 1s;
+    opacity: 0.70;
+    position: fixed;
+    bottom: 40px;
+    width: 100%;
+    margin-left: 40px;
+    @media screen and (orientation: portrait) {
+      margin-left: 0px;
+    }
+    &>div {
+      width: 90%;
+      margin: auto;
+    }
+  }
+  .bx-wrapper .bx-controls-direction a {
+    z-index: 10;
+    top: 45%;
+  }
+  #thumbnailContainer {
+    display: none;
+    width: 150px;
+    top: -200px;
+    position: absolute;
+  }
+  body {
+    overflow: hidden;
+  }
+  .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .loading-message {
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #226;
+    z-index: 4;
+  }
+
+  .close-modal a {
+    background: image-url('topBarHeader/x.png') no-repeat;
+    width: 40px;
+    height: 37px;
+    display: inline;
+    z-index: 3200;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    cursor: pointer;
+  }
+
+  page.slide-left>ng-include>div {
+    width: 50% !important;
+  }
+  page.slide-right>ng-include>div {
+    width: 50% !important;
+    left: 50% !important;
+  }
+}
+
+.ecatalog .modal-catalog-browser {
+  width: 80%;
+  margin-left: -40%;
+  left: 50%;
+  height: 80%;
+
+  .modal-body {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    position: absolute;
+    max-height: 100%;
+  }
+
+  bx-slider {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    margin: 0px;
+  }
+
+  #jqUISlider {
+    transition: opacity 1s;
+    opacity: 1;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+
+}
+
+.pan-zoom-modal {
+  overflow: hidden;
+  .modal-body {
+    width: 100%;
+    height: 100%;
+    div[pan-zoom] {
+      text-align: center;
+    }
+  }
+}
+
+.catalogBrowse.assortmentFeature {
+  #jqUISlider {
+    bottom: 40px;
+  }
+}
+
+.catalogBrowse.modal {
+  padding-bottom: 10px;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: rgba(245, 245, 245, 0.2);
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-left: -25%;
+}
+
+.page-thumbnail-modal-body {
+  max-height: 80%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.page-thumbnail-container {
+  width: 114px;
+  height: 131px;
+  float: left;
+  overflow: hidden;
+  background-color: #AAA;
+  float: left;
+  margin: 20px 20px 20px 20px;
+  position: relative;
+  border: 0;
+  -moz-box-shadow: 1px 1px 5px #777;
+  -webkit-box-shadow: 1px 1px 5px #777;
+  box-shadow: 1px 1px 5px #777;
+}
+
+.page-thumbnail-img-container {
+  padding: 5px 5px 5px 5px;
+}
+
+.product-thumbnail-img {
+  height: 121px;
+  width: 104px;
+}
+
+.modal-header-text-align {
+  text-align: center;
+}

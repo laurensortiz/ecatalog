@@ -1,0 +1,29 @@
+<div class="assortment-link-customer-page">
+    <p class="title">
+        Select Customer
+    </p>
+
+    <div class="customer-search-container">
+        <div class="customer-search">
+            <div class="icon-search"></div>
+            <input type="text" class="search-query" placeholder="Search" ng-model="nameFilter">
+        </div>
+    </div>
+    <div class="addressbook-container">
+        <div id="addressbook-slider">
+            <div class="slider-content">
+                <ul>
+                    <li ng-repeat="(name, customers) in groupedCustomers " id="{{name}}"><a name="{{name}}"
+                                                                                            class="title">{{name}}</a>
+                        <ul>
+                            <li ng-repeat="cust in customers | filter:nameFilter" inner-loop
+                                ng-click="linkCustomer(cust)">{{cust.name}}
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+SELECTDB, our standard demo tenant, is the only tenant content directory committed to the
+eCatalog repository moving forward.
+
+All other tenant content directories have been moved into their respective Services
+repositories.
+
+If you would like to test eCatalog in your local server environment with a tenant other 
+than SELECTDB, you will need to Check Out the services repository for the tenant you wish 
+to test with then SymLink the tenant content directory into your app/data directory.
+
+For example, if you would like to test eCatalog in your local NodeJS server using the 
+VANSSB tenant, you would do the following:
+
+	1 - Check out the Vans services repository from the following URL
+		https://svn.conductiv.com/repos/svc-vans.
+		
+	2 - Go to a command prompt and change to your eCatalog app/data directory. 
+		(e.g.; cd ~/dev/conductiv/ecatalog/trunk/app/data)
+	
+	3 - Create a SymLink with the appropriate tenant name pointing to the appropriate 		services directory for that tenant.
+		(e.g.; ln -s "~/dev/conductiv/services/vans/trunk/ecat-files" VANSSB
+	
+	4 - Open your SVN Client and set it to "Ignore" the SymLink you added
+		so that it doesn't accidentally get added to the repository. 
+		
+Now you should be able to run eCatalog locally with the new tenant.

@@ -1,0 +1,255 @@
+<div class="grid productGroup">
+    <!-- Left Margin Graphics -->
+    <widget class="margins left-margin" widget-id="LeftMargin">
+    </widget>
+    <!-- Product Grid -->
+    <div class="productGrid">
+        <div class="img_container" style="left:35%; top:15%;" ng-show="pagedata.masterCatalogPageNumber == 42">
+          <div class="top_right_icons" style="height: 30%; margin-left:-12%;" base-path="{{pagedata.rootCatalogPath}}" background-image="indy-vans.png"></div>
+        </div>
+        <div class="img_container" ng-show="pagedata.masterCatalogPageNumber == 42">
+          <div class="top_right_icons" style="height: 70%;" base-path="{{pagedata.rootCatalogPath}}" background-image="new_style.png"></div>
+        </div>
+        <div class="img_container" ng-show="pagedata.masterCatalogPageNumber == 15">
+          <div class="top_right_icons" style="height: 70%;" base-path="{{pagedata.rootCatalogPath}}" background-image="new_style.png"></div>
+          <div class="top_right_icons" style="height: 30%; margin-left:-12%;" base-path="{{pagedata.rootCatalogPath}}" background-image="indy-vans.png"></div>
+        </div>
+        <widget class="productWidget" widget-id="TopLeftProduct" debugWithPlaceholder="false">
+
+        </widget>
+
+        <widget class="productWidget" widget-id="TopRightProduct" debugWithPlaceholder="true">
+        </widget>
+
+        <widget class="productWidget" widget-id="BottomLeftProduct" debugWithPlaceholder="true">
+        </widget>
+
+        <widget class="productWidget" widget-id="BottomRightProduct" debugWithPlaceholder="true">
+        </widget>
+    </div>
+
+    <!-- Widget Summary -->
+    <widget class="textFooterSummary" widget-id="FeatureSummary" debugWithPlaceholder="true">
+    </widget>
+
+</div>
+<style type="text/css" data-styleId="PRODUCT_4_UP">
+		.catalog-page .productGroup {
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-color: #FFF;
+		}
+
+		.catalog-page .productGroup .productGrid {
+			height: 75%;
+			width: 100%;
+			position: absolute;
+			z-index: 4;
+		}
+
+		.catalog-page .productGroup .productWidget {
+			width: 40%;
+			height: 45%;
+			float: left;
+			text-align: left;
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-bottom: 2.5%;
+			margin-top: 2.5%;
+		}
+    .catalog-page .img_container{
+      position: absolute;
+      height: 110px;
+      background-size: contain;
+      background-position: right top;
+      background-repeat: no-repeat;
+      top: 7%;
+      right: 3%;
+      right: 0;
+      z-index:9000;
+      width:80px;
+    }
+
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (-webkit-min-device-pixel-ratio: 1) and (orientation : landscape)  {
+      .catalog-page .img_container{
+        top: 4%;
+      }
+    }
+
+    /*portrait*/
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : portrait)
+    and (-webkit-min-device-pixel-ratio: 1) {
+      .catalog-page .img_container{
+        top: 8%;
+        right: 4%;
+      }
+    }
+    .catalog-page .top_right_icons{
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: contain;
+      width:100%;
+      position:relative;
+    }
+
+
+		/* Color */
+		.catalog-page .productGroup .productWidget h2 {
+			font-family: HelveticaNeue-Bold;
+			margin: auto;
+			font-size: 1.15em;
+			line-height: 1.15em;
+		}
+
+		/* Style */
+		.catalog-page .productGroup .productWidget h4 {
+			font-family: Monaco, monospace;
+			font-weight: normal;
+			margin: auto;
+			font-size: .95em;
+			line-height: 1.4em;
+		}
+
+		/* Material */
+		.catalog-page .productGroup .productWidget h5 {
+			font-family: HelveticaNeue-P;
+			font-weight: normal;
+			margin: auto;
+			font-size: .95em;
+			line-height: 1.4em;
+			font-weight: normal;
+		}
+
+		/* Lead Time */
+		.catalog-page .productGroup .productWidget h6 {
+			font-family: HelveticaNeue-P;
+			font-weight: normal;
+			margin: auto;
+			font-size: .95em;
+			line-height: 1em;
+			font-weight: normal;
+		}
+
+		.catalog-page .productGroup .productWidget .text-block {
+			position: relative;
+			padding-top: 5%;
+			height: 25%;
+			margin-left: 2%;
+		}
+
+		.catalog-page .productGroup .productWidget .productImage {
+			height: 70%;
+			background-repeat: no-repeat;
+			background-position: left bottom;
+			background-size: contain;
+		}
+
+		.catalog-page .productGroup .margins {
+			background-repeat: no-repeat;
+		}
+		.catalog-page .productGroup .margins div {
+			width: 100%;
+			height: 100%;
+		}
+
+		.catalog-page .productGroup .margins .constrainedImage {
+
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		.catalog-page .productGroup .margins.left-margin {
+			width: 50%;
+			height: 100%;
+			left: 0px;
+			position: absolute;
+		}
+
+		.catalog-page .productGroup .margins.left-margin .constrainedImage {
+			background-position: left top;
+		}
+
+		.catalog-page .productGroup .margins.right-margin {
+			width: 15%;
+			height: 100%;
+			right: 0px;
+			position: absolute;
+			z-index: 5;
+		}
+
+		.catalog-page .productGroup .margins.right-margin .constrainedImage {
+			background-position: right top;
+		}
+
+		.catalog-page .productGroup .textFooterSummary {
+			height: 10%;
+			width: 95%;
+			position: absolute;
+			z-index: 4;
+			top: 77.5%;
+			margin-left: 6%;
+			margin-right: 5%;
+			font-family: helvetica;
+		}
+
+		.textFooterSummary h1 {
+			font-size: 1em;
+			padding-bottom: 10px;
+			border-bottom: #eee 1px solid;
+		}
+		.textFooterSummary h6 {
+			font-size: .8em;
+		}
+
+		.textFooterSummary dl {
+
+		}
+
+		.textFooterSummary dl dt {
+			font-weight: bold;
+			display: inline;
+			margin: auto;
+		}
+
+		.textFooterSummary dl dd {
+			font-size: .8em;
+			display: inline;
+			margin: auto;
+		}
+
+		.textFooterSummary dd:after {
+			content: "/";
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+
+		.textFooterSummary dd:last-child:after {
+			display: none;
+		}
+
+		.textFooterSummary #featureSummaryFeatureAvailability {
+			font-size: .8em;
+		}
+
+		.textFooterSummary #featureSummaryFeatureAvailability .av-avkey, .av-szkey {
+			font-weight: bold;
+		}
+
+		.textFooterSummary #featureSummaryFeatureAvailability .av-szkey {
+			margin-left: 15px;
+		}
+
+		.textFooterSummary #featureSummaryFeatureAvailability .av-llt {
+			margin-left: 15px;
+			color: #aaa;
+		}
+
+    </style>

@@ -1,0 +1,16 @@
+<div class="signaturestyles_page signature_2">
+    <div class="signature_cover_left" base-path="{{pagedata.rootCatalogPath}}"></div>
+    <div class="signature_content" base-path="{{pagedata.rootCatalogPath}}" ></div>
+    <div class="signature_content_footer" base-path="{{pagedata.rootCatalogPath}}">
+    	<div class="signature_header">SIGNATURE<br />STYLES</div>
+        <div class="signature_caption">
+            <div class="signature_caption_1">
+                <B>GILBERT CROCKETT</B></div>
+			<div class="signature_caption_2">
+                IN THE <B>CROCKETT PRO (INDEPENDENT)</B> FEATURING VANS WAFFLECUP (PG.<B>13</B>)<BR/>SEE THE <B>INDEPENDENT COLLECTION</B> ON <B>PG.58</B>
+            </div>
+   			<div class="signature_caption_3"></div>
+        </div>
+    </div>    
+    <div class="waffle_guy" base-path="{{pagedata.rootCatalogPath}}"></div>
+</div>

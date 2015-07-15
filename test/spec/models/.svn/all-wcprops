@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/ecatalog/!svn/ver/1709/trunk/test/spec/models
+END
+assortmentTab.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/ecatalog/!svn/ver/1709/trunk/test/spec/models/assortmentTab.js
+END
+productStyle.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/ecatalog/!svn/ver/1696/trunk/test/spec/models/productStyle.js
+END
+displayStyle.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/ecatalog/!svn/ver/1688/trunk/test/spec/models/displayStyle.js
+END
+product.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/ecatalog/!svn/ver/1688/trunk/test/spec/models/product.js
+END
+assortment.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/ecatalog/!svn/ver/1665/trunk/test/spec/models/assortment.js
+END
+order.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/ecatalog/!svn/ver/1701/trunk/test/spec/models/order.js
+END
+user.js
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/ecatalog/!svn/ver/1701/trunk/test/spec/models/user.js
+END
+catalog.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/ecatalog/!svn/ver/1673/trunk/test/spec/models/catalog.js
+END

@@ -1,0 +1,14 @@
+<!-- MESSAGE_ASKATE_2 -->
+<div class="askate_page askate_2 paper">
+    <div class="askate_right" base-path="{{pagedata.rootCatalogPath}}"></div>
+    <div class="askate_graphic" base-path="{{pagedata.rootCatalogPath}}">
+        <div class="text-block"> <p>The A.skate Foundation is a registered 501(c)(3) nonprofit that allows children with autism to be a part of our social world trough skateboarding.</p>
+            <p>
+                Autism, like skateboarding, can be unpredictable and often times unruly.<br/>
+                A.skate embrace the parts of autism that are hard to understand and gives the children an outlet that is free of rules or judgement, allowing them to be social without being "social".
+            </p>
+            www.askate.org
+        </div>
+    </div>
+    <div class="askate_logo" base-path="{{pagedata.rootCatalogPath}}"></div>
+</div>

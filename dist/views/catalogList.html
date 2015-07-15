@@ -1,0 +1,14 @@
+<div class="container catalogList view-content">
+    <div class="row">
+        <div class="span12 ec-span12-margin">
+            <ul class="thumbnails">
+                <li class="span3" ng-repeat="catalog in catalogs">
+                    <a ng-click="browseCatalog(catalog.id)">
+                        <span class="shadow"></span>
+                        <img ng-src="{{catalog.links['image']}}" alt="{{catalog.name}}"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

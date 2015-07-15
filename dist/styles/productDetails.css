@@ -1,0 +1,120 @@
+/* line 1, productDetails.scss */
+.product-details-popup {
+  height: 85%;
+  width: 94%;
+  margin-left: 0px;
+  top: 3% !important;
+  left: 3% !important;
+}
+/* line 8, productDetails.scss */
+.product-details-popup .remove-border {
+  border: none;
+}
+/* line 11, productDetails.scss */
+.product-details-popup .annotation-btn {
+  z-index: 999;
+  display: block;
+  background: url(../images/annotation.png);
+  position: absolute;
+  height: 43px;
+  width: 43px;
+  top: 10;
+  right: 0;
+  border: 2px;
+  border-color: #000000;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+/* line 27, productDetails.scss */
+.product-details-popup .annotation-box {
+  z-index: 1000;
+  display: block;
+  padding: 25px 25px 40px;
+  margin: 0 auto 20px auto;
+  width: 30%;
+  height: 20%;
+  line-height: 1.5;
+  border: 0;
+  border-radius: 3px;
+  background: -webkit-linear-gradient(#f9efaf, #f7e98d);
+  background: -moz-linear-gradient(#f9efaf, #f7e98d);
+  background: -o-linear-gradient(#f9efaf, #f7e98d);
+  background: -ms-linear-gradient(#f9efaf, #f7e98d);
+  background: linear-gradient(#f9efaf, #f7e98d);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.5s ease;
+  font-smoothing: subpixel-antialiased;
+  max-width: 520px;
+  max-height: 250px;
+  position: absolute;
+  top: 20;
+  right: 0;
+}
+/* line 54, productDetails.scss */
+.product-details-popup .popup-body {
+  height: 100%;
+  max-height: 100%;
+  width: 97%;
+  overflow: hidden;
+  position: relative;
+  background-color: #FFF;
+}
+/* line 62, productDetails.scss */
+.product-details-popup .popup-body .product-image-container {
+  display: block;
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+  text-align: center;
+}
+/* line 70, productDetails.scss */
+.product-details-popup .popup-body .product-image-container img {
+  max-height: 100%;
+  max-width: 100%;
+}
+/* line 75, productDetails.scss */
+.product-details-popup .popup-body .popup-text-marketing-container {
+  overflow: hidden;
+  height: 35%;
+}
+/* line 80, productDetails.scss */
+.product-details-popup .popup-body .product-text-container {
+  float: left;
+  width: 45%;
+  height: 100%;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 15px;
+}
+/* line 89, productDetails.scss */
+.product-details-popup .popup-body .product-marketing-material-container {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+/* line 96, productDetails.scss */
+.product-details-popup .btn-container {
+  position: relative;
+}
+/* line 100, productDetails.scss */
+.product-details-popup .popup-footer {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+}
+/* line 106, productDetails.scss */
+.product-details-popup .close-btn {
+  width: 200px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+/* line 115, productDetails.scss */
+.product-details-popup .btn-warning:hover, .product-details-popup .btn-warning:active, .product-details-popup .btn-warning.active, .product-details-popup .btn-warning.disabled, .product-details-popup .btn-warning[disabled] {
+  color: white;
+  background-color: #000000;
+}

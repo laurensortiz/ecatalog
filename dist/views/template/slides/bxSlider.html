@@ -1,0 +1,9 @@
+<ul>
+    <li ng-repeat="slide in slides" ng-transclude>
+
+    </li>
+</ul>
+<div ng-show="isBuildingSlides" class="slide-loading-screen">
+    <img src="images/bx_loader_w.gif" ui-if="color='white';"/>
+    <img src="images/bx_loader.gif" ui-if="color!='white';"/>
+</div>

@@ -1,0 +1,131 @@
+/* line 2, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page p.title {
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+/* line 12, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page .customer-search-container {
+  width: 100%;
+  text-align: center;
+}
+/* line 16, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page .customer-search {
+  position: relative;
+}
+/* line 21, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page .customer-search .search-query {
+  padding-left: 29px;
+}
+/* line 25, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page .customer-search .icon-search {
+  position: relative;
+  top: 2px;
+  left: 25px;
+  background-image: url("http://twitter.github.com/bootstrap/assets/img/glyphicons-halflings.png");
+}
+/* line 32, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page #addressbook-slider {
+  border-radius: 5px;
+  margin: 15px;
+  min-height: 250px;
+  display: block;
+  position: relative;
+  background: #F6F9FF;
+  overflow: hidden;
+}
+/* line 42, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page #addressbook-slider ul {
+  list-style: none;
+}
+/* line 45, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page .slider-content {
+  float: left;
+  width: 100%;
+  display: block;
+  overflow: auto;
+  min-height: 250px;
+}
+/* line 52, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page .slider-content ul {
+  float: left;
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0;
+}
+/* line 59, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page .slider-content ul li {
+  float: left;
+  width: 100%;
+}
+/* line 63, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page .slider-content ul ul li {
+  font-size: 22px;
+  font-weight: bolder;
+  line-height: 50px;
+  padding: 0px 10px;
+  display: block;
+  border-bottom: 1px solid #c9ced1;
+  text-transform: capitalize;
+}
+/* line 73, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page .slider-content .title {
+  padding: 0px 0;
+  text-indent: 10px;
+  background: #899BA5;
+  color: #fff;
+  width: 100%;
+  float: left;
+  text-transform: uppercase;
+}
+/* line 83, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page .slider-content .selected .title {
+  background: #899BA5;
+}
+/* line 86, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page #addressbook-slider .slider-nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-height: 250px;
+}
+/* line 92, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page #addressbook-slider .slider-nav ul {
+  padding: 5px 0;
+}
+/* line 95, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page #addressbook-slider .slider-nav li a {
+  padding: 3px 5px;
+  line-height: 10px;
+  text-align: center;
+  color: #878787;
+  display: block;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/* line 104, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page #addressbook-slider #debug {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  background: #000;
+  color: #fff;
+}
+/* line 113, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page #addressbook-slider .down {
+  border-bottom: none;
+  border-top: 8px solid white;
+  top: 15px;
+}
+/* line 119, assortmentLinkCustomer.scss */
+.ecatalog .assortment-link-customer-page #addressbook-slider .slide-up, .ecatalog .assortment-link-customer-page #addressbook-slider .slide-down {
+  height: 0px;
+  background: #333;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+  width: 100%;
+  position: relative;
+}

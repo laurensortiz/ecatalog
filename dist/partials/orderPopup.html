@@ -1,0 +1,107 @@
+<div modal="orderPopupShouldBeOpen"  options="modalOpts" class="orderPopup" close="orderPopupShouldBeOpen">
+    <div class="modal-header popup-header ui-bar-c orderPopup ui-corner-top center">
+        <!--<h3>{{languagesJSON['orderPopUp.tittle']}}</h3>-->
+        <button type="button" class="close" ng-click="closeOrderPopup()" close="closeOrderPopup()"></button>
+        <checkbox-button ng-model="copyHeader.check" class="copy-header">
+            <div class="align-left">&nbspCopy Previous Order Header</div>
+        </checkbox-button>
+        <button name="submitButton" ng-disabled="orderProductForm.$invalid" class="order-header" ng-click="saveOrderHeader(orderProductForm.$invalid)">{{languagesJSON['orderPopUp.save.order.header']}}</button>
+
+    </div>
+    <form name="orderProductForm" class="bg-darkBlue" novalidate>
+
+        <div class="popup-body control-group left-right-margin-10">
+            <div class="row-fluid" >
+                <div class="span12">
+                    <label>{{languagesJSON['orderPopUp.purchase']}}<span class="required-field">*</span></label>
+                    <input type="text" name="purchaseOrder" ng-model="formFields.po" ng-required="true" ng-minlength="1" ng-maxlength="100" autocomplete='off' class="span12"/>
+                    <label class="form-error-message" ng-show="orderProductForm.purchaseOrder.$error.maxlength">Maximum of 100 characters are allowed in Purchase Order</label>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span6">
+                    <label>{{languagesJSON['orderPopUp.customer']}}<span class="required-field">*</span></label>
+                    <select ui-select2 id="orderProductForm-customerName" ng-model="formFields.customer" ng-required="false">
+                      <option></option>
+                      <option ng-repeat="customer in customers" value="{{customer.name}}">{{customer.name}}</option>
+                    </select>
+                    <label>{{languagesJSON['orderPopUp.shipTo']}}<span class="required-field">*</span></label>
+                    <select id="ship-to" ng-model="formFields.shipToAddress" ng-required="true" ng-options="address for address in addressStrings" class="span12">
+                    </select>
+                    <label>{{languagesJSON['orderPopUp.shipMeth']}}<span class="required-field">*</span></label>
+                    <select id="ship-method" ng-model="formFields.shipMethod" ng-required="true" ng-options="method for method in shippingMethodStrings" class="span12">
+                    </select>
+                </div>
+                <div class="span6">
+                    <label>{{languagesJSON['orderPopUp.promo']}}</label>
+                    <select id="promo-code" ng-model="formFields.promotion" ng-options="promo as promo.name for promo in promocodes" class="span12">
+                        <option value=""></option>
+                        <option value="">{{formFields.promotion.description}}</option>
+                    </select>
+                    <label>{{languagesJSON['orderPopUp.reqShip']}}<span class="required-field">*</span></label>
+                    <input type="date" name="requestedShipDate" ui-validate="{future: 'dateInFuture( $value )'}" ng-required="false" ng-model="formFields.shippingDate" ng-change="changeCancelAfter()" class="span12" />
+                    <label class="form-error-message" ng-show="orderProductForm.requestedShipDate.$error.future">Requested Ship Date should be in future</label>
+                    <label>{{languagesJSON['orderPopUp.cancelAft']}}<span class="required-field">*</span></label>
+                    <input type="date" name="cancelAfterDate" ng-required="false" ui-validate="{valid: 'dateWithinRequiredRange( $value )'}" ng-model="formFields.cancelDate" class="span12" />
+                    <label class="form-error-message" ng-show="orderProductForm.cancelAfterDate.$error.valid">Cancel After Date should be within 15 to 30 days from Requested Ship Date</label>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <label>{{languagesJSON['orderPopUp.email']}}<span class="required-field">*</span></label>
+                    <input type="text" name="email" autocapitalize="off" autocorrect="off" ng-model="formFields.email" class="span12"  ng-pattern="/^((\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)*([ ]*[,][ ]*)*)*$/"
+                           required ng-minlength="6"/>
+                    <div ng-show="orderProductForm.email.$dirty && orderProductForm.email.$invalid" class="form-error-message">Invalid:
+                        <span ng-show="orderProductForm.email.$error.required">Tell us your email.</span>
+                        <span ng-show="orderProductForm.email.$error.pattern">Invalid email. </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <label>{{languagesJSON['orderPopUp.remarks']}}</label>
+                    <textarea rows="3" name="remarks"  ng-model="formFields.remarks" class="span12" ng-maxlength="255"></textarea>
+                    <label class="form-error-message" ng-show="orderProductForm.remarks.$error.maxlength">Maximum of 255 characters are allowed in remarks.</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer bottom">
+            <div class="row-fluid">
+
+                <div ng-clock>
+                    <button ng-hide="moreThanOneTab" name="submitButton" ng-disabled="orderProductForm.$invalid" class="btn btn-large btn-block btn-primary" ng-click="submitOrder(orderProductForm.$invalid)" hm-tap="saveOrderHeader(orderProductForm.$invalid)">
+                        {{languagesJSON['orderPopUp.submit']}}
+                    </button>
+                    <div ng-hide="$parent.submitOrders">
+                    <button   ng-show="moreThanOneTab"  name="submitButton" ng-disabled="true" class="btn btn-large btn-block btn-primary" ng-click="submitOrder(orderProductForm.$invalid)" hm-tap="saveOrderHeader(orderProductForm.$invalid)">
+                        {{languagesJSON['orderPopUp.submitAll']}}
+                    </button>
+                    </div>
+                    <div ng-show="$parent.submitOrders">
+
+                        <button  ng-show="moreThanOneTab"   name="submitButton" ng-disabled="orderProductForm.$invalid" class="btn btn-large btn-block btn-primary" ng-click="submitOrder(orderProductForm.$invalid)" hm-tap="saveOrderHeader(orderProductForm.$invalid)">
+                            {{languagesJSON['orderPopUp.submitAll']}}
+                        </button>
+                    </div>
+                </div>
+                <button class="btn btn-large btn-block btn-inverse" hm-tap="closeOrderPopup()" style="visibility: hidden">{{languagesJSON['orderPopUp.close']}}</button>
+            </div>
+        </div>
+
+    </form>
+
+    <div class="tablist">
+                <a class="navElement tab-moveLeft" ng-show="showLeftNavTabs" ng-click="navegationTabs.prev()">Move Left</a>
+                <div class="taps-content span12">
+                    <ul style="left:{{ positionStart }}px">
+                        <li ng-repeat="assortment in listOfAssortments" ng-click="openAssortment(assortment.id)" hm-tap="saveOrderHeader(orderProductForm.$invalid)" class="{{ isActive(assortment.id) }}" >
+                            <span>
+                                <p long-tap-to-show-assortment-options="assortment">{{assortment.description}}</p>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navElement tab-moveRight" ng-show="showRightNavTabs" ng-click="navegationTabs.next()">Move Right</a>
+            </div>
+        </div>

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/ecatalog/!svn/ver/1643/trunk/app/scripts/vendor
+END
+jquery.ui.touch-punch.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/vendor/jquery.ui.touch-punch.js
+END
+hammer.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/vendor/hammer.js
+END
+jquery.flexverticalcenter.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/vendor/jquery.flexverticalcenter.js
+END
+moment.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/vendor/moment.min.js
+END
+angular-hammer.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/vendor/angular-hammer.js
+END
+Base64.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/vendor/Base64.js
+END
+jquery.indexeddb.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/vendor/jquery.indexeddb.js
+END
+aes.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/vendor/aes.js
+END
+UtilityFunctions.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/vendor/UtilityFunctions.js
+END
+md5.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/vendor/md5.js
+END

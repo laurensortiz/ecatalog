@@ -1,0 +1,73 @@
+<div ng-hide="productStyle.connections.products">
+  <img src="images/bx_loader.gif"/>
+</div>
+<div class="row-fluid" ui-if="productStyle.connections.products">
+  <div class="span12">
+    <div class="span1">
+      <img ng-src="{{productStyle.links.image}}">
+    </div>
+    <div class="span7">
+      <div class="product-style-info">
+        <div>
+          <h4>
+            {{productStyle.style.name}}
+          </h4>
+        </div>
+        <div>
+          {{productStyle.style.styleCode}}
+        </div>
+      </div>
+    </div>
+
+    <div class="span1">
+      <div class="bolder summary currQuantity" ng-bind="totalQuantityForProductStyle(productStyle)"></div>
+    </div>
+    <div class="span1">
+      <div class="summary currPrice" ng-bind="totalPriceForProductStyle(productStyle) | currency"></div>
+    </div>
+  </div>
+</div>
+<div class="row-fluid">
+  <div class="span12 assortment-row">
+    <div class="span9">
+      <table class="table">
+        <thead>
+        <th ng-repeat="xFeature in getFeaturesInProductStyle(productStyle).size">
+          {{xFeature}}
+        </th>
+        </thead>
+        <tbody>
+
+
+        <tr ng-repeat="yFeature in getFeaturesInProductStyle(productStyle).width">
+
+          <td class="ls-takesize" ng-repeat="upcProduct in getProductsQty(productStyle)">
+            <div id="product-{{upcProduct.productId}}"
+                ng-bind="getProductQuantity(upcProduct)"></div>
+            <br>
+        </tr>
+
+
+        </tbody>
+      </table>
+    </div>
+    <div class="span3">
+      <table class="table">
+        <thead>
+        <td style="height: 1em">
+        </td>
+        <td>
+        </td>
+        </thead>
+        <tbody>
+        <td>
+          <span class="shorter"
+                ng-bind="pricePerUnitForProductStyle(productStyle) | currency"></span>
+          <span class="shorter">ea</span>
+        </td>
+        <td></td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

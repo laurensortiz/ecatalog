@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/ecatalog/!svn/ver/3/trunk/app/components/json3/vendor
+END
+closure-compiler.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/ecatalog/!svn/ver/3/trunk/app/components/json3/vendor/closure-compiler.jar
+END
+curl.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/ecatalog/!svn/ver/3/trunk/app/components/json3/vendor/curl.js
+END
+prototype.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/ecatalog/!svn/ver/3/trunk/app/components/json3/vendor/prototype.js
+END
+require.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/ecatalog/!svn/ver/3/trunk/app/components/json3/vendor/require.js
+END

@@ -1,0 +1,263 @@
+/* line 3, homeMenu.scss */
+.ecatalog .homeMenu {
+  padding-bottom: 50px;
+}
+/* line 6, homeMenu.scss */
+.ecatalog .homeMenu .row-fluid {
+  margin-bottom: 1.5%;
+}
+/* line 9, homeMenu.scss */
+.ecatalog .homeMenu .span7 {
+  width: 70%;
+}
+@media (max-width: 1023px) {
+  /* line 13, homeMenu.scss */
+  .ecatalog .homeMenu .span7 {
+    width: 56%;
+  }
+}
+/* line 18, homeMenu.scss */
+.ecatalog .homeMenu .row-fluid .span3 {
+  width: 20%;
+  min-width: 160px;
+}
+@media screen and (max-width: 767px) {
+  /* line 18, homeMenu.scss */
+  .ecatalog .homeMenu .row-fluid .span3 {
+    margin: auto;
+  }
+}
+/* line 26, homeMenu.scss */
+.ecatalog .homeMenu .order-stat {
+  -webkit-border-radius: 40px 40px;
+  -moz-border-radius: 40px / 40px;
+  border-radius: 40px / 40px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+  background-color: red;
+  color: white;
+  top: -170px;
+  right: -20px;
+  border: 5px solid white;
+  z-index: 3;
+  position: relative;
+  float: right;
+}
+/* line 43, homeMenu.scss */
+.ecatalog .homeMenu .dashboard-button-extras-container {
+  height: 120px;
+}
+/* line 47, homeMenu.scss */
+.ecatalog .homeMenu .dashboard-button {
+  vertical-align: bottom;
+  text-align: left;
+  width: 150px;
+  height: 150px;
+  display: block;
+  position: relative;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: 40px -80px;
+  -webkit-border-radius: 15px 15px;
+  -moz-border-radius: 15px / 15px;
+  border-radius: 15px / 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+/* line 63, homeMenu.scss */
+.ecatalog .homeMenu .dashboard-button.sales-dashboard {
+  background-image: url("../images/homeMenu/Dashboard_Button.png");
+  background-color: #FFF;
+}
+/* line 68, homeMenu.scss */
+.ecatalog .homeMenu .dashboard-button.catalog-dashboard {
+  background-image: url("../images/homeMenu/Catalog_Button.png");
+  background-color: #FFF;
+}
+/* line 73, homeMenu.scss */
+.ecatalog .homeMenu .dashboard-button.assortment-dashboard {
+  background-image: url("../images/homeMenu/Assortment_Button.png");
+  background-color: #FFF;
+}
+/* line 78, homeMenu.scss */
+.ecatalog .homeMenu .dashboard-button.order-dashboard {
+  background-image: url("../images/homeMenu/Order_Button.png");
+  background-color: #FFF;
+}
+/* line 83, homeMenu.scss */
+.ecatalog .homeMenu .button-text {
+  display: table-cell;
+  vertical-align: bottom;
+  height: 90px;
+  padding: 10px;
+}
+/* line 89, homeMenu.scss */
+.ecatalog .homeMenu .button-text > span {
+  font-size: 1.6em;
+  color: #222222;
+  text-shadow: 0 1px 0 white;
+}
+/* line 96, homeMenu.scss */
+.ecatalog .homeMenu .ui-btn-inner {
+  word-wrap: break-word;
+  vertical-align: bottom;
+  font-size: 20px !important;
+}
+/* line 102, homeMenu.scss */
+.ecatalog .homeMenu .dashboard-button-extras {
+  display: block;
+  height: 120px;
+  background-color: rgba(38, 38, 38, 0.4);
+  -webkit-border-radius: 15px 15px;
+  -moz-border-radius: 15px / 15px;
+  border-radius: 15px / 15px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+@media screen and (max-width: 767px) {
+  /* line 102, homeMenu.scss */
+  .ecatalog .homeMenu .dashboard-button-extras {
+    display: none;
+  }
+}
+/* line 115, homeMenu.scss */
+.ecatalog .homeMenu .catalog-button {
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), 0 1px rgba(255, 255, 255, 0.3) inset, 0 10px rgba(255, 255, 255, 0.2) inset, 0 10px 20px rgba(255, 255, 255, 0.25) inset, 0 -15px 30px rgba(0, 0, 0, 0.3) inset;
+  display: block;
+  float: left;
+  height: 120px;
+  margin: 0 10px 0 0;
+}
+/* line 124, homeMenu.scss */
+.ecatalog .homeMenu .catalog-button-title {
+  position: relative;
+  background-color: black;
+  color: white;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: center;
+  height: 20px;
+  top: -6px;
+  display: block;
+  text-decoration: none !important;
+  border-radius: 0px 0px 15px 15px;
+}
+/* line 138, homeMenu.scss */
+.ecatalog .homeMenu .extras-img {
+  border-radius: 15px 15px 0px 0px;
+  height: 105px;
+  width: 240px;
+}
+/* line 144, homeMenu.scss */
+.ecatalog .homeMenu .button-bg-img {
+  height: 150px;
+  width: 150px;
+}
+/* line 149, homeMenu.scss */
+.ecatalog .homeMenu .button-group {
+  margin-bottom: 30px;
+  height: 150px;
+}
+/* line 152, homeMenu.scss */
+.ecatalog .homeMenu .button-group .topLevelButton {
+  width: 20%;
+  height: 100%;
+  display: block;
+  float: left;
+}
+/* line 158, homeMenu.scss */
+.ecatalog .homeMenu .button-group .childButtons {
+  width: 75%;
+  padding-left: 5px;
+  display: inline-block;
+}
+/* line 165, homeMenu.scss */
+.ecatalog .homeMenu td.assortment-menu, .ecatalog .homeMenu td.order-menu {
+  background-color: #2D2D2D;
+  border: 1px solid #858380;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.28), 0 1px rgba(255, 255, 255, 0.1) inset, 0 10px rgba(60, 60, 60, 0.3) inset, 0 10px 20px rgba(255, 255, 255, 0.1) inset, 0 -15px 30px rgba(0, 0, 0, 0.21) inset;
+  cursor: pointer;
+  font-weight: normal;
+  height: 118px;
+  padding: 0 10px;
+  width: 220px;
+  color: #FFF;
+  position: relative;
+}
+/* line 179, homeMenu.scss */
+.ecatalog .homeMenu td > div.assortments-name {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 22px;
+  line-height: 23px;
+  width: 227px;
+  overflow: hidden;
+}
+
+/* line 190, homeMenu.scss */
+#HomeMenuFeature a.btn.btn-block {
+  border: 1px solid #858380;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5), 0 1px rgba(255, 255, 255, 0.3) inset, 0 10px rgba(255, 255, 255, 0.3) inset, 0 10px 20px rgba(255, 255, 255, 0.25) inset, 0 -15px 30px rgba(0, 0, 0, 0.4) inset;
+  height: 120px;
+  -webkit-tap-highlight-color: transparent;
+}
+/* line 196, homeMenu.scss */
+#HomeMenuFeature .inactive {
+  cursor: inherit;
+  border: 0.5px solid #858380;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5), 0 1px transparent inset, 0 10px transparent inset, 0 130px 0 rgba(0, 0, 0, 0.4) inset, 0 0 0 rgba(0, 0, 0, 0.4) inset !important;
+}
+/* line 201, homeMenu.scss */
+#HomeMenuFeature div.row {
+  margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  /* line 206, homeMenu.scss */
+  #HomeMenuFeature .offset1:first-child {
+    margin-left: 4.511%;
+  }
+}
+/* line 210, homeMenu.scss */
+#HomeMenuFeature table {
+  border-collapse: separate;
+  border-spacing: 10px 0;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+/* line 217, homeMenu.scss */
+.warning-wrapper {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 0.2em;
+  overflow: hidden;
+  padding: 0.2em 0;
+  height: 16px;
+  vertical-align: top;
+  position: absolute;
+  top: 6%;
+  left: 3%;
+  width: 92%;
+}
+/* line 229, homeMenu.scss */
+.warning-wrapper .icon-warning {
+  height: 13px;
+  margin: 1px 0;
+  background: none;
+}
+/* line 234, homeMenu.scss */
+.warning-wrapper.red {
+  background: rgba(204, 63, 56, 0.3);
+  border: 1px solid #cc3f38;
+}
+/* line 238, homeMenu.scss */
+.warning-wrapper.green {
+  background: rgba(9, 127, 54, 0.3);
+  border: 1px solid #097f36;
+}

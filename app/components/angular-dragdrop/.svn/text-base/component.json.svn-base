@@ -1,0 +1,8 @@
+{
+  "name": "angular-dragdrop",
+  "version": "1.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/codef0rmer/angular-dragdrop.git"
+  }
+}

@@ -1,0 +1,48 @@
+<div class="footer" ng-class="{assortment: inAssortmentScope()}" ng-show="isFooterVisible()">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="span3 clickable">
+
+                    <div class="user-dropdown" ng-show="isUserLoggedIn()">
+                        <a class="toggle-dropdown"
+                           ng-click="showUserDropdown.main = !showUserDropdown.main; showUserDropdown.lang = false;">
+              <span ng-show="isUserLoggedIn()">
+                <i class="icon-user icon-white"></i>
+                <span ng-bind="currentUser()"></span>
+              </span>
+                            <i class="icon-chevron-up icon-white"></i>
+                        </a>
+                        <ul class="menu-dropdown" ng-show="showUserDropdown.main">
+                            <li class="dropdown-submenu"><a
+                                    ng-click="showUserDropdown.lang = !showUserDropdown.lang;"><i
+                                    class="icon-globe"></i>{{int['footer.change.language']}}</a>
+                                <ul class="menu-dropdown" ng-show="showUserDropdown.lang">
+                                    <li ng-repeat="language in languageschg" ng-click="mainDropdown = !mainDropdown;">
+                                        <a ng-click="langme({language:language}); showUserDropdown.main = !showUserDropdown.main; showUserDropdown.lang = !showUserDropdown.lang;"><i
+                                                class="icon-ok" ng-show="language.shortCode == show"></i>{{language.lang}}</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a ng-click="logout(); showUserDropdown.main = !showUserDropdown.main; showUserDropdown.lang = !showUserDropdown.lang;"><i
+                                        class="icon-off"></i>{{int['footer.logout']}}</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="span6 assortment-name" ui-if="inAssortmentScope()">
+                    <span>{{group}}</span>
+                </div>
+                <div class="span3 product-styles-count" ui-if="inAssortmentScope()">
+
+                    <span><i class="icon-tag icon-white"></i>{{assortment().productStyles().length}} {{int['footer.style.colors']}}</span>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

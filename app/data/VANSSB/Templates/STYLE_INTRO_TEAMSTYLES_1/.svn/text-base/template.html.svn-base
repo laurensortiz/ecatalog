@@ -1,0 +1,4 @@
+<div class="teamstyles_page team_1">
+    <div class="team_cover"base-path="{{pagedata.rootCatalogPath}}"></div>
+    <div class="team_logo"base-path="{{pagedata.rootCatalogPath}}"></div>
+</div>

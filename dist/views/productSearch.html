@@ -1,0 +1,136 @@
+<!-- Dialog Box for Searching product style starts -->
+<div modal="searchModal.searchingDialogShouldBeOpen" close="searchModal.close()" options="searchModal.options"
+     ng-controller="ProductStylesSearchCtrl">
+
+    <div class="modal-header ui-bar-c ui-corner-top center">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="searchModal.close()">
+        </button>
+        <h3>
+            {{languagesJSON['productSearchModal.title']}}
+        </h3>
+    </div>
+
+    <div class="modal-body product-search-box">
+        <div class="span3 filter-container">
+            <h4>
+                {{languagesJSON['productSearchModal.filters']}}
+            </h4>
+
+            <form id="product-filters" ng-submit="applyFilters()">
+                <div class="row-fluid">
+                    <div class="filter-name">
+                        {{languagesJSON['productSearchModal.code.style']}}
+                    </div>
+                    <input type="text" ng-model="searchFilters.term" class="span12"
+                           placeholder="{{languagesJSON['productSearchModal.code.style.search']}}"/>
+                </div>
+                <div class="row-fluid">
+                    <div class="filter-name">
+                        {{languagesJSON['productSearchModal.catalogs']}}
+                    </div>
+                    <select ui-select2 multiple ng-model="searchFilters.catalogs.selection"
+                            data-placeholder="{{languagesJSON['productSearchModal.catalogs.select']}}"
+                            class="select-width">
+                        <option ng-repeat="catalog in searchFilters.catalogs.list" value="{{catalog.id}}">
+                            {{catalog.name}}
+                        </option>
+                    </select>
+                </div>
+                <div class="row-fluid">
+                    <div class="filter-name">
+                        {{languagesJSON['productSearchModal.colors']}}
+                    </div>
+                    <select ui-select2 multiple ng-model="searchFilters.colors.selection"
+                            data-placeholder="{{languagesJSON['productSearchModal.colors.select']}}"
+                            class="select-width">
+                        <option ng-repeat="color in searchFilters.colors.list" value="{{color}}">
+                            {{color}}
+                        </option>
+                    </select>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="actions">
+                            <!--
+                                <p  class="message">You have <strong ng-bind="(productStyles | filter:{availableOnCurrentAssortment: true}).length"></strong> items into assortment.</p>
+                            -->
+                            <p class="message" ng-show="addedNewStylesApplied()">
+                                <strong>
+                                    {{languagesJSON['productSearchModal.adding']}}
+                                    <ng-pluralize count="countNewAddedStyles"
+                                                  when="{'1': '1 style color',
+                                'other': '{} style colors '}">
+                                    </ng-pluralize>
+                                    {{languagesJSON['productSearchModal.adding.assort']}}
+                                </strong>
+                            </p>
+
+                            <p class="message" ng-show="isFilterApplied()">
+                                <strong>
+                                    <ng-pluralize count="filteredProducts.length"
+                                                  when="{'1': '1 style color',
+                           'other': '{} style colors '}">
+                                    </ng-pluralize>
+                                    {{languagesJSON['productSearchModal.found']}}</strong>
+                            </p>
+                            <input type="submit"
+                                   ng-disabled="searchFilters.term.length < 1 && searchFilters.catalogs.selection.length < 1 && searchFilters.colors.selection.length < 1"
+                                   class="btn btn-block btn-primary btn-large"
+                                   value="{{languagesJSON['productSearchModal.apply']}}">
+                            <button class="btn btn-block btn-large" ng-disabled="!isFilterApplied()"
+                                    ng-click="addAllFoundToAssortment()">
+                                {{languagesJSON['productSearchModal.add.all']}}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="span9 search-result-container">
+            <div class="row-fluid">
+                <div class="span12 slider-container">
+                    <div ng-hide="isFilterApplied()" class="message-to-user">
+                        {{languagesJSON['productSearchModal.please.apply']}}
+                    </div>
+                    <div class="productSearchSlider" ui-if="isFilterApplied()">
+                        <div ng-show="filteredProducts.length == 0" class="message-to-user">
+                            {{languagesJSON['productSearchModal.no.products']}}
+                        </div>
+                        <div ui-if="filteredProducts.length > 0">
+                            <bx-slider get-items="filteredProducts"
+                                       current-page-index="currentPageIndex" items-per-slide="itemsPerSlide"
+                                       reload-on-change-of="searchFiltersInEffect"
+                                       reload-on-model-changes=false ng-init="color='white';">
+                                <div ui-if="slide[0]"
+                                     hm-tap="currentAssortment.toggleProductStyleAvailability(slide[0])">
+                                    <div class="product-search-description-container">
+                                        <img class="product-main-image" ng-src="{{slide[0].links.image}}"
+                                             draggable="false"/>
+                                        <img class="added-to-assortment" ng-src="images/ok.png"
+                                             ng-show="slide[0].availableOnCurrentAssortment" draggable="false"/>
+
+                                        <div class="product-description">
+                                            <h2>
+                                                {{slide[0].name}}
+                                            </h2>
+                                            Details
+                                            <ul>
+                                                <li>
+                                                    {{slide[0].styleCode}}
+                                                </li>
+                                                <li>
+                                                    {{slide[0].connections.products[0].features[3].value}}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </bx-slider>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+    <!-- Dialog Box for Searching product Style ends -->

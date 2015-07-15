@@ -1,0 +1,26 @@
+<div class="grid productGroup">
+    <widget class="margins left-margin" widget-id="LeftMargin">
+    </widget>
+    <div class="productGrid">
+        <div class="img_container" ng-show="pagedata.masterCatalogPageNumber == 42">
+          <div class="top_right_icons indy" base-path="{{pagedata.rootCatalogPath}}"></div>
+        </div>
+        <div class="img_container right" ng-show="pagedata.masterCatalogPageNumber == 42">
+          <div class="top_right_icons new_style" base-path="{{pagedata.rootCatalogPath}}"></div>
+        </div>
+        <div class="img_container right" ng-show="pagedata.masterCatalogPageNumber == 15">
+          <div class="top_right_icons new_style " base-path="{{pagedata.rootCatalogPath}}"></div>
+          <div class="top_right_icons indy" base-path="{{pagedata.rootCatalogPath}}"></div>
+        </div>
+        <widget class="productWidget" widget-id="TopLeftProduct" debugWithPlaceholder="false">
+        </widget>
+        <widget class="productWidget" widget-id="TopRightProduct" debugWithPlaceholder="true">
+        </widget>
+        <widget class="productWidget" widget-id="BottomLeftProduct" debugWithPlaceholder="true">
+        </widget>
+        <widget class="productWidget" widget-id="BottomRightProduct" debugWithPlaceholder="true">
+        </widget>
+    </div>
+    <widget class="textFooterSummary" widget-id="FeatureSummary" debugWithPlaceholder="true">
+    </widget>
+</div>

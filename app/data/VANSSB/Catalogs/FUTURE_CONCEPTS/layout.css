@@ -1,0 +1,268 @@
+/* CSS Document */
+
+@font-face {
+	font-family: HelveticaNeue-Bold;
+	src: url(Fonts/HelveticaNeueLTStd-Bd.otf);
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: HelveticaNeue-H1;
+	src: url(Fonts/HelveticaNeueLTStd-BlkCn.otf);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: HelveticaNeue-H2;
+	src: url(Fonts/HelveticaNeueLTStd-BlkCn.otf);
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: HelveticaNeue-H3;
+	src: url(Fonts/HelveticaNeueLTStd-Md.otf);
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: HelveticaNeue-H4;
+	src: url(Fonts/HelveticaNeueLTStd-BlkCn.otf);
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: HelveticaNeue-P;
+	src: url(Fonts/HelveticaNeueLTStd-Lt.otf);
+}
+
+@font-face {
+	font-family: Franklin-Gothic-ExtraCond;
+	src: url(Fonts/FranklinGothicStd-ExtraCond.otf);
+}
+
+
+@font-face {
+	font-family: Franklin-Gothic-Cond;
+	src: url(Fonts/FranklinGothicStd-Condensed.otf);
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: FranklinGothicStd-Roman;
+	src: url(Fonts/FranklinGothicStd-Roman.otf);
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: News-Bold;
+	src: url(Fonts/news701-bt-bold.ttf);
+}
+
+
+@font-face {
+	font-family: News;
+	src: url(Fonts/news-701-bt.ttf);
+}
+
+
+
+
+@font-face {
+	font-family: Monaco;
+	src: url(Fonts/Monaco.ttf);
+	font-weight: 100;
+}
+
+.S14-PRO-SKATE  .catalog-page h1 {
+	font-family: HelveticaNeue-H1;
+	font-size: 3.0em;
+	letter-spacing: 2px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.S14-PRO-SKATE  .textFooterSummary h1 {
+	font-family: HelveticaNeue-P;
+	font-size: 1.05em;	
+	margin: 0pt;
+	padding: 0pt;
+}
+
+.S14-PRO-SKATE .textFooterSummary dl {
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+}
+
+.S14-PRO-SKATE  .catalog-page dl h2 {
+	font-size: 2em;
+	font-family: Franklin-Gothic-Cond;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.S14-PRO-SKATE  .catalog-page h2 {
+	font-family: HelveticaNeue-H2;
+	font-size: 1.2em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.S14-PRO-SKATE  .catalog-page h3 {
+	font-family: HelveticaNeue-H3;
+	font-size: 1.0em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.S14-PRO-SKATE  .catalog-page h4 {
+	font-family: HelveticaNeue-H3;
+	font-size: 1.2em;
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.S14-PRO-SKATE  .catalog-page h5 {
+	font-family: HelveticaNeue-H3;
+	font-size: .95em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.S14-PRO-SKATE  .catalog-page p {
+	font-family: HelveticaNeue-P;
+	font-size: 1em;
+	line-height: 1.8em;
+}
+
+.S14-PRO-SKATE .img_text_header {
+	height: 3em;
+	margin-bottom: 25px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.S14-PRO-SKATE  .story_page {
+
+	width: 95%;
+	height: 95%;
+	padding: 2.5%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-image: url('paper.jpg');
+}
+.S14-PRO-SKATE  .story_page .story_inner {
+	width: 90%;
+	height: 90%;
+	padding: 5%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-image: url('mesh_background.jpg');
+}
+.S14-PRO-SKATE .catalog-page  .story_page .story_inner {
+	color: #FFF;
+}
+
+.S14-PRO-SKATE  .catalog-page dt {
+	font-family:HelveticaNeue-P;
+	font-size: 1.05em;
+	line-height: 1.8em;
+}
+
+.S14-PRO-SKATE  .catalog-page .story_inner > dl > dd.techInfo {
+	font-family: HelveticaNeue-P;
+	font-size: 1em;
+}
+
+.S14-PRO-SKATE  .catalog-page .story_inner dd {
+	line-height: 1em;
+}
+
+.S14-PRO-SKATE  .story_page dl {
+	margin-top: 0px;
+	height: 100%;
+	display: block;
+}
+
+.S14-PRO-SKATE  .catalog-page .image-definition {
+	width: 20%;
+	float: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin-right: 5%;
+}
+
+.S14-PRO-SKATE  .story_page .story_person {
+	width: 95%;
+	margin-left: 2.5%;
+	margin-top: 10%;
+	height: 60%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.S14-PRO-SKATE  .story_page .story_logo {
+	width: 35%;
+	height: 35%;
+	margin-left: 32.5%;
+	margin-top: 32.5%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.S14-PRO-SKATE  .story_page  .signature {
+	position: absolute;
+	z-index: 10;
+}
+
+.S14-PRO-SKATE  .page-placeholder-graphic {
+	background-image: url('transparency-checkerboard.png');
+	background-repeat: repeat;
+	background-size: 1%;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	z-index: 5;
+}
+
+.S14-PRO-SKATE .paired  .page-placeholder-graphic {
+	background-image: url('transparency-checkerboard.png');
+	background-repeat: repeat;
+	background-size: 2%;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1) and (orientation : landscape)  {
+	
+	 .S14-PRO-SKATE  .catalog-page .story_inner > dl > dd.techInfo {
+		font-family: HelveticaNeue-P;
+		font-size: .82em;
+	}
+
+	.S14-PRO-SKATE  .catalog-page .story_inner dd {
+		line-height: 1em;
+	}
+	
+	.S14-PRO-SKATE  .catalog-page p {
+		font-family: HelveticaNeue-P;
+		font-size: .85em;
+		line-height: 1.1em;
+	}
+	
+	.S14-PRO-SKATE  .catalog-page .story-inner p {
+		font-family: HelveticaNeue-P;
+		font-size: .85em;
+		line-height: 1.1em;
+	}
+}

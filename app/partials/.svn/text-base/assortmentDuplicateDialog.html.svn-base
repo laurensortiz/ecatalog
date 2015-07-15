@@ -1,0 +1,49 @@
+<!-- Dialog Box for duplicating Assortment starts -->
+<div modal="duplicateAssortmentDialogShouldBeOpen" close="closeDuplicateAssortmentDialog()" options="renameAssortmentPopupOptions">
+    <div class="duplicate">
+    <div class="modal-header ui-bar-c ui-corner-top modal-header-text-align">
+        <button type="button" class="close" ng-click="closeDuplicateAssortmentDialog()"></button>
+        <h3>
+            {{languagesJSON['assortmentList.duplicate']}}
+        </h3>
+    </div>
+    <form name="duplicate_assortment_form" ng-submit="duplicateAction()">
+        <div class="modal-body  ui-body-c ui-overlay-c">
+            <div class="control-group">
+                <label class="control-label" for="inputDescription">
+                    <h4>{{languagesJSON['assortmentList.duplicate.description']}}</h4></label>
+                <div class="controls">
+                    <div class="">
+                        <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow">
+                            <input name="description" type="text" id="inputDescription" ng-model='selectedAssortment.newName'
+                                   class="big-box ui-input-text ui-body-c ng-pristine ng-valid" ng-required="true"
+                                   ng-minlength="1" ng-maxlength="100">
+                        </div>
+                    </div>
+                    <div class="form-error-message"
+                         ng-show="duplicate_assortment_form.description.$error.maxlength || duplicate_assortment_form.description.$error.minlength">
+                        {{languagesJSON['assortmentList.duplicate.error']}}
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="span1">
+                        <input type="checkbox" ng-model="duplicateQuantities">
+                        </div>
+                        <div class="span11"><h5  class="modalH5">{{languagesJSON['assortmentList.duplicate.original.qty']}}</h5></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer bottom">
+            <button type="submit" ng-disabled="duplicate_assortment_form.$invalid"
+                    class="btn btn-large btn-block btn-primary">{{languagesJSON['assortmentList.duplicate.save']}}
+            </button>
+            <button type="button" class="btn btn-large btn-block btn-inverse"
+                    ng-click="closeDuplicateAssortmentDialog()">
+                {{languagesJSON['assortmentList.duplicate.cancel']}}
+            </button>
+        </div>
+    </form>
+    </div>
+</div>
+<!-- Dialog Box for duplicating Assortment ends -->

@@ -1,0 +1,192 @@
+.ecatalog .topBarHeader.ui-show {
+  transition: all 0.5s ease;
+}
+
+.ecatalog .topBarHeader.ui-show + div {
+  z-index: 2010;
+  top: 10px;
+  right: 15px;
+  position: fixed;
+  background-image: url("../images/topBarHeader/arrow-up-down-sprite.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.ecatalog .topBarHeader.ui-hide {
+  transition: all 0.5s ease;
+  background: none;
+}
+
+.ecatalog .topBarHeader {
+  width: 100%;
+  position: absolute;
+  z-index: 2001;
+  top: 0px;
+  background-color: rgba(51, 51, 51, .9);
+  height: 50px;
+
+  .invertIcon {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    border-radius: 16px;
+    border: 1px solid rgba(51, 51, 51, 0.9);
+  }
+  .toggleBackground {
+    background-color: rgba(51, 51, 51, 0.9);
+    border-radius: 16px;
+    border: 1px solid rgba(51, 51, 51, 0.9);
+  }
+  ul {
+
+    margin-top: 0px;
+    margin-bottom: 0em;
+    margin-right: 0px;
+    height: 100%;
+    padding-right: 16px;
+    display: inline-block;
+    float: right;
+    li {
+      list-style-type: none;
+      display: inline-block;
+      text-align: -webkit-match-parent;
+      margin-top: .15em;
+      margin-bottom: .15em;
+      margin-left: .15em;
+      margin-right: .15em;
+      padding: .5em;
+      vertical-align: middle;
+      a {
+        text-decoration: none;
+        display: block;
+        vertical-align: middle;
+        span {
+          color: #FFF;
+          max-width: 100px;
+        }
+      }
+    }
+  }
+
+  ul.hasToggle {
+    padding-right: 60px;
+  }
+  .position-relative {
+    position: relative;
+    z-index: 2100;
+  }
+  .conductiv-name {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: SourceSansPro, sans-serif;
+    font-size: 1.35em;
+    font-style: normal;
+    margin-top: 20px;
+    color: #FFF;
+    text-shadow: none;
+  }
+
+  /*--------------ICON LINKS------------------------------*/
+  .icon {
+    height: 32px;
+    width: 40px;
+    display: block;
+  }
+
+  .icon.home-icon {
+    background: url('../images/topBarHeader/home-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .icon.compose-icon {
+    background: url('../images/topBarHeader/compose-4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .icon.list-icon {
+    background: url('../images/topBarHeader/list.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .icon.book-icon {
+    background: url('../images/topBarHeader/book-lines-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .icon.whiteboard-icon {
+    background: url('../images/topBarHeader/whiteboard.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 30px;
+  }
+  .icon.submit-order-icon {
+    background: url('../images/topBarHeader/send-email.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .icon.create-order-icon {
+    background: url('../images/topBarHeader/create-order.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .icon.search-icon {
+    background: url('../images/topBarHeader/search.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .ui-button .ui-icon.grid-icon {
+    background-image: url('../images/topBarHeader/grid.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -16px;
+    margin-left: -16px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .ui-button .ui-icon.fullScreen {
+    background-image: url('../images/topBarHeader/crop.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -16px;
+    margin-left: -16px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .textNavLink {
+    color: #FFF;
+    font-size: 1.2em;
+    line-height: 32px;
+  }
+
+  .ui-button.ui-state-active.ui-button.ui-button-icon-only {
+    border: 1px solid #666666;
+    background: #555555 url(images/ui-bg_glass_20_555555_1x400.png) 50% 50% repeat-x;
+    opacity: .5;
+  }
+
+  .ui-button.ui-state-active.ui-button.ui-button-icon-only.ui-state-hover {
+    border: 1px solid #59b4d4;
+    background: #0078a3 url(images/ui-bg_glass_40_0078a3_1x400.png) 50% 50% repeat-x;
+  }
+}
+
+.ecatalog .toggleHeaderButton {
+  z-index: 2101;
+  top: 10px;
+  right: 15px;
+  position: absolute;
+  background-image: url("../images/topBarHeader/arrow-up-down-sprite.png");
+  background-position: 0px;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+}

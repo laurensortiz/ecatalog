@@ -1,0 +1,3 @@
+<div ng-click="showAnnotation(this)"  class="annotation-btn"></div> <!-- the button to show the annotation-box -->
+<textarea rows="4" cols="50" class="annotation-box"  id="annotation-box" ng-show="obj.note.length > 0" save-on-blur value="{{obj.note}}" />  </textarea>
+<!-- annotation-box shown by default only if mode is assortment catalog browse and annotation has some text -->

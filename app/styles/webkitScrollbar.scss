@@ -1,0 +1,28 @@
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 1);
+  visibility: hidden;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: rgba(0, 0, 0, 0);
+  visibility: hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  border: 1px rgba(150, 150, 150, 0.2) solid;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive, ::selection {
+  background: rgba(0, 0, 0, 0);
+}

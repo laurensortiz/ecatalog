@@ -1,0 +1,32 @@
+<div>
+    <!--- ProductImage -->
+    <div class="collaboration-logo" style="float:right;width:100px;height:100px;">
+    </div>
+    <div class="productImage" ng-style="{ 'background-image': 'url('+$parent.$parent.imagePath +')' }">
+    </div>
+
+    <!--- Style/Color Summary -->
+    <div class="text-block">
+        <h2>
+        <!-- {{$parent.$parent.model.features[0].type}} : -->
+        {{$parent.$parent.model.keyFeatures["COLOR"][0].value}}
+        </h2>
+        <h4>
+        {{$parent.$parent.model.code}}{{$parent.$parent.model.keyFeatures["COLOR"][0].code}}
+        </h4>
+        <h5>
+        {{$parent.$parent.model.keyFeatures["MATERIAL"][0].value}}
+        </h5>
+        <h6 ng-class="{'red': $parent.$parent.model.productStatus == 'NEW'}">
+         {{$parent.$parent.model.productStatus}}
+        </h6>
+
+    </div>
+</div>
+<script type="conditional/css" data-styleId="genericProduct">
+    <style>
+            .productWidget .text-block .red {
+                color: #C22;
+            }
+    </style>
+</script> 

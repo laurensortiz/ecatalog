@@ -1,0 +1,77 @@
+10
+
+dir
+1709
+https://lortiz@svn.conductiv.com/repos/ecatalog/trunk/app/data/SELECTDB/Templates
+https://lortiz@svn.conductiv.com/repos/ecatalog
+
+
+
+2013-09-12T02:26:38.065091Z
+1618
+cmangum
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+eff5840c-d368-46f3-b2fb-872a05a52732
+
+COVER_PAGE
+dir
+
+HERO_PAGE
+dir
+
+PRODUCT_4_UP
+dir
+
+STORY
+dir
+
+TABLE_OF_CONTENTS_1
+dir
+
+productDetails.html
+file
+
+
+
+
+2013-09-12T14:59:19.000000Z
+818b965bc2801a96281f3a0bfc1b2e00
+2013-09-12T02:26:38.065091Z
+1618
+cmangum
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+487
+

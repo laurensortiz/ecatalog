@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/vendor/lawnchair/plugins
+END
+query.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/vendor/lawnchair/plugins/query.js
+END
+aggregation.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/vendor/lawnchair/plugins/aggregation.js
+END
+pagination.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/vendor/lawnchair/plugins/pagination.js
+END
+callbacks.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/vendor/lawnchair/plugins/callbacks.js
+END

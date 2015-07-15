@@ -1,0 +1,11 @@
+<div class="story_page story_2">
+    <div class="story_inner">
+        <div class="full_page_image"  base-path="{{pagedata.rootCatalogPath}}">
+        </div>
+       <div class="img_text_header proskate" base-path="{{pagedata.rootCatalogPath}}">
+       </div>
+        <p>
+            Welcome to Vans PRO SKATE, home of the WAFFLECUP™—skateboarding’s first-ever vulcanized cupsole! For the ultimate in skateboarding performance, Vans PRO SKATE continuously gathers feedback from the Vans professional skateboarding team and combines it with over 45 years of quality craftsmanship and proven skate heritage to innovate team-tested and category-exclusive skate performance technologies. Consisting of distinct CONSTRUCTION methods, upgraded CUSHIONING options, and PRO SKATE-specific FUNCTIONAL design improvements, Vans’ PRO SKATE  performance technologies are combined in every new shoe, custom tailoring each new style to fit the unique demands and diverse riding preferences of the Vans professional skateboarding team. The result: No matter what your own riding style demands, Vans PRO SKATE has got it covered.
+        </p>
+    </div>
+</div>

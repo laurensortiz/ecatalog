@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/ecatalog/!svn/ver/1565/trunk/app/components/rosie
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/ecatalog/!svn/ver/1565/trunk/app/components/rosie/LICENSE
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/ecatalog/!svn/ver/1565/trunk/app/components/rosie/README.md
+END
+component.json
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/ecatalog/!svn/ver/1565/trunk/app/components/rosie/component.json
+END
+.bower.json
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/ecatalog/!svn/ver/1565/trunk/app/components/rosie/.bower.json
+END
+bower.json
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/ecatalog/!svn/ver/1565/trunk/app/components/rosie/bower.json
+END

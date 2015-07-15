@@ -1,0 +1,86 @@
+10
+
+dir
+1709
+https://lortiz@svn.conductiv.com/repos/ecatalog/trunk/app/scripts
+https://lortiz@svn.conductiv.com/repos/ecatalog
+
+
+
+2013-09-19T21:30:54.077260Z
+1709
+amoraga
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+eff5840c-d368-46f3-b2fb-872a05a52732
+
+app.js
+file
+
+
+
+
+2013-09-09T22:46:44.000000Z
+cb1f52d0dfbbcb8e31f1dd3d02547520
+2013-09-09T22:39:31.634562Z
+1571
+vibhor.mahajan
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8091
+
+controllers
+dir
+
+custom
+dir
+
+directives
+dir
+
+filters
+dir
+
+i18n
+dir
+
+models
+dir
+
+services
+dir
+
+vendor
+dir
+

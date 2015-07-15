@@ -1,0 +1,8 @@
+<div class="catalog-cover-page">
+    <widget widget-id="CoverPageRight" class="right-page-padding">
+    </widget>
+    <widget widget-id="CoverPageLeft" class="left-page-padding">
+    </widget>
+    <widget widget-id="CoverPageCenter" class="page-content">
+    </widget>
+</div>

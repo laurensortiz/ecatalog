@@ -1,0 +1,33 @@
+<!-- Pop Over Container starts -->
+<div id="assortment-actions" class=" assortment-pop-over-container modal-backdrop" ng-click="hidePopUp()">
+    <div class="mypopover">
+        <div class="mypopover-content">
+            <div class="arrow">
+          <span>
+          </span>
+            </div>
+            <div class="mypopover-body">
+                <ul>
+                    <li>
+                        <button class="btn btn-large btn-block btn-rename" type="button" ng-click="openRenamingDialog()">
+                            {{languagesJSON['assortmentList.rename.input.name']}}
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-large btn-block btn-duplicate" type="button"
+                                ng-click="openDuplicateAssortmentDialog()">
+                            {{languagesJSON['assortmentList.duplicate.input.name']}}
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-large btn-block btn-danger" type="button"
+                                ng-click="openDeletingDialog()">
+                            {{languagesJSON['assortmentList.delete.input.name']}}
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Pop Over container ends -->

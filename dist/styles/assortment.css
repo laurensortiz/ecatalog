@@ -1,0 +1,15 @@
+/* line 2, assortment.scss */
+.assortmentFeature .assortmentFooter {
+  position: fixed;
+  background-color: #3d3d3d;
+  color: #FFFFFF;
+  bottom: 0px;
+  width: 100%;
+}
+
+/* line 11, assortment.scss */
+.assortmentFooter {
+  -webkit-box-shadow: 0px -4px 10px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px -4px 10px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px -4px 10px rgba(50, 50, 50, 0.75);
+}

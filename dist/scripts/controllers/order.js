@@ -1,0 +1,168 @@
+'use strict';
+
+angular.module('conductivEcatalogApp')
+    .controller('OrderCtrl', function ($scope, order, $routeParams, $window, $http, httpCapi, $q, $rootScope, catalog, productStyles) {
+      $rootScope.setPageTitle('Order Summary');
+      $scope.readOnlyView = true;
+
+        $scope.findProductById = function (productId) {
+            return _.find($scope.order.products, function (product) {
+                return product.productId === productId;
+            });
+        }
+        $rootScope.loading = true;
+        order.obtain($routeParams.orderId).then(function (response) {
+
+            catalog.getPromocodes().then(function (data) {
+                _.each(data, function (code) {
+                    if(code.id == $scope.order.promotionId){
+                        $scope.order.promotion = code.description;
+                    }
+                });
+            });
+            $scope.order = response;
+
+            var justQty = [];
+            if (!$scope.order.productStyles && $scope.order.myProductStyles) {
+                $scope.order.productStyles = $scope.order.myProductStyles;
+            }
+            _.each($scope.order.productStyles, function (eachAssor) {
+                // Get the connections data
+                _.each(eachAssor.connections, function (connectData) {
+                    // Get the qty
+                    _.each(connectData, function (qty) {
+                        // Evaluate if the assorttment has any value up to 0
+                        if (qty.quantity > 0) {
+                            // Create an array just with products with qty's
+                            justQty.push(eachAssor);
+                        }
+                    })
+                });
+            });
+            $scope.orderedProductStylesInCurrentAssortment = productStyles.fetchOrderedProductStyles(_.uniq(justQty));
+            $rootScope.loading = false;
+        });
+
+      order.fetchSingleOrder($routeParams.orderId).then(function(currentOrder){
+          $scope.order = currentOrder;
+          $scope.findProductById = function (productId) {
+              return _.find($scope.order.products, function (product) {
+                  return product.productId === productId;
+              });
+          }
+          if($scope.order.promotionId){
+              catalog.getPromocodes().then(function (data) {
+                  _.each(data, function (code) {
+                      if (code.id === $scope.order.promotionId) {
+                          $scope.order.promotion = code.description;
+                      }
+                  });
+              })
+          }
+          var justQty = [];
+          //New order have myProductStyles, old orders have productStyles
+          //TODO refactor order.productStyles
+          if (!$scope.order.myProductStyles && $scope.order.productStyles) {
+              $scope.order.myProductStyles = $scope.order.productStyles;
+          }
+          if (!$scope.order.productStyles && $scope.order.myProductStyles) {
+              $scope.order.productStyles = $scope.order.myProductStyles;
+          }
+          _.each($scope.order.productStyles, function (eachAssor) {
+              // Get the connections data
+              _.each(eachAssor.connections, function (connectData) {
+                  // Get the qty
+                  _.each(connectData, function (qty) {
+                      // Evaluate if the assortment has any value up to 0
+                      if (qty.quantity > 0) {
+                          // Create an array just with products with qty's
+                          justQty.push(eachAssor);
+                      }
+                  })
+              });
+          });
+          $scope.orderedProductStylesInCurrentAssortment = productStyles.fetchOrderedProductStyles(_.uniq(justQty));
+          $rootScope.loading = false;
+      });
+      /**/
+      $scope.getFeaturesInProductStyle = function (productStyle) {
+        return productStyles.getFeatures(productStyle);
+      }
+
+      $scope.getProductsInProductStyle = function (productStyle, width) {
+        //VANS does not have a filter for width... We might use it to filter the products for other tenants in future.
+        return _.sortBy(productStyle.products, function (product) {
+          return product.size;
+        });
+      }
+
+      $scope.getProductQuantity = function (product) {
+        if (product.quantity !== undefined && product.quantity !== null) {
+          return product.quantity;
+        } else {
+          var found = $scope.findProductById(product.productId);
+          if (found) {
+            product.quantity = found.quantity;
+          } else {
+            product.quantity = 0;
+          }
+          return product.quantity;
+        }
+      }
+
+      $scope.pricePerUnitForProductStyle = function (productStyle) {
+        return productStyle.connections.products[0].unitPrice;
+      }
+
+      $scope.totalQuantityForProductStyle = function (productStyle) {
+        var sum = 0;
+        angular.forEach(productStyle.connections.products, function (product) {
+          sum = sum + $scope.getProductQuantity(product);
+        });
+        return sum;
+      }
+
+      $scope.totalPriceForProductStyle = function (productStyle) {
+        var sum = 0;
+        angular.forEach(productStyle.connections.products, function (product) {
+          sum = sum + $scope.getProductQuantity(product) * product.unitPrice;
+        });
+        return sum;
+      }
+
+      $scope.getProductsQty = function (productStyle) {
+        var productQty = [];
+        _.each(productStyle.connections.products, function (data) {
+          productQty.push(data);
+        });
+        productQty = _.sortBy(productQty, function (product) {
+          return parseInt(_.findWhere(product.features, {type: "SIZE"}).sequenceNumber, 10);
+        });
+
+        return productQty;
+      }
+
+      $scope.resendingOrderEmailDialogShouldBeOpen = false;
+
+      $scope.openResendingOrderEmailDialog = function () {
+        $scope.resendingOrderEmailDialogShouldBeOpen = true;
+
+      }
+
+      $scope.closeResendingOrderEmailDialog = function () {
+        $scope.resendingOrderEmailDialogShouldBeOpen = false;
+      }
+
+      $scope.$root.navElements = [
+        {
+          "text": "Resend Email",
+          "action": $scope.openResendingOrderEmailDialog,
+          "icon": "submit-order-icon",
+          "type": "iconNavLink"
+        }
+      ];
+
+      $scope.totalPriceForAssortment = function () {
+        return $scope.order.estimatedTotalAmount;
+      }
+    });

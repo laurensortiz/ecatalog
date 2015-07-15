@@ -1,0 +1,178 @@
+/*
+   *Pop-over styling starts
+   */
+/* line 4, assortmentNewPopup.scss */
+.assortment-pop-over-container {
+  background-color: transparent;
+  display: none;
+  opacity: 1;
+}
+/* line 9, assortmentNewPopup.scss */
+.assortment-pop-over-container .tier-box {
+  height: 40px;
+  width: 40px;
+  border: 5px;
+  background-color: green;
+}
+
+/* line 16, assortmentNewPopup.scss */
+.mypopover {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 130px;
+  width: 236px;
+  margin: 0 -118px;
+}
+
+/* line 24, assortmentNewPopup.scss */
+.mypopover .mypopover-content {
+  border: 1px solid black;
+  position: relative;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+  background-color: #575757;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#575757), to(#373737));
+  /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #575757, #373737);
+  /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(top, #575757, #373737);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #575757, #373737);
+  /* IE10 */
+  background-image: -o-linear-gradient(top, #575757, #373737);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(top, #575757, #373737);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#575757', EndColorStr='#373737');
+  /* IE6-IE9 */
+  -webkit-box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37), 0px 6px 18px 0px rgba(0, 0, 0, 0.95);
+  -moz-box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37), 0px 6px 18px 0px rgba(0, 0, 0, 0.95);
+  box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37), 0px 6px 18px 0px rgba(0, 0, 0, 0.95);
+  padding: 5px;
+}
+
+/* line 49, assortmentNewPopup.scss */
+.mypopover .mypopover-body {
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.4), inset 1px 1px 4px 0px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.4), inset 1px 1px 4px 0px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.4), inset 1px 1px 4px 0px rgba(0, 0, 0, 0.66);
+}
+
+/* line 56, assortmentNewPopup.scss */
+.mypopover .arrow {
+  position: absolute;
+  left: 23px;
+  top: -9px;
+  width: 25px;
+  height: 10px;
+  overflow: hidden;
+}
+
+/* line 64, assortmentNewPopup.scss */
+.mypopover .arrow span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: red;
+  -webkit-transform: rotate(45deg) skew(-10deg, -10deg);
+  -webkit-transform: rotate(45deg) skew(-10deg, -10deg);
+  /* Saf3.1+, Chrome */
+  -moz-transform: rotate(45deg) skew(-10deg, -10deg);
+  /* FF3.5+ */
+  -ms-transform: rotate(45deg) skew(-10deg, -10deg);
+  /* IE9 */
+  -o-transform: rotate(45deg) skew(-10deg, -10deg);
+  /* Opera 10.5 */
+  transform: rotate(45deg) skew(-10deg, -10deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */ M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476, sizingMethod='auto expand');
+  zoom: 1;
+  margin: 1px 0 0 4px;
+  background: #575757;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  -webkit-box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37);
+  -moz-box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37);
+  box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.37);
+}
+
+/* line 89, assortmentNewPopup.scss */
+.mypopover .mypopover-body ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 93, assortmentNewPopup.scss */
+.mypopover .mypopover-body ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 46px;
+  padding: 0;
+  font-family: arial;
+}
+
+/* line 103, assortmentNewPopup.scss */
+.mypopover .mypopover-body ul li:last-child {
+  border-bottom: 0;
+}
+
+/*
+ *Pop-over styling ends
+ */
+/* line 113, assortmentNewPopup.scss */
+.newAssortment .ui-bar-c {
+  background: #144158;
+}
+/* line 116, assortmentNewPopup.scss */
+.newAssortment .modal-body {
+  background: #144158;
+}
+/* line 120, assortmentNewPopup.scss */
+.newAssortment h3 {
+  font-size: 2em;
+  line-height: 1.7em;
+  color: #FF5F2D;
+  text-shadow: none;
+  margin: 0;
+}
+/* line 127, assortmentNewPopup.scss */
+.newAssortment h4 {
+  font-size: 1.4em;
+  color: #fff;
+  margin: 0;
+}
+/* line 132, assortmentNewPopup.scss */
+.newAssortment h4 span {
+  color: #CD3F38;
+  font-size: .9em;
+}
+/* line 138, assortmentNewPopup.scss */
+.newAssortment input[type="text"] {
+  width: 97%;
+  padding: 0 7px;
+  background: #285166;
+  border: 1px solid #123b50;
+  margin: 5px 0 20px;
+  color: #fff;
+  text-shadow: none;
+  font-weight: normal;
+}
+/* line 148, assortmentNewPopup.scss */
+.newAssortment input[type="text"]:focus {
+  border: 1px solid #ff5f2d;
+}
+/* line 155, assortmentNewPopup.scss */
+.newAssortment .btn-inverse {
+  background: #000;
+}
+/* line 159, assortmentNewPopup.scss */
+.newAssortment .btn.disabled, .newAssortment .btn[disabled] {
+  background: #537384;
+  color: #3E5561;
+  opacity: 1;
+}

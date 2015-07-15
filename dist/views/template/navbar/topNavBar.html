@@ -1,0 +1,30 @@
+<header ng-controller="HeaderNavbarCtrl" ng-class="{'toolbar': true, 'topBarHeader': true, 'ui-hide': !showHeader}"
+        ng-show="hideAll">
+    <div class="ios-arrow-left" title="Back" ng-click="previousPage()" ng-show="showBackButton">
+        {{int['nav.button.back']}}
+    </div>
+    <div class="conductiv-name" ng-show="showHeader">
+        {{templateName}}
+    </div>
+    <script type="text/ng-template" id="iconNavLink">
+        <a href="{{navElement.link}}" title="{{navElement.text}}" ng-click="navElement.action()">
+            <i class="icon {{navElement.icon}}">
+            </i>
+        </a>
+    </script>
+    <script type="text/ng-template" id="textNavLink">
+        <a class="textNavLink" href="{{navElement.link}}" title="{{navElement.text}}" ng-click="navElement.action()">
+            {{navElement.text}}
+            </i>
+        </a>
+    </script>
+    <ul class="position-relative" ng-show="showHeader" ng-class="{'hasToggle': showToggle}">
+        <li ng-repeat="navElement in navElements" ng-include="navElement.type">
+        </li>
+    </ul>
+    <div class="toggleHeaderButton" ng-show="showToggle" ng-click="showHeader=!showHeader"
+         ng-class="{invertIcon : showHeader,toggleBackground : !showHeader}">
+        <i class="icon">
+        </i>
+    </div>
+</header>

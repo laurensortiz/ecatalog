@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/ecatalog/!svn/ver/1180/trunk/test/e2e/order
+END
+orderListPage.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/ecatalog/!svn/ver/1180/trunk/test/e2e/order/orderListPage.js
+END
+orderSummaryPage.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/ecatalog/!svn/ver/1180/trunk/test/e2e/order/orderSummaryPage.js
+END

@@ -1,0 +1,86 @@
+<div id="ls-numpad" draggable-item
+     draggable-options="{handle: '.draggable-handle', containment: '#AssortmentLinesheetFeature'}" ng-show="visibility"
+     class="drop-shadow" ng-cloak>
+    <div id="ls-numpadTitle" class="draggable-handle">
+        <button type="button" class="close" ng-click="hideNumpad()">
+        </button>
+        <table class="ls-top-table">
+            <tr>
+                <td>
+                    <span class="product-name" ng-bind="numpad.product.name"></span>
+                </td>
+                <td>
+                    <table class="size">
+                        <tr>
+                            <td ng-bind="numpad.product.size"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="lcd" ng-bind="numpad.tempQuantity">
+    </div>
+
+    <table class="ls-buttons">
+        <tr>
+            <td class="numpad-number" ng-click="numpad.updateQty(1)">
+                1
+            </td>
+            <td class="numpad-number" ng-click="numpad.updateQty(2)">
+                2
+            </td>
+            <td class="numpad-number" ng-click="numpad.updateQty(3)">
+                3
+            </td>
+            <td rowspan="2" class="numpad-OK" ng-click="numpad.ok()">
+                <div>
+                    <i class="icon-play icon-white">
+                    </i>
+                </div>
+                OK
+            </td>
+        </tr>
+        <tr>
+            <td class="numpad-number" ng-click="numpad.updateQty(4)">
+                4
+            </td>
+            <td class="numpad-number" ng-click="numpad.updateQty(5)">
+                5
+            </td>
+            <td class="numpad-number" ng-click="numpad.updateQty(6)">
+                6
+            </td>
+        </tr>
+        <tr>
+            <td class="numpad-number" ng-click="numpad.updateQty(7)">
+                7
+            </td>
+            <td class="numpad-number" ng-click="numpad.updateQty(8)">
+                8
+            </td>
+            <td class="numpad-number" ng-click="numpad.updateQty(9)">
+                9
+            </td>
+            <td class="numpad-graph" rowspan="2" ng-click="numpad.next()">
+                <div>
+                    <i class="icon-forward icon-white">
+                    </i>
+                </div>
+                NEXT
+            </td>
+        </tr>
+        <tr>
+            <td class="numpad-number" ng-click="numpad.clear()">
+                C
+            </td>
+            <td class="numpad-number" ng-click="numpad.updateQty(0)">
+                0
+            </td>
+            <td class="numpad-number" ng-click="numpad.del()">
+                ⌫
+            </td>
+        </tr>
+    </table>
+</div>

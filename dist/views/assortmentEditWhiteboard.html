@@ -1,0 +1,172 @@
+<div class="container-fluid" id="AssortmentWhiteboardFeature">
+    <!--
+    ************************************************
+    FILTER
+    ************************************************
+    -->
+    <div id="wb-assortment-filter">
+        <div id="wp-filter">
+            <div ng-repeat="ctg in filterdata">
+                <h1>
+                    {{ctg.cat}}
+                </h1>
+
+                <div ng-repeat="item in ctg.items" class="wp-filteritems">
+                    <label for="wb-filter-{{item.replace(' ', '-')}}">
+                        {{item.name}}</span>
+                        <input type="checkbox" checked="checked" id="wb-filter-{{item.replace(' ', '-')}}"/>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    ************************************************
+    END OF FILTER
+    ************************************************
+    -->
+    <div class="row-fluid">
+        <div class="span4" id="wb-left-column">
+            <div class="row-fluid">
+                <div id="wb-filter" class="btn btn-inverse btn-block"></div>
+            </div>
+            <div class="wrapper-anchor">
+                <div class="wrapper">
+                    <div class="wb-item-wrapper">
+                        <div class="procItems draggable-handle"
+                             ng-repeat="item in productStyles | filter:{availableOnCurrentAssortment: true}" draggable-item
+                             draggable-options="{scroll: false, revert: 'invalid', helper: 'clone', opacity: 0.70, appendTo: 'body'}"
+                             on-finish-render>
+                            <img
+                                    ng-src="{{item.links.image}}"
+                                    data-id="{{item.id}}"
+                                    data-quantity="{{item.quantity}}"
+                                    data-name="{{item.name}}"
+                                    data-code="{{item.code}}"
+                                    />
+                        </div>
+                    </div>
+                </div>
+                <div class="actionPanel">
+                    <a class="btn btn-margin-import" ng-click="openCatalogListModal()">
+                        {{languagesJSON['whiteBoard.filter']}}
+                    </a>
+                    <a class="btn btn-margin-erase pull-right" ng-click="showComfirmationPopup(true)">
+                        {{languagesJSON['whiteBoard.erase']}}
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="span8" id="wb-right-column" droppable>
+
+            <div class="tablist"><!-- removed class span4 -->
+                <a class="navElement tab-moveLeft" ng-show="showLeftNavTabs" ng-click="navegationTabs.prev()">Move Left</a>
+                <div class="taps-content">
+                    <ul style="left:{{ positionStart }}px">
+                        <li ng-repeat="assortment in listOfAssortments" ng-click="openAssortment(assortment.id)" class="{{ isActive(assortment.id) }}" >
+                            <span>
+                                <p long-tap-to-show-assortment-options="assortment">{{assortment.description}}</p>
+                            </span>
+
+
+                        </li>
+                    </ul>
+                </div>
+
+                <a class="navElement tab-moveRight" ng-show="showRightNavTabs" ng-click="navegationTabs.next()">Move Right</a>
+                <a class="navElement tab-addNew" ng-click="openAssortmentNewModal()">Add Tab</a>
+            </div>
+
+            <div class="wrapper-anchor">
+                <div id="wrapper-right-panel" class="wrapper">
+                    <div class="wb-item-wrapper">
+                        <div class="row-fluid">
+                            <div class="span12 wb-item-panel" id="wb-item-panel">
+                                <div class="span3 dropItem"
+                                     rightpanelitem ng-repeat="item in stylesOnCanvas | filter:{style.availableOnCurrentAssortment: true}"
+                                     ng-style=" {'left': item.position.left, 'top': item.position.top } ">
+                                    <img
+                                            ng-src="{{item.style.links.image}}"
+                                            data-id="{{item.style.id}}"
+                                            data-name="{{item.style.code}}"
+                                            data-code="{{item.style.styleCode}}"
+                                            />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="actionPanel">
+                    <a class="btn btn-margin-erase pull-right" ng-click="clearCanvas()">
+                        {{languagesJSON['whiteBoard.erase']}}
+                    </a>
+                </div>
+            </div>
+            <div ng-include src="'partials/assortmentActionsPopup.html'" ng-controller="AssortmentActionsCtrl"></div>
+
+        </div>
+        <!--
+        ************************************************
+        EDITOR
+        ************************************************
+        -->
+        <div id="wb-editor">
+            <div id="wb-arrowContainer">
+                <div id="wb-arrow">
+                </div>
+            </div>
+            <div id="wb-detailContainer">
+                <div id="wb-detailTitle">
+                    <span class="pull-left">(HAWAIIAN) BLUE</span>
+                    <a class="close closeUpdate float-right" href="#">
+                        &times;
+                    </a>
+                </div>
+                <div id="wb-detailStyle">
+                    VN-oUAR8lQ
+                </div>
+
+                <!--<div style="color: #FFFFFF;">
+                  Quantity:
+                </div>
+                <input type="text" value="0" style="max-width: 90%;" ng-click="open()"/>
+
+                <div class="wb-grade">
+                </div>-->
+            </div>
+        </div>
+
+        <div modal="displayComfirmationPopup" close="showComfirmationPopup(false)" options="opts">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="showComfirmationPopup(false)"></button>
+                <h4>{{languagesJSON['whiteBoard.warning']}}</h4>
+
+            </div>
+            <div class="modal-body">
+                <p>
+                <h5>{{languagesJSON['whiteBoard.warning.msg']}}
+                    <br/>
+                    {{languagesJSON['whiteBoard.warning.question']}}</h5>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-large btn-inverse cancel" ng-click="showComfirmationPopup(false)">{{languagesJSON['whiteBoard.warning.no']}}</button>
+                <button class="btn btn-warning btn-large cancel" ng-click="removeAllProductStylesFromAssortment()">{{languagesJSON['whiteBoard.warning.yes']}}</button>
+            </div>
+        </div>
+        <ng-include src="'views/_browse-catalogs-modal.html'"></ng-include>
+    </div>
+    <div ng-include src="'partials/assortmentNewPopup.html'" ng-controller="AssortmentNewPopupCtrl"></div>
+
+
+    <div ng-include src="'partials/assortmentNewPopup.html'" ng-controller="AssortmentActionsCtrl"></div>
+    <div ng-include src="'partials/assortmentRenameDialog.html'" ng-controller="AssortmentActionsCtrl"></div>
+    <div ng-include src="'partials/assortmentDeleteDialog.html'" ng-controller="AssortmentActionsCtrl"></div>
+    <div ng-include src="'partials/assortmentDuplicateDialog.html'" ng-controller="AssortmentActionsCtrl"></div>
+    <div ng-include src="'partials/assortmentActionsPopup.html'" ng-controller="AssortmentActionsCtrl"></div>
+
+    <ng-include src="'views/productSearch.html'"></ng-include>
+</div>

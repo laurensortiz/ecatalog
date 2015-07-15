@@ -1,0 +1,88 @@
+/* line 1, orderProduct.scss */
+.order-product-popup {
+  color: #fff;
+  font-size: 1.4em;
+  height: 78%;
+  width: 70%;
+  padding: 20px 0 0 0;
+  margin-left: 0px;
+  top: 10% !important;
+  left: 15% !important;
+  overflow: auto;
+  background-color: #878787;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #878787 90%, #0e0e0e 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #878787), color-stop(100%, #0e0e0e));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #878787 90%, #0e0e0e 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #878787 90%, #0e0e0e 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #878787 90%, #0e0e0e 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #878787 90%, #0e0e0e 100%);
+  /* W3C */
+}
+/* line 19, orderProduct.scss */
+.order-product-popup .popup-header {
+  padding-top: 10px;
+  border: 0px;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 26, orderProduct.scss */
+.order-product-popup .popup-footer {
+  padding: 0px 15px;
+}
+/* line 29, orderProduct.scss */
+.order-product-popup .large-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px inset slategrey;
+}
+/* line 35, orderProduct.scss */
+.order-product-popup .popup-body {
+  padding: 0px 15px;
+}
+/* line 38, orderProduct.scss */
+.order-product-popup .relative-position {
+  position: relative;
+}
+/* line 40, orderProduct.scss */
+.order-product-popup .relative-position .dropdown-menu {
+  top: 53px;
+}
+/* line 44, orderProduct.scss */
+.order-product-popup .error {
+  color: red;
+}
+/* line 47, orderProduct.scss */
+.order-product-popup .new-button-red {
+  background: url("../images/redbg.png") repeat-x;
+}
+/* line 50, orderProduct.scss */
+.order-product-popup .new-button-green {
+  background: url("../images/greenbg.png") repeat-x;
+}
+
+/* line 56, orderProduct.scss */
+#s2id_orderProductForm-customerName {
+  display: block;
+}
+
+/* line 62, orderProduct.scss */
+.orderPopup .input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 70, orderProduct.scss */
+.orderPopup .typeahead.dropdown-menu {
+  top: auto;
+}

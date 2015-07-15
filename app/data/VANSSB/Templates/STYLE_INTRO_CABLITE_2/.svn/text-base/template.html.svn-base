@@ -1,0 +1,5 @@
+<div class="story_page no-mesh paper">
+    <div class="cab_story_logo" base-path="{{pagedata.rootCatalogPath}}">
+    </div>
+    <div class="cab_signature" base-path="{{pagedata.rootCatalogPath}}"></div>
+</div>

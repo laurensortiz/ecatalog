@@ -1,0 +1,166 @@
+/* line 1, login.scss */
+#ct-form {
+  width: 700px;
+  text-align: center;
+  margin: auto;
+}
+/* line 5, login.scss */
+#ct-form .ui-input-text {
+  color: white !important;
+}
+
+/* line 10, login.scss */
+#ct-login {
+  background: url(../img/bg_collage.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 18, login.scss */
+#ct-head {
+  padding: 5px 0;
+  font-family: SourceSansPro, sans-serif;
+  text-align: center;
+}
+
+/* line 24, login.scss */
+#ct-head span {
+  font-size: 20px;
+}
+
+/* line 28, login.scss */
+#ct-foot {
+  text-align: center;
+  background: none;
+  border: none;
+}
+
+/* line 34, login.scss */
+#ct-form .ui-bar-a {
+  padding: 15px 10px;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 40, login.scss */
+#ct-form .ui-bar-a .bar-text {
+  font-size: 25px;
+}
+
+/* line 44, login.scss */
+#ct-form img {
+  max-width: 100%;
+}
+
+/* line 48, login.scss */
+#login-form label.ui-input-text {
+  text-align: right;
+  margin-right: 10px;
+  line-height: 3em;
+}
+
+/* line 54, login.scss */
+#login-form .ct-chkbx, #login-form input[type=submit] {
+  color: #94999c;
+}
+
+/* line 58, login.scss */
+#login-form .ct-chkbx {
+  font-size: 0.35em;
+}
+
+/* line 62, login.scss */
+.ui-btn-text {
+  font-size: .75em;
+}
+
+/* line 66, login.scss */
+.ct-label.ui-input-text {
+  font-size: 1em;
+  line-height: 2.75em;
+}
+
+/* line 71, login.scss */
+.ui-corner-top {
+  -webkit-border-radius: 0.3em 0.3em 0 0;
+  border-radius: 0.3em 0.3em 0 0;
+}
+
+/* line 76, login.scss */
+.ui-btn-corner-5.ui-btn-corner-all {
+  -webkit-border-radius: 5px !important;
+  border-radius: 5px !important;
+}
+
+/* line 81, login.scss */
+#ct-foot {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* line 88, login.scss */
+.vans-logo {
+  width: 321px;
+  height: 150px;
+}
+
+/* line 93, login.scss */
+.form-body-container {
+  padding-top: 20px;
+}
+/* line 96, login.scss */
+.form-body-container .align-left {
+  text-align: left;
+}
+
+/* line 101, login.scss */
+.vertical-middle {
+  vertical-align: middle;
+}
+
+/* line 105, login.scss */
+.logo-img-container {
+  width: 325px;
+}
+
+/* line 109, login.scss */
+.form-horizontal .control-label {
+  width: auto;
+}
+
+/* line 113, login.scss */
+.form-horizontal .controls {
+  margin-left: 100px;
+}
+
+/* line 117, login.scss */
+.form-horizontal .control-group {
+  margin-bottom: 5px;
+}
+
+/* line 121, login.scss */
+#login-form {
+  margin-bottom: 0;
+  margin-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 127, login.scss */
+#login-form input[type=text], #login-form input[type=password] {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+/* line 133, login.scss */
+.error-message {
+  color: red;
+  font-size: 18px;
+  text-align: center;
+  margin: 5px 0 10px 0;
+  display: block;
+}

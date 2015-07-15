@@ -1,0 +1,213 @@
+.footer {
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  height: 50px;
+  background-color: rgba(51, 51, 51, 0.9);
+  z-index: 2001;
+
+  .user-dropdown {
+    position: absolute;
+  }
+
+  .menu-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+  }
+
+  ul.menu-dropdown {
+
+    li {
+
+      a[class="ng-binding"] {
+        $font-size: 18;
+        display: block;
+
+        font-size: ($font-size/14)+em;
+        line-height: 1;
+
+        padding: (4/$font-size)+em 18px (4/$font-size)+em 14px;
+
+        color: #333;
+
+      }
+
+      a[ng-click*="langme"] {
+        position: relative;
+        display: block;
+        color: #333;
+
+        $font-size: 16;
+
+        font-size: ($font-size/14)+em;
+        line-height: 1;
+
+        padding: (4/$font-size)+em 14px (4/$font-size)+em 30px;
+
+        i {
+          position: absolute;
+          margin: 0;
+          top: (5/$font-size)+em;
+          left: 8px;
+        }
+
+      }
+
+      &:hover {
+
+        & > a {
+          color: #fff;
+
+          .icon-ok, .icon-off {
+            background-image: url('/images/glyphicons-halflings-white.png?1375306332');
+          }
+        }
+
+      }
+    }
+  }
+
+  .menu-dropdown li > a:hover, .menu-dropdown li > a:focus, .dropdown-submenu:hover > a {
+    text-decoration: none;
+    color: white;
+    background-color: #0081c2;
+    background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+    background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+    background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+    background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0085c7', endColorstr='#0074ad', GradientType=0);
+  }
+
+  .dropdown-submenu {
+    & > .menu-dropdown {
+      bottom: 0;
+      left: 162px;
+
+      -webkit-border-radius: 6px 6px 6px 0;
+      -moz-border-radius: 6px 6px 6px 0;
+      border-radius: 6px 6px 6px 0;
+
+    }
+
+    &:hover > a:after {
+      border-left-color: #fff
+    }
+
+    & > a:after {
+      border-left-color: #333;
+      border-width: 6px 0 6px 6px;
+      margin-top: 6/18+em;
+    }
+  }
+
+  .icon-off, .icon-globe {
+    margin: 5px 8px 0 0;
+  }
+
+  a.toggle-dropdown {
+    display: block;
+
+    $font-size: 18;
+
+    font-size: ($font-size/14)+em;
+    line-height: 1;
+
+    padding: (4/$font-size)+em 14px (4/$font-size)+em 0;
+
+    .icon-user {
+      margin-right: 4px;
+    }
+
+    .icon-chevron-up {
+      margin-left: 8px;
+    }
+
+  }
+
+  .assortment-name {
+    span {
+      display: block;
+
+      $font-size: 18;
+
+      font-size: ($font-size/14)+em;
+      line-height: 1;
+
+      padding: (6/$font-size)+em 14px (6/$font-size)+em 0;
+    }
+  }
+
+  .product-styles-count {
+    span {
+      display: block;
+
+      $font-size: 18;
+
+      font-size: ($font-size/14)+em;
+      line-height: 1;
+
+      padding: (4/$font-size)+em 14px (4/$font-size)+em 0;
+    }
+
+    .icon-tag {
+      margin-right: 6px;
+    }
+  }
+
+  .container-fluid {
+    padding-top: 10px;
+  }
+
+  .assortment-name {
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .product-styles-count {
+    text-align: right;
+  }
+
+  i {
+    margin-top: 4px;
+  }
+
+  .menu-dropdown {
+
+    bottom: 30px;
+    top: auto;
+  }
+
+  a, a:hover {
+    color: white;
+  }
+}
+
+.footer.assortment {
+  background-color: rgba(0, 136, 204, 0.9);
+}

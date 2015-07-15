@@ -1,0 +1,239 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/ecatalog/!svn/ver/1705/trunk/app/scripts/controllers
+END
+catalogList.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/ecatalog/!svn/ver/1668/trunk/app/scripts/controllers/catalogList.js
+END
+assortmentEditWhiteboard.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/ecatalog/!svn/ver/1529/trunk/app/scripts/controllers/assortmentEditWhiteboard.js
+END
+resendingOrderEmail.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/resendingOrderEmail.js
+END
+assortmentEditLinkCustomer.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/assortmentEditLinkCustomer.js
+END
+loadTenant.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/loadTenant.js
+END
+assortment.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/ecatalog/!svn/ver/1529/trunk/app/scripts/controllers/assortment.js
+END
+header.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/header.js
+END
+assortmentList.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/ecatalog/!svn/ver/1529/trunk/app/scripts/controllers/assortmentList.js
+END
+AssortmentWhiteboard.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/ecatalog/!svn/ver/1699/trunk/app/scripts/controllers/AssortmentWhiteboard.js
+END
+salesDashboard.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/salesDashboard.js
+END
+masterCatalogBrowse.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/ecatalog/!svn/ver/1705/trunk/app/scripts/controllers/masterCatalogBrowse.js
+END
+homeMenu.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/ecatalog/!svn/ver/1670/trunk/app/scripts/controllers/homeMenu.js
+END
+headerNavbar.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/ecatalog/!svn/ver/1697/trunk/app/scripts/controllers/headerNavbar.js
+END
+main.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/main.js
+END
+productStylesSearch.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/ecatalog/!svn/ver/1499/trunk/app/scripts/controllers/productStylesSearch.js
+END
+assortmentEdit.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/assortmentEdit.js
+END
+catalogCreate.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/catalogCreate.js
+END
+assortmentEditLinesheet.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/ecatalog/!svn/ver/1529/trunk/app/scripts/controllers/assortmentEditLinesheet.js
+END
+customCatalogBrowse.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/customCatalogBrowse.js
+END
+downloadCatalog.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/downloadCatalog.js
+END
+application.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/ecatalog/!svn/ver/1673/trunk/app/scripts/controllers/application.js
+END
+product.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/product.js
+END
+assortmentActions.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/ecatalog/!svn/ver/1529/trunk/app/scripts/controllers/assortmentActions.js
+END
+order.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/ecatalog/!svn/ver/1680/trunk/app/scripts/controllers/order.js
+END
+imageZoom.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/imageZoom.js
+END
+orderList.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/1680/trunk/app/scripts/controllers/orderList.js
+END
+i18nCtrl.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/i18nCtrl.js
+END
+login.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/ecatalog/!svn/ver/1668/trunk/app/scripts/controllers/login.js
+END
+assortmentOrderSummary.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/ecatalog/!svn/ver/1540/trunk/app/scripts/controllers/assortmentOrderSummary.js
+END
+assortmentLinkCustomer.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/assortmentLinkCustomer.js
+END
+masterCatalogPage.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/masterCatalogPage.js
+END
+futureConcept.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/futureConcept.js
+END
+assortmentEditBrowse.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/assortmentEditBrowse.js
+END
+assortmentEditCatalogList.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/ecatalog/!svn/ver/1670/trunk/app/scripts/controllers/assortmentEditCatalogList.js
+END
+productAnnotation.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/productAnnotation.js
+END
+orderPopup.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/ecatalog/!svn/ver/1680/trunk/app/scripts/controllers/orderPopup.js
+END
+catalogProductWidget.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/ecatalog/!svn/ver/1683/trunk/app/scripts/controllers/catalogProductWidget.js
+END
+assortmentNewPopup.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/ecatalog/!svn/ver/1529/trunk/app/scripts/controllers/assortmentNewPopup.js
+END
+404.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/controllers/404.js
+END

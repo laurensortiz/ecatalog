@@ -1,0 +1,48 @@
+<div class="catalogBrowse view-content full-screen">
+    <!-- Modal View to Show all Thumbnails for the catalog-->
+    <div modal="pagePreviewModalShouldBeOpen" options="modalOpts">
+        <div class="modal-header ui-bar-c ui-corner-top modal-header-text-align">
+            <button type="button" class="close" ng-click="closePagePreviewModal()">
+            </button>
+            <h3>{{languagesJSON['masterCatalogBrowse.preview']}}</h3>
+        </div>
+        <div class="modal-body center page-thumbnail-modal-body">
+            <div class="page-thumbnail-container" ng-repeat="page in pages" ng-click="goToPage($index)">
+                <div class="page-thumbnail-img-container">
+                    <img ng-src="{{page.thumbnail}}" class="product-thumbnail-img"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <bx-slider id="full-page-catalog" class="{{$parent.parentCatalog.catalogClassName}}" get-items="pages"
+               current-page-index="currentlyDisplayedPageIndex" items-per-slide="pagesPerSlide"
+               reload-on-change-of="pages" reload-on-model-changes="false">
+        <page pagedata="page" ng-class="{'paired': $parent.slide.length > 1, 'catalog-page': true}"
+              ng-repeat="page in slide">
+        </page>
+    </bx-slider>
+    <div id="jqUISlider" ng-class="{'focused': sliderIsInFocus}">
+        <div>
+            <!-- Grid Button to trigger Modal View -->
+            <div ng-click="openPagePreviewModal()" class="icon grid-icon">
+                &nbsp;
+            </div>
+            <div id="thumbnailContainer" ng-switch on="currentlyPreviewedPage" ng-include src="'pageThumbnail'">
+            </div>
+            <jq-ui-slider current-page-index="currentlyDisplayedPageIndex" pages="pages"
+                          currently-previewed-page-index="currentlyPreviewedPageIndex" pages-per-slide="pagesPerSlide">
+            </jq-ui-slider>
+            <form id="goToSlide">
+                <input class="input-mini" type="number" min="1" max="{{pages.length}}"
+                       ng-model="currentlyDisplayedPageNumber" ng-model-onblur>
+                {{languagesJSON['masterCatalogBrowse.of']}} {{pages.length}}
+            </form>
+        </div>
+    </div>
+
+</div>
+<script type="text/ng-template" id="pageThumbnail">
+    <img id="thumb" ng-src="{{thumbnail}}" width="150px"/>
+</script> <!-- the product details popup -->
+<div ng-include src="'partials/productDetailPopup.html'">
+</div>

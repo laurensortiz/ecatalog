@@ -1,0 +1,74 @@
+.order-product-popup {
+  color: #fff;
+  font-size: 1.4em;
+  height: 78%;
+  width: 70%;
+  padding: 20px 0 0 0;
+  margin-left: 0px;
+  top: 10% !important;
+  left: 15% !important;
+  overflow: auto;
+  background-color: #878787; /* Old browsers */
+  background: -moz-linear-gradient(top, #878787 90%, #0e0e0e 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #878787), color-stop(100%, #0e0e0e)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #878787 90%, #0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #878787 90%, #0e0e0e 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #878787 90%, #0e0e0e 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #878787 90%, #0e0e0e 100%); /* W3C */
+
+  .popup-header {
+    padding-top: 10px;
+    border: 0px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+  .popup-footer {
+    padding: 0px 15px;
+  }
+  .large-button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px inset slategray;
+  }
+  .popup-body {
+    padding: 0px 15px;
+  }
+  .relative-position {
+    position: relative;
+    .dropdown-menu {
+      top: 53px;
+    }
+  }
+  .error {
+    color: red;
+  }
+  .new-button-red {
+    background: url('../images/redbg.png') repeat-x;
+  }
+  .new-button-green {
+    background: url('../images/greenbg.png') repeat-x;
+  }
+
+}
+
+#s2id_orderProductForm-customerName {
+  display: block;
+}
+
+.orderPopup {
+
+  .input-block-level {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .typeahead.dropdown-menu {
+    top: auto;
+  }
+}
+

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/ecatalog/!svn/ver/622/trunk/app/components/jquery.scrollTo
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/ecatalog/!svn/ver/622/trunk/app/components/jquery.scrollTo/.gitignore
+END
+changes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/ecatalog/!svn/ver/622/trunk/app/components/jquery.scrollTo/changes.txt
+END
+component.json
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/ecatalog/!svn/ver/622/trunk/app/components/jquery.scrollTo/component.json
+END
+jquery.scrollTo.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/ecatalog/!svn/ver/622/trunk/app/components/jquery.scrollTo/jquery.scrollTo.js
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/ecatalog/!svn/ver/622/trunk/app/components/jquery.scrollTo/README.md
+END
+jquery.scrollTo.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/ecatalog/!svn/ver/622/trunk/app/components/jquery.scrollTo/jquery.scrollTo.min.js
+END

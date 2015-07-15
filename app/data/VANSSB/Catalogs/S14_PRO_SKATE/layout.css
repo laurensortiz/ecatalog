@@ -1,0 +1,1902 @@
+@font-face {
+	font-family: HelveticaNeue-H1;
+	src: url(Fonts/HelveticaNeueLTStd-BlkCn.otf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: HelveticaNeue-H2;
+	src: url(Fonts/HelveticaNeueLTStd-BlkCn.otf);
+	font-weight: 100;
+}
+@font-face {
+	font-family: HelveticaNeue-H3;
+	src: url(Fonts/HelveticaNeueLTStd-Md.otf);
+	font-weight: 100;
+}
+@font-face {
+	font-family: HelveticaNeue-P;
+	src: url(Fonts/HelveticaNeueLTStd-Lt.otf);
+}
+@font-face {
+	font-family: Franklin-Gothic-Cond;
+	src: url(Fonts/FranklinGothicStd-Condensed.otf);
+	font-weight: 100;
+}
+@font-face {
+	font-family: FranklinGothicStd-Roman;
+	src: url(Fonts/FranklinGothicStd-Roman.otf);
+	font-weight: 100;
+}
+@font-face {
+	font-family: Monaco;
+	src: url(Fonts/Monaco.ttf);
+	font-weight: 100;
+}
+.catalog-page h1 {
+	font-family: HelveticaNeue-H1;
+	font-size: 3.0em;
+	letter-spacing: 2px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.textFooterSummary h1 {
+	font-family: HelveticaNeue-P;
+	font-size: 1.05em;	
+	margin: 0pt;
+	padding: 0pt;
+}
+.textFooterSummary dl {
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+}
+.catalog-page dl h2 {
+	font-size: 2em;
+	font-family: Franklin-Gothic-Cond;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.catalog-page h2 {
+	font-family: HelveticaNeue-H2;
+	font-size: 1.2em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.catalog-page h3 {
+	font-family: HelveticaNeue-H3;
+	font-size: 1.0em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.catalog-page h4 {
+	font-family: HelveticaNeue-H3;
+	font-size: 1.2em;
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.catalog-page h5 {
+	font-family: HelveticaNeue-H3;
+	font-size: .95em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.catalog-page p {
+	font-family: HelveticaNeue-P;
+	font-size: 1em;
+	line-height: 1.8em;
+}
+.img_text_header {
+	height: 3em;
+	margin-bottom: 25px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.story_page {
+	width: 95%;
+	height: 95%;
+	padding: 2.5%;
+	background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.story_page .story_inner {
+	width: 90%;
+	height: 90%;
+	padding: 5%;
+	background: none;
+}
+.catalog-page  .story_page .story_inner {
+	color: #FFF;
+}
+.catalog-page dt {
+	font-family:HelveticaNeue-P;
+	font-size: 1.05em;
+	line-height: 1.8em;
+}
+.catalog-page .story_inner > dl > dd.techInfo {
+	font-family: HelveticaNeue-P;
+	font-size: 1em;
+}
+.catalog-page .story_inner dd {
+	line-height: 1.2em;
+}
+.story_page dl {
+	margin-top: 0px;
+	height: 100%;
+	display: block;
+}
+.catalog-page .image-definition {
+	width: 20%;
+	float: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin-right: 5%;
+}
+.story_page .story_person {
+	width: 95%;
+	margin-left: 2.5%;
+	margin-top: 10%;
+	height: 60%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.story_page .story_logo {
+	width: 35%;
+	height: 35%;
+	margin-left: 32.5%;
+	margin-top: 32.5%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.story_page  .signature {
+	position: absolute;
+	z-index: 10;
+}
+.page-placeholder-graphic {
+	background-image: url('transparency-checkerboard.png');
+	background-repeat: repeat;
+	background-size: 1%;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	z-index: 5;
+}
+.paired  .page-placeholder-graphic {
+	background-image: url('transparency-checkerboard.png');
+	background-repeat: repeat;
+	background-size: 2%;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+}
+.catalog-page .signature {
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+}
+/* Cover Page */
+.catalog-page .catalog-cover-page h1.catalog_title {
+    font-family: Franklin-Gothic-Cond;
+    position: absolute;
+    color: #EEE;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    right: 20%;
+    bottom: 40%;
+    letter-spacing: .2em;
+}
+.catalog-page .catalog-cover-page .off_the_wall_logo {
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    height: 8%;
+    background-size: contain !important;
+    background: url("vans_off_the_wall_pro_logo.png") no-repeat right bottom;
+    min-height: 75px;
+}
+.catalog-page .catalog-cover-page .off_the_wall_title {
+    position: absolute;
+    left: 0px;
+    bottom: 15%;
+    background-size: contain !important;
+    width: 12%;
+    min-width: 200px;
+    background: url("vans_cover_logo.png") no-repeat left bottom;
+}
+.catalog-page .catalog-cover-page {
+    background-color: #EEE;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.catalog-page .catalog-cover-page .left-page-padding .constrainedImage {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+}
+.catalog-page .catalog-cover-page .right-page-padding .constrainedImage {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+}
+.catalog-page .catalog-cover-page .page-content .constrainedImage {
+    background-position: center center;
+    background-size: contain;
+}
+.catalog-page .catalog-cover-page div {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.catalog-page .catalog-cover-page .left-page-padding {
+    width: 50%;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+}
+.catalog-page .catalog-cover-page .right-page-padding {
+    width: 50%;
+    height: 100%;
+    right: 0px;
+    position: absolute;
+}
+.catalog-page .catalog-cover-page .page-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* Hero Page */
+.catalog-page .black-bar{
+    height: 5px;
+    width:100%;
+    background-color: #000;
+    position:absolute;
+    right:0;
+    top: 95%;
+    z-index:9000;
+}
+.catalog-page .hero-product-page {
+    width: 100%;
+    height: 100%;
+}
+
+.catalog-page .hero-product-page .topBar {
+    height: 19%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.catalog-page .hero-product-page .topRightIconContainer {
+    width: 50%;
+    height: 100%;
+    margin: 0px;
+    float: right;
+}
+
+.catalog-page .hero-product-page .icon {
+    width: 95%;
+    height: 80%;
+    padding-top: 5%;
+    display: block;
+    position: relative;
+    margin: 0px;
+}
+.catalog-page .hero-product-page .icon .constrainedImage {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.catalog-page .hero-product-page .icon div {
+    height: 100%;
+    width: 100%;
+}
+.catalog-page .hero-product-page .topRightIconContainer .icon {
+    padding-right: 5%;
+    display: block;
+    position: relative;
+}
+.catalog-page .hero-product-page .topRightIconContainer .icon .constrainedImage {
+    background-position: right center;
+}
+.catalog-page .hero-product-page .topLeftTextContainer {
+    width: 50%;
+    height: 100%;
+    margin: 0px;
+    float: left;
+}
+.catalog-page .hero-product-page .topLeftTextContainer .icon {
+    padding-left: 5%;
+    background-size: contain;
+    width: 80%;
+    background-position: center left;
+    position: absolute;
+    padding-top: 1.5%;
+}
+
+.catalog-page .hero-product-page .topLeftTextContainer .icon .constrainedImage {
+    background-position: left center;
+}
+.catalog-page .hero-product-page .heroImage {
+    height: 82%;
+    width: 100%;
+    margin-top: 140px;
+    position: absolute;
+    z-index: 2;
+}
+.catalog-page .hero-product-page .heroImage div {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.catalog-page .hero-product-page .backgroundImage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.catalog-page .hero-product-page .backgroundImage div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+/* askate 1 */
+.askate_1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.askate_1 .askate_left {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    margin-bottom: 2em;
+    position: absolute;
+}
+.askate_1 .askate_hero {
+    left: 10%;
+    top: 5%;
+    width: 80%;
+    height: 90%;
+    margin-bottom: 2em;
+    position: absolute;
+}
+
+.askate_1 .askate_hero_caption {
+    left: 10%;
+    bottom: 10%;
+    color: white;
+    font-size: .9em;
+    font-family: HelveticaNeue-P;
+    line-height: normal;
+    position: absolute;
+}
+/* askate 2 */
+.askate_2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.askate_2 .askate_right {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    margin-bottom: 2em;
+    position: absolute;
+}
+.askate_2 .askate_graphic {
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 60%;
+    margin-bottom: 2em;
+    position: absolute;
+}
+.askate_2 .askate_logo {
+    left: 40%;
+    bottom: 20%;
+    width: 20%;
+    height: 76pt;
+    background-size: contain !important;
+    background: url("askate_logo.png") no-repeat center center;
+    margin-bottom: 2em;
+    position: absolute;
+}
+
+.askate_2 .text-block {
+    margin-top: 500px;
+    color :white;
+}
+/* Product 2 up */
+.catalog-page .productGroup.product_2_grid {
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: none;
+}
+.catalog-page .productGroup.product_2_grid .productGrid{
+    height: 75%;
+    width: 100%;
+    position: absolute;
+    z-index: 4;
+}
+.catalog-page .productGroup.product_2_grid .productWidget {
+    width: 35%;
+    height: 45%;
+    display: block;
+    text-align: left;
+    margin-left: 30%;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+}
+.catalog-page .productGroup.product_2_grid .productWidget h2 {
+    margin: auto;
+    font-size: 1.15em;
+    line-height: 1.15em;
+}
+.catalog-page .productGroup.product_2_grid .productWidget h4 {
+    margin: auto;
+    font-size: .95em;
+    line-height: 1.4em;
+}
+.catalog-page .productGroup.product_2_grid .productWidget h5 {
+    margin: auto;
+    font-size: .95em;
+    line-height: 1.4em;
+    font-weight: normal;
+}
+.catalog-page .productGroup.product_2_grid .productWidget h6 {
+    margin: auto;
+    font-size: .95em;
+    line-height: 1em;
+    font-weight: normal;
+}
+.catalog-page .productGroup.product_2_grid .productWidget .text-block {
+    position: relative;
+    padding-top: 5%;
+    height: 25%;
+    margin-left: 2%;
+}
+.catalog-page .productGroup.product_2_grid .productWidget .productImage {
+    height: 70%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain !important;
+}
+.catalog-page .productGroup.product_2_grid .margins {
+    background-repeat: no-repeat;
+}
+.catalog-page .productGroup.product_2_grid .margins div {
+    width: 100%;
+    height: 100%;
+}
+.catalog-page .productGroup.product_2_grid .margins .constrainedImage {
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
+.catalog-page .productGroup.product_2_grid .margins.left-margin {
+    width: 50%;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+}
+.catalog-page .productGroup.product_2_grid .margins.left-margin .constrainedImage {
+    background-position: left top;
+}
+.catalog-page .productGroup.product_2_grid .margins.right-margin {
+    width: 50%;
+    height: 100%;
+    right: 0px;
+    position: absolute;
+}
+.catalog-page .productGroup.product_2_grid .margins.right-margin .constrainedImage {
+    background-position: right top;
+}
+
+.catalog-page .productGroup.product_2_grid .textFooterSummary {
+    height: 10%;
+    width: 95%;
+    position: absolute;
+    z-index: 4;
+    top: 77.5%;
+    margin-left: 6%;
+    margin-right: 5%;
+    font-family: helvetica;
+}
+.textFooterSummary h1 {
+    font-size: 1em;
+    padding-bottom: 10px;
+    border-bottom: #eee 1px solid;
+}
+.textFooterSummary h6 {
+    font-size: .8em;
+}
+.textFooterSummary dl dt {
+    font-weight: bold;
+    display: inline;
+    margin: auto;
+}
+.textFooterSummary dl dd {
+    font-size: .8em;
+    display: inline;
+    margin: auto;
+}
+.textFooterSummary dd:after {
+    content: "/";
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.textFooterSummary dd:last-child:after {
+    display: none;
+}
+.textFooterSummary #featureSummaryFeatureAvailability {
+    font-size: .8em;
+}
+.textFooterSummary #featureSummaryFeatureAvailability .av-avkey, .av-szkey {
+    font-weight: bold;
+}
+.textFooterSummary #featureSummaryFeatureAvailability .av-szkey {
+    margin-left: 15px;
+}
+.textFooterSummary #featureSummaryFeatureAvailability .av-llt {
+    margin-left: 15px;
+    color: #aaa;
+}
+/* Product 2 up image */
+.catalog-page .productGroup.product_2_grid_w_image .product_story_mini_image {
+    width: 45%;
+    height: 25%;
+    display: block;
+    margin-left: 22.5%;
+    background-size: contain !important;
+    background: url("Barbee_Product_Portrait.jpg")no-repeat center top;
+}
+.catalog-page .productGroup.product_2_grid_w_image {
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #FFF;
+}
+.catalog-page .productGroup.product_2_grid_w_image .productGrid {
+    height: 75%;
+    width: 100%;
+    position: absolute;
+    z-index: 4;
+}
+.catalog-page .productGroup.product_2_grid_w_image .productWidget {
+    width: 35%;
+    height: 25%;
+    display: block;
+    text-align: left;
+    margin-left: 30%;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+}
+.catalog-page .productGroup.product_2_grid_w_image .productWidget:last-child {
+    height: 30%;
+}
+.catalog-page .productGroup.product_2_grid_w_image .productWidget h2 {
+    margin: auto;
+    font-size: 1.15em;
+    line-height: 1.15em;
+}
+.catalog-page .productGroup.product_2_grid_w_image .productWidget h4 {
+    margin: auto;
+    font-size: .95em;
+    line-height: 1.4em;
+}
+.catalog-page .productGroup.product_2_grid_w_image .productWidget h5 {
+    margin: auto;
+    font-size: .95em;
+    line-height: 1.4em;
+    font-weight: normal;
+}
+.catalog-page .productGroup.product_2_grid_w_image .productWidget h6 {
+    margin: auto;
+    font-size: .95em;
+    line-height: 1em;
+    font-weight: normal;
+}
+.catalog-page .productGroup.product_2_grid_w_image .productWidget .text-block {
+    position: relative;
+    padding-top: 5%;
+    height: 25%;
+    margin-left: 2%;
+}
+.catalog-page .productGroup.product_2_grid_w_image .productWidget .productImage {
+    height: 70%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain !important;
+}
+.catalog-page .productGroup.product_2_grid_w_image .margins {
+    background-repeat: no-repeat;
+}
+.catalog-page .productGroup.product_2_grid_w_image .margins div {
+    width: 100%;
+    height: 100%;
+}
+.catalog-page .productGroup.product_2_grid_w_image .margins .constrainedImage {
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
+.catalog-page .productGroup.product_2_grid_w_image .margins.left-margin {
+    width: 50%;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+}
+.catalog-page .productGroup.product_2_grid_w_image .margins.left-margin .constrainedImage {
+    background-position: left top;
+}
+.catalog-page .productGroup.product_2_grid_w_image .margins.right-margin {
+    width: 50%;
+    height: 100%;
+    right: 0px;
+    position: absolute;
+}
+.catalog-page .productGroup.product_2_grid_w_image .margins.right-margin .constrainedImage {
+    background-position: right top;
+}
+.catalog-page .productGroup.product_2_grid_w_image .textFooterSummary {
+    height: 10%;
+    width: 95%;
+    position: absolute;
+    z-index: 4;
+    top: 77.5%;
+    margin-left: 6%;
+    margin-right: 5%;
+    font-family: helvetica;
+}
+/* Product 4 up */
+.catalog-page .productGroup {
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #FFF;
+}
+.catalog-page .productGroup .productGrid {
+    height: 75%;
+    width: 100%;
+    position: absolute;
+    z-index: 4;
+}
+.catalog-page .productGroup .productWidget {
+    width: 40%;
+    height: 45%;
+    float: left;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+}
+.catalog-page .productGrid .img_container{
+    position: absolute;
+    height: 110px;
+    background-size: contain;
+    background-position: right top;
+    background-repeat: no-repeat;
+    top: 7%;
+    right: 3%;
+    left:35%;
+    z-index:9000;
+    width:80px;
+}
+.catalog-page .productGrid .img_container.right{
+    top: 0%;
+    right: 0%;
+    left: 84%;
+}
+.catalog-page .productGrid .top_right_icons{
+    background-size: contain !important;
+    width:100%;
+    position:relative;
+}
+.catalog-page .productGrid .indy{
+    background: url("indy-vans.png") no-repeat center;
+    height: 30%;
+}
+.catalog-page .productGrid .new_style{
+    background: url("new_style.png") no-repeat;
+    height: 70%;
+}
+.catalog-page .productGroup .productWidget h2 {
+    font-family: HelveticaNeue-Bold;
+    margin: auto;
+    font-size: 1.15em;
+    line-height: 1.15em;
+}
+.catalog-page .productGroup .productWidget h4 {
+    font-family: Monaco, monospace;
+    font-weight: normal;
+    margin: auto;
+    font-size: .95em;
+    line-height: 1.4em;
+}
+.catalog-page .productGroup .productWidget h5 {
+    font-family: HelveticaNeue-P;
+    font-weight: normal;
+    margin: auto;
+    font-size: .95em;
+    line-height: 1.4em;
+    font-weight: normal;
+}
+.catalog-page .productGroup .productWidget h6 {
+    font-family: HelveticaNeue-P;
+    font-weight: normal;
+    margin: auto;
+    font-size: .95em;
+    line-height: 1em;
+    font-weight: normal;
+}
+.catalog-page .productGroup .productWidget .text-block {
+    position: relative;
+    padding-top: 5%;
+    height: 25%;
+    margin-left: 2%;
+}
+.catalog-page .productGroup .productWidget .productImage {
+    height: 70%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+}
+.catalog-page .productGroup .margins {
+    background-repeat: no-repeat;
+}
+.catalog-page .productGroup .margins div {
+    width: 100%;
+    height: 100%;
+}
+.catalog-page .productGroup .margins .constrainedImage {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.catalog-page .productGroup .margins.left-margin {
+    width: 50%;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+}
+.catalog-page .productGroup .margins.left-margin .constrainedImage {
+    background-position: left top;
+}
+.catalog-page .productGroup .margins.right-margin {
+    width: 15%;
+    height: 100%;
+    right: 0px;
+    position: absolute;
+    z-index: 5;
+}
+.catalog-page .productGroup .margins.right-margin .constrainedImage {
+    background-position: right top;
+}
+.catalog-page .productGroup .textFooterSummary {
+    height: 10%;
+    width: 95%;
+    position: absolute;
+    z-index: 4;
+    top: 77.5%;
+    margin-left: 6%;
+    margin-right: 5%;
+    font-family: helvetica;
+}
+/* Story 1 */
+.story_2 .full_page_image {
+    width: 100%;
+    height: 60%;
+    background-size: cover !important;
+    margin-bottom: 25px;
+    background:  url("Tech_Intro_Img.jpg") no-repeat center top;
+}
+.story_2 .img_text_header.proskate{
+    background: url("Pro_Skate_Header.png") no-repeat;
+    background-size: contain !important;
+}
+
+/* Story 2 */
+.story_2 .image-definition {
+    height: 28%;
+}
+.story_2  .story_inner > dl {
+    width: 85%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.story_2  .story_inner > dl > dd {
+    height: 28%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.story_2 .img_text_header{
+    background: url("Construction_Header.png") no-repeat top left;
+    background-size: contain !important;
+}
+.story_2 .waffle_buddy {
+    position: absolute;
+    height: 15%;
+    width: 15%;
+    background-size: contain !important;
+    background: url("WaffleBuddy.png") no-repeat right center;
+    top: 60%;
+    right: 0;
+}
+.story_2 .provulc{
+    background: url("Tech_ProVulc.png") no-repeat;
+    background-size: contain !important;
+}
+.story_2 .procup{
+    background: url("Tech_ProCup.png") no-repeat;
+    background-size: contain !important;
+}
+.story_2 .wafflecup{
+    background: url("Tech_Wafflecup.png") no-repeat;
+    background-size: contain !important;
+}
+
+/* Story 3 */
+.story_3 .image-definition {
+    height: 70px;
+}
+.story_3 .img_text_header{
+    background: url("Cushioning_Header.png") no-repeat;
+    background-size: contain !important;
+}
+.story_3 .ultracrush{
+    background: url("Tech_Ultracrush.png") no-repeat;
+    background-size: contain !important;
+}
+.story_3 .responsive{
+    background: url("Tech_Responsive.png") no-repeat;
+    background-size: contain !important;
+}
+.story_3 .techcomfort{
+    background: url("Tech_Comfort.png") no-repeat;
+    background-size: contain !important;
+}
+.story_3 .ortholite{
+    background: url("Ortholite_Logo.png") no-repeat;
+    background-size: contain !important;
+}
+.story_3 dd {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.story_3 .tech_logo, .story_3 .tech_logo_lite, .story_4 .tech_logo {
+    height: 100%;
+    float: right;
+    background-size: contain !important;
+    margin-left: 5%;
+    width: 20%;
+}
+.story_3 .techlogo{
+    background: url("Ultracrush_HD_Logo.png") no-repeat right top;
+    background-size: contain !important;
+}
+.story_3 .tech_logo_lite{
+    background: url("Ultracrush_Lite_Logo.png") no-repeat;
+    background-size: contain !important;
+}
+
+/* Story 4 */
+.story_4 .image-definition {
+    height: 60px;
+}
+.story_4  .image-definition.double-tall {
+    height: 120px;
+}
+.story_4 .story_inner > dl {
+    overflow: hidden;
+}
+.story_4 .story_inner > dl > dd, .story_4 .story_inner > dl > dd.double-tall {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.story_4 dd{
+    margin:0 0 15px 0;
+}
+.story_4 .img_text_header{
+    background: url("Function_Header.png") no-repeat;
+    background-size: contain !important;
+}
+.story_4 .techoutsole{
+    background: url("Tech_Outsole.png") no-repeat;
+    background-size: contain !important;
+}
+.story_4 .durability{
+    background: url("Durability_Image_Definition.png") no-repeat;
+    background-size: contain !important;
+}
+.story_4 .comfort{
+    background: url("Comfort_Image_Definition.png") no-repeat;
+    background-size: contain !important;
+}
+.story_4 .heelcup{
+    background: url("Heel-Cup.png") no-repeat;
+    background-size: contain !important;
+}
+/* Apparel 1 */
+.apparel_1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.apparel_1 .apparel_left {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    margin-bottom: 2em;
+    position: absolute;
+}
+
+.apparel_1 .originaltools_stencil {
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.apparel_1 .askate_logo {
+    left: 40%;
+    bottom: 10%;
+    width: 20%;
+    height: 76pt;
+    background-size: contain;
+    background: url("originaltools_stencil.jpg") no-repeat center center;
+    margin-bottom: 2em;
+    position: absolute;
+}
+.apparel_2 .apparel_right {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    margin-bottom: 2em;
+    position: absolute;
+}
+/* apparel 3 */
+.apparel_3 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.apparel_3 .apparel_left {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    margin-bottom: 2em;
+    position: absolute;
+}
+.apparel_3 .av78_stencil {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+}
+.apparel_3 .askate_logo {
+    left: 40%;
+    bottom: 10%;
+    width: 20%;
+    height: 76pt;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 2em;
+    position: absolute;
+}
+/* apparel 4*/
+.apparel_4 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.apparel_4 .apparel_right {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    margin-bottom: 2em;
+    position: absolute;
+}
+
+/* ave */
+.aveperson{
+    background-repeat: no-repeat;
+}
+.avelogo{
+    background: url("AVE_Story_Logo.png") no-repeat;
+}
+.avesignature{
+    bottom: 1%;
+    right: 5%;
+    width: 30%;
+    background: url("AVE_Signature.png") no-repeat;
+}
+.cab_story_logo{
+    background: url("Cab_Lite_Story_Logo.png") no-repeat;
+    background-size: contain !important;
+    width: 65%;
+    margin-left: 20%;
+    margin-top: 32.5%;
+    height: 50%;
+}
+.cab_signature{
+    background: url("Cab_Lite_Signature.png") no-repeat;
+    background-size: contain !important;
+    bottom: 5%;
+    right: 10%;
+    width: 9%;
+    height: 10%;
+    float: right;
+    position: absolute;
+}
+.chima_intro{
+    background-repeat:  no-repeat;
+}
+.chima_story{
+    background: url("Chima_Story_Logo.png") no-repeat;
+    width: 50%;
+    margin-left: 25%;
+}
+.rowley_intro{
+    background-repeat: no-repeat;
+}
+.rowley_story_logo{
+    background: url("Rowley_Story_Logo.png") no-repeat;
+}
+.rowley_signature{
+    background: url("Rowley_Story_Signature.png") no-repeat;
+    top:0px;
+    right: 25%;
+    width: 20%;
+}
+.tnt_five_story{
+    background: url("TNT_Five_Story_Person.jpg") no-repeat;
+}
+.tnt_story_logo{
+    background: url("TNT_Five_Story_Logo.png") no-repeat;
+}
+/* Gilbert */
+.gilbert_story_page_1.story_page {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.gilbert_story_page_1.story_page .story_logo {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 5%;
+    height: 40%;
+    background-size: contain !important;
+    background: url("Crockett_Story_Logo.png") no-repeat;
+}
+.gilbert_story_page_1  .gilbert_text_block {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20%;
+    letter-spacing: .2em;
+}
+.gilbert_story_page_1  .gilbert_text_block h1 {
+    line-height: 1.5em;
+    font-family: News-Bold;
+    letter-spacing: .3em;
+    font-size: 2.5em;
+}
+.gilbert_story_page_1  .story_inner {
+    background-image: none;
+}
+.gilbert_story_page_1  .thumbs_up {
+    background-size: contain !important;
+    background: url("thumbs_up_logo.png") no-repeat center center;
+    height: 5em;
+    margin-top: 1em;
+    position: relative;
+    left: -.5em;
+}
+/* Gilbert 2 */
+.gilbert_story_page_2.story_page {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.gilbert_story_page_2 h1 {
+    line-height: 2em;
+    font-family: News-Bold;
+    letter-spacing: .3em;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.gilbert_story_page_2.story_page .story_person {
+    width: 85%;
+    margin-left: 7.5%;
+    margin-top: 5%;
+    height: 45%;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.gilbert_story_page_2 .red_stamp_waffle {
+    position: absolute;
+    bottom: 1%;
+    right: 15%;
+    width: 18%;
+    height: 18%;
+    background-size: contain !important;
+    background: url("red_stamp_waffle_buddy.png") no-repeat;
+}
+.gilbert_story_page_2 p {
+    position: absolute;
+    width: 72.5%;
+    margin-left: 7%;
+    z-index: 5;
+    text-align: center;
+    line-height: 1.7em;
+}
+.gilbert_story_page_2 .image-definition {
+    height: 30%;
+}
+.gilbert_story_page_2  .story_inner {
+    background-image: none;
+}
+.gilbert_story_page_2  .story_inner > dl {
+    width: 85%;
+}
+.gilbert_story_page_2   .waffle_buddy {
+    position: absolute;
+    height: 15%;
+    width: 15%;
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    top: 60%;
+    right: 0;
+}
+/* Pro classic */
+.proclassics_1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.proclassics_1 .proclassics_background {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    margin-bottom: 2em;
+    position: absolute;
+}
+/* Pro classics 2 */
+.proclassics_2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.proclassics_2 .proclassics_background {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    margin-bottom: 2em;
+    position: absolute;
+}
+.proclassics_2 .signature_logo {
+    position: absolute;
+    right: 28px;
+    bottom: -120px;
+    width: 200px;
+    height: 200px;
+    background-size: contain !important;
+    background: url("vans_off_the_wall_pro_logo.png") no-repeat;
+}
+.proclassics_2 .proclassics_header {
+    width: 100%;
+    height: 195pt;
+    background-size: 100%;
+    background: url("ProClassics_Header_Background.png") no-repeat right center;
+    position: absolute;
+
+    font-size:5em;
+    font-family: HelveticaNeue-P;
+    line-height:normal;
+}
+.proclassics_2 .proclassics_header .header_1 {
+    font-size:1.0em;
+    font-family:HelveticaNeue-P;
+    line-height:normal;
+    margin-left:5%;
+    margin-top:10pt;
+    color:#fff;
+}
+.proclassics_2 .proclassics_header .header_1 span, .proclassics_2 .proclassics_header .header_2 span{
+    color:#f00;
+}
+.proclassics_2 .proclassics_header .header_2 {
+    font-size:.60em;
+    font-family:HelveticaNeue-P;
+    line-height:normal;
+    margin-left:5%;
+    margin-bottom:2%;
+    color:#fff;
+}
+.proclassics_2 .proclassics_header .bullet {
+    font-size:.24em;
+    font-family:Franklin-Gothic-Cond;
+    line-height:normal;
+    margin-left:15%;
+    color:#fff;
+}
+.proclassics_2 .proclassics_content {
+    width: 100%;
+    top: 38%;
+    background-size: 100%;
+    background-position: right center;
+    background-repeat:no-repeat;
+    position: absolute;
+    font-size:5em;
+    font-family: HelveticaNeue-P;
+    line-height:normal;
+}
+.proclassics_2 .proclassics_content .content_header {
+    font-size:.3em;
+    font-family:Franklin-Gothic-Cond;
+    line-height:normal;
+    margin-left:5%
+}
+.proclassics_2 .proclassics_content .content_bullet {
+    font-size:.15em;
+    font-family:HelveticaNeue-P;
+    line-height:normal;
+    margin-left:5%;
+}
+.proclassics_2 .proclassics_content .content_paragraph {
+    margin-top:20pt;
+    width:40%;
+    height:40%;
+    font-size:.15em;
+    font-family:HelveticaNeue-P;
+    line-height:normal;
+    margin-left:5%;
+}
+/* Signature Styles 1 */
+.signature_2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.signature_2 .signature_cover_left {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    background-position: right center;
+    margin-bottom: 2em;
+    position: absolute;
+}
+.signature_2 .signature_content {
+    width:250pt;
+    height:100%;
+    left:0px;
+    margin-bottom: 2em;
+    position: absolute;
+}
+.signature_2 .signature_content_footer {
+    width:250pt;
+    height:54pt;
+    bottom:0px;
+    left:0px;
+    background-size: cover !important;
+    background: url("Signature_Style_Content_Footer.jpg") no-repeat right top;
+    position: absolute;
+}
+.signature_2 .signature_header {
+    position: relative;
+    top: -60pt;
+    left: 18pt;
+    color:white;
+    font-family:HelveticaNeue-H1;
+    font-size:2.3em;
+    font-weight:100;
+    letter-spacing: 5pt;
+    line-height:29pt;
+}
+.signature_2 .signature_caption {
+    position: relative;
+    top: -47pt;
+    left: 10pt;
+    font-size:1.0em;
+    font-family: HelveticaNeue-P;
+    letter-spacing: 2pt;
+    line-height: 10pt;
+}
+.signature_2 .waffle_guy {
+    width: 150pt;
+    height: 300pt;
+    left: 0px;
+    bottom: 5%;
+    position: absolute;
+    background-size: contain !important;
+    background: url("Signature_Style_Waffle_Buddy.png") no-repeat;
+}
+.signature_2 .signature_logo {
+    position: absolute;
+    right: 44px;
+    bottom: -69px;
+    width: 200px;
+    height: 200px;
+    background-size: contain !important;
+    background: url("vans_off_the_wall_pro_logo.png") no-repeat;
+}
+.signature_2 .signature_cover_right {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    background-position: left center;
+    margin-bottom: 2em;
+}
+.signature_caption .signature_caption_1 {
+    font-family:HelveticaNeue-H1;
+    margin-top:5pt;
+}
+.signature_caption .signature_caption_2 {
+    font-size: .4em;
+    line-height: 7pt;
+    letter-spacing: 0pt;
+    margin-top: 2pt;
+}
+.signature_caption .signature_caption_3 {
+    margin-top:15pt;
+    font-family:HelveticaNeue-H1;
+    font-size: 2.3em;
+}
+/* Team Styles */
+.team_1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.team_1 .team_logo {
+    position: absolute;
+    left: 44px;
+    bottom: -69px;
+    width: 200px;
+    height: 200px;
+    background-size: contain !important;
+    background: url("vans_off_the_wall_pro_logo.png") no-repeat;
+}
+.team_1 .team_cover {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: right center;
+    margin-bottom: 2em;
+}
+.team_2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.team_2 .team_cover {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    margin-bottom: 2em;
+    position: absolute;
+}
+.team_2 .team_content {
+    width:250pt;
+    height:100%;
+    right:0px;
+    margin-bottom: 2em;
+    position: absolute;
+}
+.team_2 .team_content_footer {
+    width:250pt;
+    height:54pt;
+    bottom:0px;
+    right:0px;
+    background-size: cover !important;
+    background: url("Team_Style_Content_Footer.jpg") no-repeat left top;
+    position: absolute;
+}
+.team_2 .team_header {
+    position: relative;
+    top: -60pt;
+    left: 20pt;
+    color:white;
+    font-family:HelveticaNeue-H1;
+    font-size:2.3em;
+    font-weight:100;
+    letter-spacing: 10pt;
+    line-height:29pt;
+}
+.team_2 .team_caption {
+    position: relative;
+    top: -47pt;
+    left: 10pt;
+    font-size:1.0em;
+    font-family: HelveticaNeue-P;
+    letter-spacing: 1pt;
+}
+.team_caption .team_caption_1 {
+    font-family:HelveticaNeue-H1;
+}
+.team_caption .team_caption_2 {
+    font-size:.8em;
+}
+.team_caption .team_caption_3 {
+    margin-top:15pt;
+    font-family:HelveticaNeue-H1;
+    font-size: 2.3em;
+}
+/* TOC */
+.catalog-page .table-of-contents-page {
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.catalog-page .legal-text {
+    font-size: 0.65em;
+    line-height: 1.1em;
+}
+.catalog-page .legal-text p {
+    margin-top: 0.5em;
+    margin-bottom: 0px;
+}
+.catalog-page .table-of-contents-page .inner-content {
+    padding-left: 15%;
+    padding-right: 10%;
+    padding-top: 15%;
+    height: 73%;
+    width: 70%;
+    margin-top: 10%;
+    color: #FFF;
+}
+.catalog-page .table-of-contents-page .inner-content_1 {
+    margin-top:10%;
+    padding-top:15%;
+    width:70%;
+    height:70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    color:white;
+    position:absolute;
+}
+.catalog-page .table-of-contents-page .toc-section {
+    border-bottom: #555555 1px solid;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    min-height: 8%;
+}
+.catalog-page .table-of-contents-page .toc-section .h1{
+    display:inline-block;
+}
+.catalog-page .table-of-contents-page .page-number {
+    float: right;
+}
+.catalog-page .table-of-contents-page h1 {
+    display: block;
+    float: left;
+}
+.catalog-page .table-of-contents-page h2 {
+    display: block;
+    line-height: 1.5em;
+}
+.catalog-page .table-of-contents-page h3 {
+    display: block;
+    line-height: 1.8em;
+}
+.catalog-page .table-of-contents-page .sub-title{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+/* Product Widget */
+.productWidget .text-block .red {
+    color: #C22;
+}
+/* IPad 2 & Mini Landscape*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape){
+    .catalog-page .catalog-cover-page .page-content {
+        background: url("cover_art_landscape.jpg");
+    }
+    .catalog-page .story_inner > dl > dd.techInfo {
+        font-family: HelveticaNeue-P;
+        font-size: .82em;
+    }
+
+    .catalog-page .story_inner dd {
+        line-height: 1em;
+    }
+
+    .catalog-page p {
+        font-family: HelveticaNeue-P;
+        font-size: .85em;
+        line-height: 1.1em;
+    }
+    .catalog-page .story-inner p {
+        font-family: HelveticaNeue-P;
+        font-size: .85em;
+        line-height: 1.1em;
+    }
+    span.sub-title{
+        margin-left:15px;
+        font-size:10px;
+    }
+    .catalog-page .productGrid .img_container{
+        top: 4%;
+    }
+    .story_4 .story_inner > dl {
+        margin-top: -2%;
+    }
+    .catalog-page .story_inner > dl > dd.techInfoFunction{
+        margin:0;
+        line-height:1em;
+        font-size:0.8em;
+    }
+    .catalog-page .story_inner > dl > dd.techInfoFunction > dl{
+        margin:0;
+    }
+    .story_4 dd{
+        margin:0 0 5px 0;
+    }
+    .gilbert_story_page_2 p {
+        line-height: 1.2em;
+        font-size: .85em;
+    }
+    .gilbert_story_page_2 h1 {
+        font-size: 2.1em;
+    }
+    .story_page{
+        background: url("story_paper_landscape.jpg");
+    }
+    .signature_2 .signature_cover_right{
+        background: url("signature_style_photo_right_landscape.jpg");
+    }
+    .signature_2 .signature_cover_left{
+        background: url("signature_style_photo_left_landscape.jpg");
+    }
+    .gilbert_story_page_1.story_page{
+        background: url("gilbert_background_left_landscape.jpg");
+    }
+    .gilbert_story_page_2.story_page{
+        background: url("gilbert_background_right_landscape.jpg");
+    }
+    .gilbert_story_page_2.story_page .story_person{
+        background: url("crockett_story_person.jpg");
+    }
+    .chima_intro{
+        background: url("chima_intro_story_person_landscape.jpg");
+    }
+    .rowley_intro{
+        background: url("rowley_img.jpg");
+    }
+    .aveperson{
+        background: url("AVE_story_person_landscape.jpg");
+    }
+    .story_page.no-mesh{
+        background: url("hero_paper_landscape.jpg") no-repeat;
+    }
+    .catalog-page .table-of-contents-page-left {
+        background: url("TOC_background_left_landscape.jpg") no-repeat right center;
+        background-size: cover !important;
+    }
+    .catalog-page .table-of-contents-page-right {
+        background: url("TOC_background_right_landscape.jpg") no-repeat left center;
+        background-size: cover !important;
+    }
+    .askate_1 .askate_left{
+        background: url("askate_era_laceless_pro_left_landscape.jpg");
+    }
+    .askate_2 .askate_right{
+        background: url("askate_era_laceless_pro_right_landscape.jpg");
+    }
+    .story_page.no-mesh.paper{
+        background: url("paper_landscape.jpg") no-repeat;
+    }
+    .cablitestory{
+        background: url("cab_lite_story_person_landscape.jpg") no-repeat;
+    }
+    .proclassics_1 .proclassics_background{
+        background: url("pro_classics_left_landscape.jpg");
+    }
+    .proclassics_2 .proclassics_background{
+        background: url("pro_classics_right_landscape.jpg");
+    }
+    .apparel_1 .apparel_left{
+        background: url("style_intro_apparel_1_left_landscape.jpg");
+    }
+    .apparel_2 .apparel_right{
+        background: url("style_intro_apparel_1_right_landscape.jpg");
+    }
+    .apparel_3 .av78_stencil{
+        background: url("style_intro_apparel_3_left_landscape.jpg");
+    }
+    .apparel_4 .apparel_right{
+        background: url("style_intro_apparel_3_right_landscape.jpg");
+    }
+    .team_1 .team_cover{
+        background: url("team_styles_left_landscape.jpg");
+    }
+    .team_2 .team_cover{
+        background: url("team_styles_right_landscape.jpg");
+    }
+}
+
+/* IPad 2 & Mini Portrait*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait){
+    .catalog-page .catalog-cover-page .page-content {
+        background: url("cover_art_portrait.jpg");
+    }
+    .catalog-page .productGrid .img_container{
+        top: 8%;
+        right: 4%;
+    }
+    .story_3 .story_page dl{
+        margin-bottom: 15%;
+    }
+    .story_4 dd{
+        margin:0;
+    }
+    .story_page{
+        background: url("story_paper_portrait.jpg");
+    }
+    .signature_2 .signature_cover_right{
+        background: url("signature_style_photo_right_portrait.jpg");
+    }
+    .signature_2 .signature_cover_left{
+        background: url("signature_style_photo_left_portrait.jpg");
+    }
+    .gilbert_story_page_1.story_page{
+        background: url("gilbert_background_left_portrait_2x.jpg");
+    }
+    .gilbert_story_page_2.story_page{
+        background: url("gilbert_background_right_portrait_2x.jpg");
+    }
+    .gilbert_story_page_2.story_page .story_person{
+        background: url("crockett_story_person.jpg");
+    }
+    .chima_intro{
+        background: url("chima_intro_story_person_landscape.jpg");
+    }
+    .rowley_intro{
+        background: url("rowley_img.jpg");
+    }
+    .aveperson{
+        background: url("AVE_story_person_landscape.jpg");
+    }
+    .story_page.no-mesh{
+        background: url("hero_paper_portrait.jpg") no-repeat;
+    }
+    .catalog-page .table-of-contents-page-left {
+        background: url("TOC_background_left_portrait.jpg") no-repeat right center;
+        background-size: cover !important;
+    }
+    .catalog-page .table-of-contents-page-right {
+        background: url("TOC_background_right_portrait.jpg") no-repeat left center;
+        background-size: cover !important;
+    }
+    .askate_1 .askate_left{
+        background: url("askate_era_laceless_pro_left_portrait.jpg");
+    }
+    .askate_2 .askate_right{
+        background: url("askate_era_laceless_pro_right_portrait.jpg");
+    }
+    .story_page.no-mesh.paper{
+        background: url("paper_landscape.jpg") no-repeat;
+    }
+    .cablitestory{
+        background: url("cab_lite_story_person_landscape.jpg") no-repeat;
+    }
+    .proclassics_1 .proclassics_background{
+        background: url("pro_classics_left_portrait.jpg");
+    }
+    .proclassics_2 .proclassics_background{
+        background: url("pro_classics_right_portrait.jpg");
+    }
+    .apparel_1 .apparel_left{
+        background: url("style_intro_apparel_1_left_portrait.jpg");
+    }
+    .apparel_2 .apparel_right{
+        background: url("style_intro_apparel_1_right_portrait.jpg");
+    }
+    .apparel_3 .av78_stencil{
+        background: url("style_intro_apparel_3_left_portrait.jpg");
+    }
+    .apparel_4 .apparel_right{
+        background: url("style_intro_apparel_3_right_portrait.jpg");
+    }
+    .team_1 .team_cover{
+        background: url("team_styles_left_portrait.jpg");
+    }
+    .team_2 .team_cover{
+        background: url("team_styles_right_portrait.jpg");
+    }
+}
+/* IPad Retina Landscape*/
+@media only screen{
+    .catalog-page .catalog-cover-page .page-content {
+        background: url("cover_art_landscape_2x.jpg");
+    }
+    .story_page{
+        background: url("story_paper_landscape_2x.jpg");
+    }
+    .signature_2 .signature_cover_right{
+        background: url("signature_style_photo_right_landscape_2x.jpg");
+    }
+    .signature_2 .signature_cover_left{
+        background: url("signature_style_photo_left_landscape_2x.jpg");
+    }
+    .gilbert_story_page_1.story_page{
+        background: url("gilbert_background_left_landscape_2x.jpg");
+    }
+    .gilbert_story_page_2.story_page{
+        background: url("gilbert_background_right_landscape_2x.jpg");
+    }
+    .gilbert_story_page_2.story_page .story_person{
+        background: url("crockett_story_person_2x.jpg");
+    }
+    .chima_intro{
+        background: url("chima_intro_story_person_landscape_2x.jpg");
+    }
+    .rowley_intro{
+        background: url("rowley_img_2x.jpg");
+    }
+    .aveperson{
+        background: url("AVE_story_person_landscape_2x.jpg");
+    }
+    .story_page.no-mesh{
+        background: url("hero_paper_landscape_2x.jpg") no-repeat;
+    }
+    .catalog-page .table-of-contents-page-left {
+        background: url("TOC_background_left_landscape_2x.jpg") no-repeat right center;
+        background-size: cover !important;
+    }
+    .catalog-page .table-of-contents-page-right {
+        background: url("TOC_background_right_landscape_2x.jpg") no-repeat left center;
+        background-size: cover !important;
+    }
+    .askate_1 .askate_left{
+        background: url("askate_era_laceless_pro_left_landscape_2x.jpg");
+    }
+    .askate_2 .askate_right{
+        background: url("askate_era_laceless_pro_right_landscape_2x.jpg");
+    }
+    .story_page.no-mesh.paper{
+        background: url("paper_landscape_2x.jpg") no-repeat;
+    }
+    .cablitestory{
+        background: url("cab_lite_story_person_landscape_2x.jpg") no-repeat;
+    }
+    .proclassics_1 .proclassics_background{
+        background: url("pro_classics_left_landscape_2x.jpg");
+    }
+    .proclassics_2 .proclassics_background{
+        background: url("pro_classics_right_landscape_2x.jpg");
+    }
+    .apparel_1 .apparel_left{
+        background: url("style_intro_apparel_1_left_landscape_2x.jpg");
+    }
+    .apparel_2 .apparel_right{
+        background: url("style_intro_apparel_1_right_landscape_2x.jpg");
+    }
+    .apparel_3 .av78_stencil{
+        background: url("style_intro_apparel_3_left_landscape_2x.jpg");
+    }
+    .apparel_4 .apparel_right{
+        background: url("style_intro_apparel_3_right_landscape_2x.jpg");
+    }
+    .team_1 .team_cover{
+        background: url("team_styles_left_landscape_2x.jpg");
+    }
+    .team_2 .team_cover{
+        background: url("team_styles_right_landscape_2x.jpg");
+    }
+}
+/* iPad Retina Portrait and browser*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .catalog-page .catalog-cover-page .page-content {
+        background: url("cover_art_portrait_2x.jpg");
+    }
+    .story_page{
+        background: url("story_paper_portrait_2x.jpg");
+    }
+    .signature_2 .signature_cover_right{
+        background: url("signature_style_photo_right_portrait_2x.jpg");
+    }
+    .signature_2 .signature_cover_left{
+        background: url("signature_style_photo_left_portrait_2x.jpg");
+    }
+    .gilbert_story_page_1.story_page{
+        background: url("gilbert_background_left_portrait_2x.jpg");
+    }
+    .gilbert_story_page_2.story_page{
+        background: url("gilbert_background_right_portrait_2x.jpg");
+    }
+    .gilbert_story_page_2.story_page .story_person{
+        background: url("crockett_story_person_2x.jpg");
+    }
+    .chima_intro{
+        background: url("chima_intro_story_person_landscape_2x.jpg");
+    }
+    .rowley_intro{
+        background: url("rowley_img_2x.jpg");
+    }
+    .aveperson{
+        background: url("AVE_story_person_landscape_2x.jpg");
+    }
+    .story_page.no-mesh{
+        background: url("hero_paper_portrait_2x.jpg") no-repeat;
+    }
+    .catalog-page .table-of-contents-page-left {
+        background: url("TOC_background_left_portrait_2x.jpg") no-repeat right center;
+        background-size: cover !important;
+    }
+    .catalog-page .table-of-contents-page-right {
+        background: url("TOC_background_right_portrait_2x.jpg") no-repeat left center;
+        background-size: cover !important;
+    }
+    .askate_1 .askate_left{
+        background: url("askate_era_laceless_pro_left_portrait_2x.jpg");
+    }
+       .askate_2 .askate_right{
+        background: url("askate_era_laceless_pro_right_portrait_2x.jpg");
+    }
+    .story_page.no-mesh.paper{
+        background: url("paper_landscape_2x.jpg") no-repeat;
+    }
+    .cablitestory{
+        background: url("cab_lite_story_person_landscape_2x.jpg") no-repeat;
+    }
+    .proclassics_1 .proclassics_background{
+        background: url("pro_classics_left_portrait_2x.jpg");
+    }
+    .proclassics_2 .proclassics_background{
+        background: url("pro_classics_right_portrait_2x.jpg");
+    }
+    .apparel_1 .apparel_left{
+        background: url("style_intro_apparel_1_left_portrait_2x.jpg");
+    }
+    .apparel_2 .apparel_right{
+        background: url("style_intro_apparel_1_right_portrait_2x.jpg");
+    }
+    .apparel_3 .av78_stencil{
+        background: url("style_intro_apparel_3_left_portrait_2x.jpg");
+    }
+    .apparel_4 .apparel_right{
+        background: url("style_intro_apparel_3_right_portrait_2x.jpg");
+    }
+    .team_1 .team_cover{
+        background: url("team_styles_left_portrait_2x.jpg");
+    }
+    .team_2 .team_cover{
+        background: url("team_styles_right_portrait_2x.jpg");
+    }
+}

@@ -1,0 +1,6 @@
+<div class="story_page">
+     <div class="story_inner">
+         <div class="story_person tnt_five_story" base-path="{{pagedata.rootCatalogPath}}">
+         </div>
+     </div>
+</div>

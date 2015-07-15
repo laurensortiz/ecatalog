@@ -1,0 +1,257 @@
+<div class="assortment-list-page view-content">
+  <input type="text" ng-model="query.description" class="search-assortment" placeholder="{{languagesJSON['assortmentList.placeholder.search']}}"/>
+  <div class="assortments">
+    <div class="assortment-list-area">
+      <div class="container">
+        <div class="assortment-container">
+          <div ng-repeat="assortment in listOfAssortments | orderBy:'-lastUpdatedTime' | filter:query" class="span6 assortment"
+               ng-click="openAssortment(assortment[0].id)" repeat-done="repeatDone()">
+            <span class="assortment-description" long-tap-to-show-assortment-options="assortment" >{{assortment[0].group}}</span>
+          </div>
+          <div class="span6 assortment" ng-show="!(listOfAssortments | filter:query).length">
+            <span class="assortment-description">{{languagesJSON['assortmentList.nofound']}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="btn btn-large btn-block new" ng-click="openNewAssortmentDialog()" type="button" ng-hide="!listOfAssortments">
+      {{languagesJSON['assortmentList.new']}}</a>
+  <!-- Dialog Box for duplicating Assortment starts -->
+  <div modal="duplicateAssortmentDialogShouldBeOpen" close="closeDuplicateAssortmentDialog()" options="modalOpts">
+    <div class="modal-header ui-bar-c ui-corner-top modal-header-text-align">
+      <button type="button" class="close" ng-click="closeDuplicateAssortmentDialog()"></button>
+      <h3>
+          {{languagesJSON['assortmentList.duplicate']}}
+      </h3>
+    </div>
+    <form name="duplicate_assortment_form" ng-submit="duplicateAction()">
+      <div class="modal-body  ui-body-c ui-overlay-c">
+        <div class="control-group">
+          <label class="control-label" for="inputDescription">
+            <h4>{{languagesJSON['assortmentList.duplicate.description']}}</h4></label>
+          <div class="controls">
+            <div class="">
+              <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-c">
+                <input name="description" type="text" id="inputDescription" ng-model='duplicateAssortmentGroup'
+                       class="big-box ui-input-text ui-body-c ng-pristine ng-valid" ng-required="true"
+                       ng-minlength="1" ng-maxlength="100">
+              </div>
+            </div>
+            <div class="form-error-message"
+                 ng-show="duplicate_assortment_form.description.$error.maxlength || duplicate_assortment_form.description.$error.minlength">
+                {{languagesJSON['assortmentList.duplicate.error']}}
+            </div>
+            <br>
+            <div class="row">
+              <div class="span1 span1-text-alignments"><input type="checkbox" ng-model="duplicateQuantities"></div>
+              <div class="span11"><h4>{{languagesJSON['assortmentList.duplicate.original.qty']}}</h4></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer bottom">
+        <button type="submit" ng-disabled="duplicate_assortment_form.$invalid"
+                class="btn btn-large btn-block btn-primary">{{languagesJSON['assortmentList.duplicate.save']}}
+        </button>
+        <button type="button" class="btn btn-large btn-block btn-inverse"
+                ng-click="closeDuplicateAssortmentDialog()">
+            {{languagesJSON['assortmentList.duplicate.cancel']}}
+        </button>
+      </div>
+    </form>
+  </div>
+  <!-- Dialog Box for duplicating Assortment ends -->
+  <!-- Dialog Box for new Assortment starts -->
+  <div modal="newAssortmentDialogShouldBeOpen" close="closeNewAssortmentDialog()" options="modalOpts">
+    <div class="modal-header ui-bar-c ui-corner-top modal-header-text-align">
+      <button type="button" class="close" ng-click="closeNewAssortmentDialog()"></button>
+      <h3>
+          {{languagesJSON['assortmentList.new.description.tittle']}}
+      </h3>
+    </div>
+    <form name="new_assortment_form" ng-submit="newAssortmentAction()">
+      <div class="modal-body ui-body-c ui-overlay-c">
+
+        <div class="control-group">
+          <label class="control-label" for="inputDescription">
+            <h4>
+                {{languagesJSON['assortmentList.new.description']}}
+            </h4></label>
+          <div class="controls">
+            <div class="">
+              <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-c">
+                <input name="description" type="text" id="inputDescription" placeholder="New Assortment"
+                       ng-model="newAsssortmentDescription"
+                       title="Length of description should be between 1-100 characters." ng-required="true"
+                       ng-minlength="1" ng-maxlength="100"
+                       class="big-box ui-input-text ui-body-c ng-pristine ng-valid"
+                       required="required"
+                       ui-event="{ keypress : 'verifyAssortmentDescriptionLength($event)' } ">
+              </div>
+            </div>
+            <div class="form-error-message"
+                 ng-show="newAsssortmentDescription.length >= 100">
+              Length of description should be between 1-100 characters.
+            </div>
+          </div>
+        </div>
+        <div>
+          <br/>
+        <div>
+            <h4>
+                {{languagesJSON['assortmentList.new.select.acc']}}
+            </h4>
+        </div>
+        <div class="ui-select">
+            <div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span"
+                 data-icon="arrow-d" data-iconpos="right" data-theme="c"
+                 class="ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-right ui-focus ui-btn-up-c">
+              <span class="ui-btn-inner ui-btn-corner-all">
+                <span class="ui-btn-text">
+                  <span ng-bind="customerTier.name"></span>
+                </span>
+                <span class="ui-icon ui-icon-arrow-d ui-icon-shadow">&nbsp;</span>
+              </span>
+              <select ng-model="customerTier" ng-options="tier.name for tier in customerTiers"
+                      name="select-choice-c" id="select-choice-c">
+              </select>
+            </div>
+        </div>
+      </div>
+
+    </div>
+      <div class="assortment-view">
+          <button type="button" class="btn" ng-click="showWhiteBoard = true">White Board</button>
+          <span>OR</span>
+          <button type="button" class="btn" ng-click="showWhiteBoard = false">Linesheet</button>
+      </div>
+
+      <div class="modal-footer bottom">
+        <button type="submit" ng-disabled="new_assortment_form.$invalid"
+                class="btn btn-large btn-block btn-primary">{{languagesJSON['assortmentList.new.button.create']}}
+        </button>
+        <button type="button" class="btn btn-large btn-block btn-inverse" ng-click="closeNewAssortmentDialog()">
+            {{languagesJSON['assortmentList.new.button.cancel']}}
+        </button>
+
+      </div>
+    </form>
+
+  </div>
+  <!-- Dialog Box for new Assortment ends -->
+
+  <!-- Dialog Box for Renaming the assortment starts -->
+  <div modal="RenamingDialogShouldBeOpen" close="closeRenamingDialog()" options="modalOpts">
+
+    <div class="modal-header ui-bar-c ui-corner-top modal-header-text-align">
+      <button type="button" class="close" ng-click="closeRenamingDialog()"></button>
+      <h3>
+          {{languagesJSON['assortmentList.rename']}}
+      </h3>
+    </div>
+    <form name="rename_assortment_form" ng-submit="renameAction()">
+      <div class="modal-body form-horizontal ui-body-c ui-overlay-c">
+
+        <div class="control-group">
+          <div class="row">
+            <label class="control-label ui-input-text" for="inputEmail">
+              <h4> &nbsp; &nbsp; &nbsp; {{languagesJSON['assortmentList.rename.description']}}</h4>
+            </label>
+          </div>
+          <div class="">
+            <div class="">
+              <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-c">
+                <input name="description" type="text" id="inputEmail" placeholder="Assortment Name"
+                       ng-model="selectedAssortment.newName"
+                       ng-required="true"
+                       ng-minlength="1" ng-maxlength="100"
+                       class="big-box ui-input-text ui-body-c ng-pristine ng-valid">
+              </div>
+            </div>
+
+            <div class="form-error-message"
+                 ng-show="rename_assortment_form.description.$error.maxlength || rename_assortment_form.description.$error.minlength">
+                {{languagesJSON['assortmentList.rename.error']}}
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="modal-footer bottom">
+        <button type="submit" ng-disabled="rename_assortment_form.$invalid"
+                class="btn btn-large btn-block btn-primary"
+                value="Save">
+            {{languagesJSON['assortmentList.rename.save']}}
+        </button>
+        <button type="button" class="btn btn-large btn-block btn-inverse" ng-click="closeRenamingDialog()">
+            {{languagesJSON['assortmentList.rename.cancel']}}
+        </button>
+      </div>
+    </form>
+  </div>
+  <!-- Dialog Box for Renaming the assortment ends -->
+
+  <!-- Dialog Box for Deleting the assortment starts -->
+  <div modal="DeletingDialogShouldBeOpen" close="closeDeletingDialog()" options="modalOpts">
+
+    <div class="modal-header ui-bar-c ui-corner-top modal-header-text-align">
+      <button type="button" class="close" ng-click="closeDeletingDialog()"></button>
+      <h3>
+          {{languagesJSON['assortmentList.delete']}}
+      </h3>
+    </div>
+    <div class="modal-body  ui-body-c ui-overlay-c">
+      <h4>
+          {{languagesJSON['assortmentList.delete.are.you.sure']}} {{selectedAssortment[0].group}}?
+      </h4>
+
+
+    </div>
+    <div class="modal-footer bottom">
+      <form ng-submit="deleteAction()">
+        <button type="submit" class="btn btn-large btn-block btn-primary">{{languagesJSON['assortmentList.delete.yes']}}</button>
+        <button type="button" class="btn btn-large btn-block btn-inverse" ng-click="closeDeletingDialog()">
+            {{languagesJSON['assortmentList.delete.no']}}
+        </button>
+      </form>
+    </div>
+
+  </div>
+  <!-- Dialog Box for Deleting the assortment ends -->
+
+  <!-- Pop Over Container starts -->
+  <div class=" assortment-pop-over-container modal-backdrop" ng-click="hidePopUp()">
+    <div class="mypopover ">
+      <div class="mypopover-content">
+        <div class="arrow">
+          <span>
+          </span>
+        </div>
+        <div class="mypopover-body">
+          <ul>
+            <li>
+              <button class="btn btn-large btn-block" type="button" ng-click="openRenamingDialog()">
+                  {{languagesJSON['assortmentList.rename.input.name']}}
+              </button>
+            </li>
+            <li>
+              <button class="btn btn-large btn-block" type="button"
+                      ng-click="openDuplicateAssortmentDialog()">
+                  {{languagesJSON['assortmentList.duplicate.input.name']}}
+              </button>
+            </li>
+            <li>
+              <button class="btn btn-large btn-block btn-danger" type="button"
+                      ng-click="openDeletingDialog()">
+                  {{languagesJSON['assortmentList.delete.input.name']}}
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pop Over container ends -->
+</div>

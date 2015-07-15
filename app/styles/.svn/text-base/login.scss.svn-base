@@ -1,0 +1,139 @@
+#ct-form {
+  width: 700px;
+  text-align: center;
+  margin: auto;
+  .ui-input-text {
+    color: #FFFFFF !important;
+  }
+}
+
+#ct-login {
+  background: url(../img/bg_collage.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#ct-head {
+  padding: 5px 0;
+  font-family: SourceSansPro, sans-serif;
+  text-align: center;
+}
+
+#ct-head span {
+  font-size: 20px;
+}
+
+#ct-foot {
+  text-align: center;
+  background: none;
+  border: none;
+}
+
+#ct-form .ui-bar-a {
+  padding: 15px 10px;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+#ct-form .ui-bar-a .bar-text {
+  font-size: 25px;
+}
+
+#ct-form img {
+  max-width: 100%;
+}
+
+#login-form label.ui-input-text {
+  text-align: right;
+  margin-right: 10px;
+  line-height: 3em;
+}
+
+#login-form .ct-chkbx, #login-form input[type=submit] {
+  color: #94999c;
+}
+
+#login-form .ct-chkbx {
+  font-size: 0.35em;
+}
+
+.ui-btn-text {
+  font-size: .75em;
+}
+
+.ct-label.ui-input-text {
+  font-size: 1em;
+  line-height: 2.75em;
+}
+
+.ui-corner-top {
+  -webkit-border-radius: .3em .3em 0 0 /*{global-radii-blocks}*/;
+  border-radius: .3em .3em 0 0 /*{global-radii-blocks}*/;
+}
+
+.ui-btn-corner-5.ui-btn-corner-all {
+  -webkit-border-radius: 5px !important /*{global-radii-blocks}*/;
+  border-radius: 5px !important /*{global-radii-blocks}*/;
+}
+
+#ct-foot {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.vans-logo {
+  width: 321px;
+  height: 150px;
+}
+
+.form-body-container {
+  padding-top: 20px;
+
+  .align-left {
+    text-align: left;
+  }
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+.logo-img-container {
+  width: 325px;
+}
+
+.form-horizontal .control-label {
+  width: auto;
+}
+
+.form-horizontal .controls {
+  margin-left: 100px;
+}
+
+.form-horizontal .control-group {
+  margin-bottom: 5px;
+}
+
+#login-form {
+  margin-bottom: 0;
+  margin-left: 5px;
+  padding-right: 5px;
+}
+
+#login-form input[type=text], #login-form input[type=password] {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 18px;
+  text-align: center;
+  margin: 5px 0 10px 0;
+  display: block;
+}

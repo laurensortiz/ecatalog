@@ -1,0 +1,13 @@
+<div class="catalog-cover-page">
+    <div class="page-content"  base-path="{{pagedata.rootCatalogPath}}">
+        <div class="off_the_wall_title"  base-path="{{pagedata.rootCatalogPath}}">
+        </div>
+        <h1 class="catalog_title">
+            PRO SKATE
+            <br/>
+            Spring 2014
+        </h1>
+        <div class="off_the_wall_logo"  base-path="{{pagedata.rootCatalogPath}}">
+        </div>
+    </div>
+</div>

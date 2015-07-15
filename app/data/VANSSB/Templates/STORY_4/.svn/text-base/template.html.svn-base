@@ -1,0 +1,80 @@
+<div class="story_page story_4">
+    <div class="story_inner">
+        <div class="img_text_header"base-path="{{pagedata.rootCatalogPath}}">
+        </div>
+        <dl>
+            <dt class="image-definition techoutsole" base-path="{{pagedata.rootCatalogPath}}">
+            </dt>
+            <dd class="techInfo techInfoFunction clearfix">
+                <dl>
+                    <h4>
+                      GRIP
+                    </h4>
+                    <dt>
+                        Vans ORIGINAL WAFFLE Outsole
+                    </dt>
+                    <dd>
+                        Back in ’66, Paul Van Doren made the first soles of his new shoes twice as thick so they would wear longer and, unlike other shoe manufacturers, he used pure crepe rubber with no filler. That decision ended up defining the company when the world’s first skateboarders discovered how Vans’ now-famous ORIGINAL WAFFLE outsole gum rubber compound let them feel their board while staying firmly connected to it.
+                    </dd>
+                </dl>
+            </dd>
+            <dt class="image-definition double-tall durability" base-path="{{pagedata.rootCatalogPath}}">
+            </dt>
+            <dd class="double-tall techInfo techInfoFunction clearfix">
+                <dl>
+                    <h4>
+                      DURABILITY
+                    </h4>
+                    <dt>
+                        DURACAP™ Underlays
+                    </dt>
+                    <dd>
+                        With added reinforcement rubber underlays in high-wear areas, Vans PRO SKATE shoes featuring DURACAP™ rubber underlays are built to withstand the abuse of the Vans Pro skateboarding team, and save everyday skateboarders money and time.
+                    </dd>
+                    <dt>
+                        RAPIDWELD
+                    </dt>
+                    <dd>
+                        This progressive upper panel construction replaces the need for conventional stitching in high abrasion areas, utilizing a thin film between panels that fuses them together when pressed and heated to create an extremely strong bond between panels which is more durable, flexible and lighter than conventional stitching.
+                    </dd>
+                </dl>
+            </dd>
+            <dt class="image-definition double-tall comfort" base-path="{{pagedata.rootCatalogPath}}">
+            </dt>
+            <dd class="double-tall techInfo techInfoFunction clearfix">
+                <dl>
+                    <h4>
+                      COMFORT
+                    </h4>
+                    <dt>
+                        FLEX &amp; FIT Upper Patterning
+                    </dt>
+                    <dd>
+                        By placing the contact point of the tongue’s edge past the sensitive part of your foot, the shoe flexes better without interruption, making it way more COMFORTABLE. Uninterrupted flex also eliminates hot spots, while the secondary construction material reinforces the ollie area to improve DURABILITY.
+                    </dd>
+                    <dt>
+                        LUXLINER™
+                    </dt>
+                    <dd>
+                        This advanced liner system improves comfort, fit and responsiveness by enabling the shoe to conform like a glove to the shape and movement of the foot, increasing air flow and breathability while reducing the chance of hot spots or pinching in high flex zones.
+                    </dd>
+                </dl>
+            </dd>
+            <dt class="image-definition heelcup" base-path="{{pagedata.rootCatalogPath}}">
+            </dt>
+            <dd class="techInfo techInfoFunction clearfix">
+                <dl>
+                    <h4>
+                      STABILITY
+                    </h4>
+                    <dt>
+                        MOLDED HEEL POCKET Inserts
+                    </dt>
+                    <dd>
+                        Anatomically-molded heel cup inserts are shaped to lock heels in place without the need for bulky foam padding.
+                    </dd>
+                </dl>
+            </dd>
+        </dl>
+    </div>
+</div>

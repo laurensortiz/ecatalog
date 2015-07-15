@@ -1,0 +1,32 @@
+<div class="proclassicsstyles_page proclassics_2">
+    <div class="proclassics_background" base-path="{{pagedata.rootCatalogPath}}"></div>
+    <div class="proclassics_header" base-path="{{pagedata.rootCatalogPath}}">
+    	<div class="header_1">
+            <span>Pro</span>Classics.
+        </div>
+        <div class="header_2">
+            The best. Only <span>better.</span>
+        </div>
+        <div class="bullet">ADVANCED CUSIONING</div>
+        <div class="bullet">INCREASED DURABILITY</div>
+        <div class="bullet">EXTRA REINFORCEMENT</div>
+        <div class="signature_logo" base-path="{{pagedata.rootCatalogPath}}"></div>
+    </div>
+    <div class="proclassics_content">
+    	<div class="content_header">PERFORMANCE UPGRADES:</div>
+        <div class="content_bullet">ULTRACUSH&trade; HD SOCKLINERS</div>
+        <div class="content_bullet">DURACAP&trade; TOE BUMPER UNDERLAYS</div>
+        <div class="content_bullet">DURACAP&trade; UPPER OLLIE UNDERLAYS</div>
+        <div class="content_paragraph">
+	        In 1977, Tony Alva modified the already classic Vans Authentic by adding collar 
+            padding and a heel cap for support to create the now-classic Vans Era, the first 
+            shoe designed by skaters specifically for skateboarding. A lot has changed since 
+            those early days of skateboarding. Enter PRO CLASSICS. The Vans PRO CLASSICS range 
+            includes the classic Vans styles you know and love but updated and upgraded under 
+            the hood to withstand the enhanced performance requirements of skateboarding these 
+            days. Identified by their distinctive PRO CLASSICS label package, Vans PRO CLASSICS 
+            are built to last longer with reinforced abrasion areas and provide the extra 
+            support and cushioning demanded by the world’s best professional skateboarders.
+        </div>
+    </div>
+</div>

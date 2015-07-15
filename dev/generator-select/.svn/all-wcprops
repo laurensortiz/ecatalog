@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/ecatalog/!svn/ver/1556/trunk/dev/generator-select
+END
+package.json
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/ecatalog/!svn/ver/1548/trunk/dev/generator-select/package.json
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/ecatalog/!svn/ver/1548/trunk/dev/generator-select/LICENSE
+END
+.travis.yml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/ecatalog/!svn/ver/1548/trunk/dev/generator-select/.travis.yml
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/ecatalog/!svn/ver/1548/trunk/dev/generator-select/.gitignore
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/ecatalog/!svn/ver/1548/trunk/dev/generator-select/README.md
+END
+.gitattributes
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/ecatalog/!svn/ver/1548/trunk/dev/generator-select/.gitattributes
+END
+.editorconfig
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/ecatalog/!svn/ver/1548/trunk/dev/generator-select/.editorconfig
+END
+.jshintrc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/ecatalog/!svn/ver/1548/trunk/dev/generator-select/.jshintrc
+END

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repos/ecatalog/!svn/ver/1707/trunk/test/mock
+END
+fileSync.js
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/ecatalog/!svn/ver/1626/trunk/test/mock/fileSync.js
+END
+displayService.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/ecatalog/!svn/ver/1703/trunk/test/mock/displayService.js
+END
+assortmentServiceTab.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/ecatalog/!svn/ver/1707/trunk/test/mock/assortmentServiceTab.js
+END
+helper.js
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/ecatalog/!svn/ver/1657/trunk/test/mock/helper.js
+END
+OfflineManager.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/ecatalog/!svn/ver/1692/trunk/test/mock/OfflineManager.js
+END
+userService.js
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/ecatalog/!svn/ver/1701/trunk/test/mock/userService.js
+END
+assortmentCurrentService.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/ecatalog/!svn/ver/1707/trunk/test/mock/assortmentCurrentService.js
+END
+assortmentService.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/ecatalog/!svn/ver/1699/trunk/test/mock/assortmentService.js
+END
+productService.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/ecatalog/!svn/ver/1689/trunk/test/mock/productService.js
+END
+assortmentTabModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/ecatalog/!svn/ver/1699/trunk/test/mock/assortmentTabModel.js
+END
+httpCapi.js
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/ecatalog/!svn/ver/1670/trunk/test/mock/httpCapi.js
+END
+assortmentCurrentModel.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/ecatalog/!svn/ver/1707/trunk/test/mock/assortmentCurrentModel.js
+END
+catalogService.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/ecatalog/!svn/ver/1673/trunk/test/mock/catalogService.js
+END
+canConnect.js
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/ecatalog/!svn/ver/1608/trunk/test/mock/canConnect.js
+END
+authentication.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/ecatalog/!svn/ver/1638/trunk/test/mock/authentication.js
+END

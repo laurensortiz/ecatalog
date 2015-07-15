@@ -1,0 +1,100 @@
+10
+
+dir
+1709
+https://lortiz@svn.conductiv.com/repos/ecatalog/trunk/app/components
+https://lortiz@svn.conductiv.com/repos/ecatalog
+
+
+
+2013-09-09T22:01:10.686664Z
+1565
+vibhor.mahajan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+eff5840c-d368-46f3-b2fb-872a05a52732
+
+angular
+dir
+
+angular-bootstrap
+dir
+
+angular-cookies
+dir
+
+angular-dragdrop
+dir
+
+angular-http-auth
+dir
+
+angular-mocks
+dir
+
+angular-resource
+dir
+
+angular-sanitize
+dir
+
+angular-scenario
+dir
+
+angular-ui
+dir
+
+angular-ui-select2
+dir
+
+es5-shim
+dir
+
+jquery
+dir
+
+jquery-migrate
+dir
+
+jquery-mobile
+dir
+
+jquery-mousewheel
+dir
+
+jquery-tmpl
+dir
+
+jquery-ui
+dir
+
+jquery.scrollTo
+dir
+
+json3
+dir
+
+rosie
+dir
+
+select2
+dir
+
+slidernav
+dir
+
+underscore
+dir
+

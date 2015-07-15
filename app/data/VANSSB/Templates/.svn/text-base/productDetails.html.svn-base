@@ -1,0 +1,14 @@
+<div class="product-image-container" pan-zoom>  <!-- panzoom enables the pinch-in pinch-out zoom -->
+  <img ng-src="{{productStyleImage}}">
+</div>
+<div class="popup-text-marketing-container">
+  <div class="product-text-container">
+    <h3>{{productStyle.name}}</h3>
+    Details
+    <ul>
+      <li>{{productStyle.styleCode}}</li>
+      <li>{{productStyle.connections.products[0].features[3].value}}</li>
+    </ul>
+  </div>
+  <div class="product-marketing-material-container"></div>
+</div>

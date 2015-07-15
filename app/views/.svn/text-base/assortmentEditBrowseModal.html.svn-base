@@ -1,0 +1,40 @@
+<bx-slider get-items="pages" current-page-index="currentlyDisplayedPageIndex" items-per-slide="pagesPerSlide"
+           reload-on-change-of="getItems()">
+    <page pagedata="page" ng-class="{'paired': $parent.slide.length > 1, 'catalog-page': true}"
+          ng-repeat="page in slide">
+    </page>
+</bx-slider>
+<div id="jqUISlider">
+    <div ng-click="openModal()" class="icon grid-icon">
+        &nbsp;
+    </div>
+    <div id="thumbnailContainer" ng-switch on="currentlyPreviewedPage">
+        <h2>
+            Page: {{pages[currentlyPreviewedPageIndex].masterCatalogPageNumber}}
+        </h2>
+    </div>
+    <jq-ui-slider current-page-index="currentlyDisplayedPageIndex" pages="pages"
+                  currently-previewed-page-index="currentlyPreviewedPageIndex">
+    </jq-ui-slider>
+    <form id="goToSlide">
+        <input class="input-mini" type="number" min="1" max="{{pages.length}}" ng-model="currentlyDisplayedPageNumber"
+               ng-model-onblur>
+        of {{pages.length}}
+    </form>
+</div>
+<div modal="modalShouldBeOpen" close="closeModal()" options="modalOptions">
+    <div class="close-modal">
+        <a ng-click="closeModal()">
+        </a>
+    </div>
+    <div class="modal-body">
+        <ul class="ui-thumbnails">
+            <li ng-repeat="page in pages" ng-click="popupNavigateToSlide(page)" class="ui-thumbnail">
+                <h2>
+                    Page: {{page.masterCatalogPageNumber}}
+                </h2>
+            </li>
+        </ul>
+    </div>
+
+</div>

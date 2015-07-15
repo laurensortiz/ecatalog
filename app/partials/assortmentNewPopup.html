@@ -1,0 +1,34 @@
+<div id="showNewAssortmentModal" modal="showNewAssortmentModal" close="closeAssortmentNewModal()" options="newAssortmentPopupOptions">
+    <div class="newAssortment">
+        <div class="modal-header ui-bar-c ui-corner-top center">
+            <h3>Create New Assortment</h3>
+        </div>
+        <div class="modal-body">
+           <h4>Assortment Name <span>*</span></h4>
+            <form name="create_New_Assortment" novalidate ng-submit="createNewAssortment()">
+                <div>
+                    <div class="control-group">
+                        <input type="text" autocapitalize="off" autocorrect="off" id="newAssortmentDescription"
+                           name="newAssortmentDescription" ng-model='$parent.newAsssortmentDescription'
+                           class="big-box ui-input-text ui-body-c ng-pristine "
+                           ng-required="true" ng-minlength="1" ng-maxlength="100"
+                           required="required"
+                           ui-event="{ keypress : 'verifyAssortmentDescriptionLength($event)' } " ng-enter/>
+                        <input type="reset" id="reset-name" ng-click="$parent.newAsssortmentDescription = ''"/>
+                    </div>
+                    <div class="form-error-message">
+                        <p>Field Cannot Contain Special Characters  <span></span></p>
+                    </div>
+                </div>
+                <button type="submit" ng-disabled="create_New_Assortment.$invalid" class="btn btn-large btn-block btn-primary">
+                    Create New
+                </button>
+
+                <button type="button"  class="btn btn-large btn-block btn-inverse" ng-click="closeAssortmentNewModal()">
+                    Cancel
+                </button>
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/ecatalog/!svn/ver/1705/trunk/app/scripts/services/sync
+END
+SyncManager.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/ecatalog/!svn/ver/1705/trunk/app/scripts/services/sync/SyncManager.js
+END
+WebKitAdapter.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/ecatalog/!svn/ver/1529/trunk/app/scripts/services/sync/WebKitAdapter.js
+END
+EntityDefinitions.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/services/sync/EntityDefinitions.js
+END
+HttpConnectionStatusInterceptor.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/services/sync/HttpConnectionStatusInterceptor.js
+END
+syncConfig.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/ecatalog/!svn/ver/1705/trunk/app/scripts/services/sync/syncConfig.js
+END
+QueueManager.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/ecatalog/!svn/ver/1547/trunk/app/scripts/services/sync/QueueManager.js
+END
+OfflineManager.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/ecatalog/!svn/ver/1667/trunk/app/scripts/services/sync/OfflineManager.js
+END

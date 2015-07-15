@@ -1,0 +1,163 @@
+/*#AssortmentLinesheetFeature{
+  overflow-y: scroll;
+}
+*/
+/* line 6, orderList.scss */
+.order-list-page .order-list-area {
+  height: 600px;
+  overflow-x: hidden;
+}
+@media only screen and (orientation: portrait) {
+  /* line 11, orderList.scss */
+  .order-list-page .order-list-area {
+    height: 770px;
+  }
+}
+/* line 16, orderList.scss */
+.order-list-page .order-container {
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 95%;
+}
+/* line 21, orderList.scss */
+.order-list-page .loader {
+  text-align: center;
+}
+/* line 25, orderList.scss */
+.order-list-page p.title {
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+/* line 31, orderList.scss */
+.order-list-page div.orders {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  margin: 95px 0 0 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 48, orderList.scss */
+.order-list-page div.order {
+  background-color: #2D2D2D;
+  border: 1px solid #858380;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.28), 0 1px rgba(255, 255, 255, 0.1) inset, 0 10px rgba(60, 60, 60, 0.3) inset, 0 10px 20px rgba(255, 255, 255, 0.1) inset, 0 -15px 30px rgba(0, 0, 0, 0.21) inset;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: normal;
+  opacity: 0.9;
+  margin: 5px;
+  border: 0px solid gray;
+  text-align: center;
+  padding: 20px 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  line-height: 1.2;
+  width: 94%;
+}
+/* line 68, orderList.scss */
+.order-list-page div.order .cust-name-and-po {
+  text-align: left;
+  vertical-align: top;
+}
+/* line 72, orderList.scss */
+.order-list-page div.order .span8 {
+  width: 50%;
+  float: left;
+}
+/* line 76, orderList.scss */
+.order-list-page div.order .unit-and-total {
+  float: right;
+  margin-right: 20px;
+  text-align: right;
+  width: 40%;
+}
+/* line 83, orderList.scss */
+.order-list-page div.order .bold {
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  /* line 48, orderList.scss */
+  .order-list-page div.order {
+    width: 70%;
+    margin: 10px auto;
+  }
+}
+/* line 92, orderList.scss */
+.order-list-page .search-order {
+  border-color: #808080;
+  border-radius: 10px 10px 10px 10px;
+  height: 25px;
+  left: 25%;
+  margin: -40px 0 0;
+  position: fixed;
+  text-align: center;
+  width: 50%;
+  z-index: 2;
+}
+/* line 103, orderList.scss */
+.order-list-page .order-description {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 108, orderList.scss */
+.order-list-page .title {
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 1px solid gray;
+  color: #FFFFFF;
+  height: 40px;
+  margin: 0 0 10px 30px;
+  text-align: left;
+  width: 93%;
+}
+/* line 118, orderList.scss */
+.order-list-page .row {
+  margin: 0;
+}
+/* line 121, orderList.scss */
+.order-list-page .warning-wrapper-list {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+  overflow: hidden;
+  padding: 0.25em 0.25em;
+}
+/* line 128, orderList.scss */
+.order-list-page .warning-wrapper-list .icon-warning {
+  float: left;
+  padding: 0 0.25em 0.25em 0;
+  display: inline-block;
+  line-height: 12px;
+  vertical-align: text-top;
+  background: none;
+}
+/* line 136, orderList.scss */
+.order-list-page .warning-wrapper-list p {
+  text-align: left !important;
+  font-size: 0.8em !important;
+  margin-bottom: 0 !important;
+}
+/* line 141, orderList.scss */
+.order-list-page .warning-wrapper-list.red {
+  background: rgba(204, 63, 56, 0.3);
+  border: 1px solid #cc3f38;
+}
+/* line 145, orderList.scss */
+.order-list-page .warning-wrapper-list.green {
+  background: rgba(9, 127, 54, 0.3);
+  border: 1px solid #097f36;
+}

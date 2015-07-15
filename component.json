@@ -1,0 +1,26 @@
+{
+  "name": "conductivEcatalog",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "~1.0.5",
+    "json3": "~3.2.4",
+    "es5-shim": "~2.0.5",
+    "angular-resource": "~1.0.5",
+    "angular-cookies": "~1.0.5",
+    "angular-sanitize": "~1.0.5",
+    "jquery": "~1.9.1",
+    "angular-ui": "~0.3.0",
+    "angular-bootstrap": "~0.3.0",
+    "underscore": "~1.4.4",
+    "angular-ui-select2": "~0.0.1",
+    "select2": "~3.3.2",
+    "jquery.scrollTo": "~1.4.5",
+    "angular-mocks": "~1.0.5",
+    "angular-scenario": "~1.0.5",
+    "rosie": "*"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.0.5",
+    "angular-scenario": "~1.0.5"
+  }
+}

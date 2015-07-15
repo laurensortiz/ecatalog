@@ -1,0 +1,56 @@
+.catalog-page {
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+
+  .gray-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    vertical-align: middle;
+  }
+}
+
+.single-page-render .catalog-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  max-width: 800px;
+
+}
+
+.catalog-page.paired {
+  float: left;
+  width: 50%;
+}
+
+.catalog-page.paired:last-child {
+  left: 50%;
+}
+
+.emptyCatalogAlert {
+  text-align: center;
+  color: #F00;
+}
+
+.catalog-navigation-link {
+  position: absolute;
+  font-size: 1.8em;
+  top: 50%;
+  margin-top: -.9em;
+  color: #333;
+}
+
+.catalog-navigation-link:hover {
+  color: #0088cc;
+}
+
+.catalog-navigation-link.next {
+  right: .9em;
+
+}
+
+.catalog-navigation-link.previous {
+  left: .9em;
+}

@@ -1,0 +1,60 @@
+<div class="story_page story_3">
+    <div class="story_inner">
+        <div class="img_text_header" base-path="{{pagedata.rootCatalogPath}}">
+        </div>
+        <dl>
+            <dt class="image-definition ultracrush" base-path="{{pagedata.rootCatalogPath}}">
+            </dt>
+            <dd class="clearfix techInfo">
+                <div class="tech_logo techlogo" base-path="{{pagedata.rootCatalogPath}}">
+                </div>
+                <dl>
+                    <h2>
+                    IMPACT
+                    </h2>
+                    <dt>
+                        ULTRACUSH HD Sockliner
+                    </dt>
+                    <dd>
+                        Vans’ polyurethane-based UltraCush HD footbed keeps the foot close to the board yet won’t pack out over time, providing our highest level of IMPACT cushioning.
+
+                    </dd>
+                </dl>
+            </dd>
+            <dt class="image-definition responsive"base-path="{{pagedata.rootCatalogPath}}">
+            </dt>
+            <dd class="clearfix techInfo">
+                <div class="tech_logo_lite" base-path="{{pagedata.rootCatalogPath}}">
+                </div>
+                <dl>
+                    <h2>
+                    RESPONSIVENESS
+                    </h2>
+                    <dt>
+                        ULTRACUSH LITE Sockliner
+                    </dt>
+                    <dd>
+                        Vans’ CMEVA-based UltraCush Lite low-profile foam footbed is ultralight and anatomically contoured to put the foot closer to the board for quick RESPONSIVENESS, providing our most natural fit and ride.
+                    </dd>
+                </dl>
+            </dd>
+            <dt class="image-definition techcomfort" base-path="{{pagedata.rootCatalogPath}}">
+            </dt>
+            <dd class="clearfix techInfo">
+                <div class="tech_logo ortholite" base-path="{{pagedata.rootCatalogPath}}">
+                </div>
+                <dl>
+                    <h2>
+                    COMFORT
+                    </h2>
+                    <dt>
+                        ORTHOLITE® Sockliner
+                    </dt>
+                    <dd>
+                        Light, predictable cushioning and foothold, OrthoLite® has antimicrobial, odor-eliminating properties for superior COMFORT.
+                    </dd>
+                </dl>
+            </dd>
+        </dl>
+    </div>
+</div>

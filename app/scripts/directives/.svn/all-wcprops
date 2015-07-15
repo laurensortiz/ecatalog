@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/ecatalog/!svn/ver/1673/trunk/app/scripts/directives
+END
+bxSlider.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/bxSlider.js
+END
+catalogNativationAction.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/catalogNativationAction.js
+END
+resize.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/resize.js
+END
+draggable-item.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/draggable-item.js
+END
+imageBlock.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/imageBlock.js
+END
+longTapToShowAssortmentOptions.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/longTapToShowAssortmentOptions.js
+END
+page.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/ecatalog/!svn/ver/1673/trunk/app/scripts/directives/page.js
+END
+customHmEvents.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/customHmEvents.js
+END
+numpad.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/numpad.js
+END
+commonFooter.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/ecatalog/!svn/ver/1529/trunk/app/scripts/directives/commonFooter.js
+END
+appAuthDirective.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/appAuthDirective.js
+END
+onLastEvent.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/onLastEvent.js
+END
+saveOnBlur.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/saveOnBlur.js
+END
+clickable.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/clickable.js
+END
+onFinishedCatalogsRender.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/onFinishedCatalogsRender.js
+END
+repeatDone.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/repeatDone.js
+END
+droppable.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/droppable.js
+END
+rightpanelitem.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/rightpanelitem.js
+END
+innerLoop.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/innerLoop.js
+END
+updatequantity.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/updatequantity.js
+END
+navbar.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/navbar.js
+END
+removeonleftswipe.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/removeonleftswipe.js
+END
+panZoom.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/panZoom.js
+END
+annotation.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/annotation.js
+END
+assortmentFooter.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/assortmentFooter.js
+END
+onFinishRender.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/onFinishRender.js
+END
+switchButton.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/switchButton.js
+END
+widget.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/ecatalog/!svn/ver/1529/trunk/app/scripts/directives/widget.js
+END
+ngEnter.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/ecatalog/!svn/ver/1529/trunk/app/scripts/directives/ngEnter.js
+END
+jqUiSlider.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/jqUiSlider.js
+END
+verticallyCenter.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/ecatalog/!svn/ver/1418/trunk/app/scripts/directives/verticallyCenter.js
+END

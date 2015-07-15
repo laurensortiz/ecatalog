@@ -1,0 +1,119 @@
+<!--suppress ALL -->
+<div class="container-fluid homeMenu view-content" id="HomeMenuFeature">
+  <div class="row-fluid">
+      <div class="span3 offset1">
+          <div class="pull-right">
+              <a class="btn btn-block dashboard-button catalog-dashboard" href="#/catalog/list">
+            <span class="button-text">
+              <span>
+                {{languagesJSON['home.menu.catalogs']}}
+              </span>
+            </span>
+              </a>
+          </div>
+      </div>
+      <div class="span7">
+          <div class="dashboard-button-extras">
+              <div class="dashboard-button-extras-container catalog-container">
+                  <a ng-click="browseCatalog(catalog.id)" class="catalog-button"
+                     ng-repeat="catalog in masterCatalogs" on-finished-catalogs-render>
+              <span class="catalog-button-wrapper">
+                <img class="extras-img" ng-hide="!catalog.name" ng-src="{{catalog.links['image']}}"/>
+              </span>
+              <span class="catalog-button-title">
+                {{catalog.name}}
+              </span>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row-fluid">
+      <div class="span3 offset1">
+          <div class="pull-right">
+              <a class="btn btn-block dashboard-button assortment-dashboard pull-right" href="#/assortment">
+            <span class="button-text">
+              <span>
+                {{languagesJSON['home.menu.assortments']}}
+              </span>
+            </span>
+              </a>
+          </div>
+      </div>
+      <div class="span7">
+          <div class="dashboard-button-extras">
+              <div class="dashboard-button-extras-container">
+                  <table>
+                      <tbody>
+                      <tr>
+                          <!--Expecting the assortments to be ordered descending by date automatically from server-->
+                          <td ng-repeat="assortment in listOfAssortments | orderBy:'-lastUpdatedTime' | limitTo: 10"
+                              class="assortment-menu"
+                              ng-click="defaultSelection(assortment.id)">
+                              <div class="assortments-name">
+                                  {{assortment.description}}
+                              </div>
+                          </td>
+                      </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row-fluid">
+      <div class="span3 offset1">
+          <div class="pull-right">
+              <a class="btn btn-block dashboard-button order-dashboard" href="#/order">
+            <span class="button-text">
+              <span>
+                {{languagesJSON['home.menu.orders']}}
+              </span>
+            </span>
+              </a>
+          </div>
+      </div>
+      <div class="span7">
+          <div class="dashboard-button-extras">
+              <div class="dashboard-button-extras-container">
+                  <table>
+                      <tbody>
+                      <tr>
+                          <!--Expecting the assortments to be ordered descending by date automatically from server-->
+                          <td ng-repeat="order in orders | orderBy:'-lastUpdatedTime' | limitTo: 10" class="order-menu" ng-click="redirectToOrderSummary(order.id)">
+                              <div class="warning-wrapper red center" ui-if="order.status && order.status == 'unsubmitted' ">
+                                  <img class="icon-warning" src="images/icon-warning-small.png" alt="small warning icon">
+                              </div>
+                              <div class="warning-wrapper green center" ui-if="order.status && order.status == 'submitted' ">
+                                  <img class="icon-warning" src="images/icon-check-small.png" alt="small check icon">
+                              </div>
+                              <div class="assortments-name">
+                                  {{order.customerName}}
+                              </div>
+                          </td>
+                      </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row-fluid">
+      <div class="span3 offset1">
+          <div class="pull-right">
+              <a class="inactive btn btn-block dashboard-button sales-dashboard">
+            <span class="button-text">
+              <span>
+                {{languagesJSON['home.menu.sales']}}
+              </span>
+            </span>
+              </a>
+          </div>
+      </div>
+      <div class="span7">
+          <div class="dashboard-button-extras">
+              <img src="images/homeMenu/infographic.png" alt="infograph"/>
+          </div>
+      </div>
+  </div>
+</div>

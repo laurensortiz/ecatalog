@@ -1,0 +1,29 @@
+<div ng-controller="CatalogProductWidgetCtrl">
+  <div ng-include class="widget-functionality-wrapper" src="$parent.tenantTemplateSrc"
+       hm-hold="$emit('handleDoubleTapOnProductWidget', $parent.model)"
+       hm-tap="$emit('handleTapOnProductWidget', $parent.model)"
+       onload="$parent.loadTenantStyles('productWidgetWrapper')">
+
+  </div>
+  <img ng-show="isProductAssociatedWithCurrentAssortment(model.styleId)" class="product-add-check-mark"
+       src="images/ok.png" hm-tap="$emit('handleTapOnProductWidget', $parent.model)"/>
+</div>
+<script type="conditional/css" data-styleId="productWidgetWrapper">
+    <style>
+		.catalog-page .productGroup .product-add-check-mark {
+			z-index: 10001;
+			position: absolute;
+			top: 100px;
+			right: 0;
+			width: 50px;
+			height: 50px;
+		}
+
+		/*both layers of templates need to take up the full width and height of the parent widget*/
+		.catalog-page .productGroup .productWidget div {
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+    </style>
+</script>

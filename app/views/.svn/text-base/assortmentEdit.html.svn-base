@@ -1,0 +1,5 @@
+<div class="hero-unit">
+    <h1 ng-show="! errorMessage">Loading Assortment...</h1>
+
+    <p ng-show="! errorMessage">{{errorMessage}}</p>
+</div>

@@ -1,0 +1,274 @@
+'use strict';
+
+angular.module('conductivEcatalogApp')
+    .factory('order', function ($http, httpCapi, SyncManager, $q, productStyles, catalog, OfflineManager, $rootScope, $location, network) {
+        // Public API here
+        var service = {};
+        var ENTITY_TYPE = 'Order';
+        var fetchAllOrders = function () {
+            var deferred = $q.defer();
+            $http({
+                method: "GET",
+                url: httpCapi.generateBaseApiUrl() + "/orders",
+                headers: httpCapi.generateCommonAPIHeaders()
+            }).then(function (response) {
+                    deferred.resolve(response);
+                });
+            return deferred.promise;
+        }
+
+        var fetchOrder = function (orderId) {
+            var deferred = $q.defer();
+            var rejectCallback = function () {
+                deferred.reject();
+            };
+            $http({
+                method: "GET",
+                url: httpCapi.generateBaseApiUrl() + "/orders/" + orderId,
+                headers: httpCapi.generateCommonAPIHeaders()
+            }).success(function (order) {
+                    // We got the order info. Now lets get the ship to address
+                    $http({
+                        method: "GET",
+                        url: order.links.shipToAddress,
+                        headers: httpCapi.generateCommonAPIHeaders()
+                    }).success(function (postalAddress) {
+                            var formattedAddress = postalAddress.address1;
+                            if (postalAddress.address2 && postalAddress.address2.trim().length > 0) {
+                                formattedAddress = formattedAddress + ', ' + postalAddress.address2;
+                            }
+                            formattedAddress = formattedAddress + ', ' + postalAddress.city + ', ' + postalAddress.state + ', ' + postalAddress.country + ' ' + postalAddress.postalCode;
+                            order.postalAddress = formattedAddress;
+                            //Fetch all the products associated with the order
+                            $http({
+                                method: "GET",
+                                url: order.links.products,
+                                headers: httpCapi.generateCommonAPIHeaders()
+                            }).success(function (allProducts) {
+                                    order.products = allProducts;
+                                    // Lets get the product styles available on the order
+                                    $http({
+                                        method: "GET",
+                                        url: order.links["product-styles"] + '/?expand=self,products',
+                                        headers: httpCapi.generateCommonAPIHeaders()
+                                    }).success(function (styles) {
+                                            _.each(styles, function (productStyle) {
+                                                httpCapi.getFileResource(productStyle.links.image).then(function (resolvedURL) {
+                                                    productStyle.links.image = resolvedURL;
+                                                });
+                                            });
+                                            order.productStyles = styles;
+                                            deferred.resolve(order);
+                                        }).error(rejectCallback);
+                                }).error(rejectCallback);
+                        }).error(rejectCallback);
+                })
+                .error(rejectCallback);
+            return deferred.promise;
+        }
+
+        //Orders Summary
+        service.getAllOrders = function () {
+            return SyncManager.fetch(fetchAllOrders, ENTITY_TYPE);
+        }
+
+        service.saveAllOrdersOffline = function () {
+            return SyncManager.save(fetchAllOrders, ENTITY_TYPE);
+        }
+
+        service.getAllOrdersOnline = function () {
+            var promise = $http({
+                method: "GET",
+                url: httpCapi.generateBaseApiUrl() + "/orders",
+                headers: httpCapi.generateCommonAPIHeaders()
+            }).then(function (response) {
+                    return response;
+                });
+            return promise;
+        }
+
+        //Single Orders
+        service.obtain = function (orderId) {
+            return SyncManager.fetch(
+                function () {
+                    return fetchOrder(orderId)
+                },
+                ENTITY_TYPE, {id: orderId}
+            );
+        };
+        //Save Single Order
+        service.persist = function (orderId) {
+            return SyncManager.save(
+                function () {
+                    return fetchOrder(orderId)
+                },
+                ENTITY_TYPE, {id: orderId}
+            );
+        };
+
+        service.guid = function () {
+            return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+                s4() + '-' + s4() + s4() + s4();
+        }
+
+        var s4 = function () {
+            return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+        };
+
+<<<<<<< .mine
+      OfflineManager.save(myOrder).then(function(orderObject){
+
+        service.getAllOrders().then(function (infoOrder) {
+	        infoOrder.key = 'Order';
+	        infoOrder.data.push(myOrder);
+          OfflineManager.save(infoOrder).then(function(){
+            defer.resolve();
+            if(network.canConnect()){
+              $rootScope.$broadcast('event:network-connectivity-orders', true);
+            }
+          });
+        });
+=======
+        //Save Order
+        service.saveOrder = function (myOrder) {
+            var defer = $q.defer();
+            myOrder.id = service.guid();
+            myOrder.key = 'Order|' + myOrder.id;
+            OfflineManager.save(myOrder).then(function () {
+                service.getAllOrders().then(function (infoAssorment) {
+                    infoAssorment.key = 'Order';
+                    infoAssorment.data.push(myOrder);
+                    OfflineManager.save(infoAssorment).then(function () {
+                        defer.resolve();
+                        $rootScope.$broadcast('event:network-connectivity-orders', true);
+                    });
+                });
+            });
+            return defer.promise;
+        }
+>>>>>>> .r1476
+
+<<<<<<< .mine
+      });
+      return defer.promise;
+    }
+
+
+    //Save the Order into the CAPI
+    service.createNewOrder = function (order,email) {
+      var promise = $http({
+        method: "POST",
+        data: order,
+        url: httpCapi.generateBaseApiUrl() + "/orders",
+        headers: httpCapi.generateCommonAPIHeaders()
+=======
+        //Save the Order into the CAPI
+        service.createNewOrder = function (order, email) {
+            var promise = $http({
+                method: "POST",
+                data: order,
+                url: httpCapi.generateBaseApiUrl() + "/orders",
+                headers: httpCapi.generateCommonAPIHeaders()
+            }).success(function (order) {
+                    $http({
+                        method: "POST",
+                        data: {
+                            'orderId': order.id,
+                            'format': "Excel",
+                            'subject': 'PO #' + order.purchaseOrder,
+                            'recipients': email,
+                            'message': 'PO #' + order.purchaseOrder
+                        },
+                        url: httpCapi.generateBaseApiUrl() + "/actions/send-order-notification",
+                        headers: httpCapi.generateCommonAPIHeaders()
+>>>>>>> .r1476
+
+                    }).then(function (response) {
+                            return response;
+                        });
+                });
+            return promise;
+        }
+
+        service.deleteOrder = function (orderId) {
+            var defer = $q.defer();
+            service.obtain(orderId).then(function (order) {
+                OfflineManager.removeByKey('Order|' + order.id).then(function () {
+                    service.getAllOrders().then(function (orders) {
+                        var indexToDelete = _.indexOf(orders.data,
+                            _.findWhere(orders.data, {id: orders.id}));
+                        orders.data = _.without(orders.data, orders.data[indexToDelete]);
+                        OfflineManager.save(orders).then(function () {
+                            defer.resolve(order);
+                        });
+                    });
+                });
+            });
+            return defer.promise;
+        }
+
+        service.createSendMailList = function () {
+            var sendEmailList = {key: 'ORDER_SENDEMAIL_LIST', data: []};
+            OfflineManager.save(sendEmailList);
+        }
+
+        service.sendEmail = function (orderId, format, subject, recipients) {
+            var defer = $q.defer();
+            OfflineManager.find('ORDER_SENDEMAIL_LIST').then(function (sendEmailList) {
+                sendEmailList.data.push({'orderId': orderId, 'format': format, 'subject': subject, 'recipients': recipients});
+                OfflineManager.save(sendEmailList).then(function () {
+                    defer.resolve();
+                    if (network.canConnect()) {
+                        $rootScope.$broadcast('event:network-connectivity-orders', true);
+                    }
+                });
+            });
+            return defer.promise;
+        }
+
+        service.sendEmailsCAPI = function (orderId, format, subject, recipients) {
+            var promise = $http({
+                method: "POST",
+                data: {
+                    'orderId': orderId,
+                    'format': format,
+                    'subject': subject,
+                    'recipients': recipients,
+                    'message': subject
+                },
+                url: httpCapi.generateBaseApiUrl() + "/actions/send-order-notification",
+                headers: httpCapi.generateCommonAPIHeaders()
+            }).then(function (response) {
+                    return response;
+                });
+            return promise;
+        }
+
+        //this function Syncs the order list and each order
+        service.syncOrdersData = function () {
+            var deferred = new $.Deferred();
+            //We need to sync the order list first...
+            //then we are going to go thru each order and get the whole object...
+            service.getAllOrders().then(function (response) {
+                var orders = response.data
+                    , ordersLength = orders.length
+                    , currentOrderIndex = 0;
+                if (orders.length === 0) {
+                    deferred.resolve();
+                    return deferred;
+                }
+                _.each(orders, function (order) {
+                    service.persist(order.id).then(function (data) {
+                        currentOrderIndex++;
+                        deferred.notify();
+                        //resolving when all the orders are saved...
+                        if (currentOrderIndex === ordersLength) {
+                            deferred.resolve();
+                        }
+                    });
+                });
+            });
+            return deferred;
+        }
+        return service;
+    });

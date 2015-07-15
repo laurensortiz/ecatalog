@@ -1,0 +1,209 @@
+/* line 1, topBarHeader.scss */
+.ecatalog .topBarHeader.ui-show {
+  transition: all 0.5s ease;
+}
+
+/* line 5, topBarHeader.scss */
+.ecatalog .topBarHeader.ui-show + div {
+  z-index: 2010;
+  top: 10px;
+  right: 15px;
+  position: fixed;
+  background-image: url("../images/topBarHeader/arrow-up-down-sprite.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+/* line 17, topBarHeader.scss */
+.ecatalog .topBarHeader.ui-hide {
+  transition: all 0.5s ease;
+  background: none;
+}
+
+/* line 22, topBarHeader.scss */
+.ecatalog .topBarHeader {
+  width: 100%;
+  position: absolute;
+  z-index: 2001;
+  top: 0px;
+  background-color: rgba(51, 51, 51, 0.9);
+  height: 50px;
+  /*--------------ICON LINKS------------------------------*/
+}
+/* line 30, topBarHeader.scss */
+.ecatalog .topBarHeader .invertIcon {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  border-radius: 16px;
+  border: 1px solid rgba(51, 51, 51, 0.9);
+}
+/* line 39, topBarHeader.scss */
+.ecatalog .topBarHeader .toggleBackground {
+  background-color: rgba(51, 51, 51, 0.9);
+  border-radius: 16px;
+  border: 1px solid rgba(51, 51, 51, 0.9);
+}
+/* line 44, topBarHeader.scss */
+.ecatalog .topBarHeader ul {
+  margin-top: 0px;
+  margin-bottom: 0em;
+  margin-right: 0px;
+  height: 100%;
+  padding-right: 16px;
+  display: inline-block;
+  float: right;
+}
+/* line 53, topBarHeader.scss */
+.ecatalog .topBarHeader ul li {
+  list-style-type: none;
+  display: inline-block;
+  text-align: -webkit-match-parent;
+  margin-top: .15em;
+  margin-bottom: .15em;
+  margin-left: .15em;
+  margin-right: .15em;
+  padding: .5em;
+  vertical-align: middle;
+}
+/* line 63, topBarHeader.scss */
+.ecatalog .topBarHeader ul li a {
+  text-decoration: none;
+  display: block;
+  vertical-align: middle;
+}
+/* line 67, topBarHeader.scss */
+.ecatalog .topBarHeader ul li a span {
+  color: #FFF;
+  max-width: 100px;
+}
+/* line 75, topBarHeader.scss */
+.ecatalog .topBarHeader ul.hasToggle {
+  padding-right: 60px;
+}
+/* line 78, topBarHeader.scss */
+.ecatalog .topBarHeader .position-relative {
+  position: relative;
+  z-index: 2100;
+}
+/* line 82, topBarHeader.scss */
+.ecatalog .topBarHeader .conductiv-name {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-family: SourceSansPro, sans-serif;
+  font-size: 1.35em;
+  font-style: normal;
+  margin-top: 20px;
+  color: #FFF;
+  text-shadow: none;
+}
+/* line 95, topBarHeader.scss */
+.ecatalog .topBarHeader .icon {
+  height: 32px;
+  width: 40px;
+  display: block;
+}
+/* line 101, topBarHeader.scss */
+.ecatalog .topBarHeader .icon.home-icon {
+  background: url("../images/topBarHeader/home-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 107, topBarHeader.scss */
+.ecatalog .topBarHeader .icon.compose-icon {
+  background: url("../images/topBarHeader/compose-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 113, topBarHeader.scss */
+.ecatalog .topBarHeader .icon.list-icon {
+  background: url("../images/topBarHeader/list.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 118, topBarHeader.scss */
+.ecatalog .topBarHeader .icon.book-icon {
+  background: url("../images/topBarHeader/book-lines-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 123, topBarHeader.scss */
+.ecatalog .topBarHeader .icon.whiteboard-icon {
+  background: url("../images/topBarHeader/whiteboard.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 30px;
+}
+/* line 129, topBarHeader.scss */
+.ecatalog .topBarHeader .icon.submit-order-icon {
+  background: url("../images/topBarHeader/send-email.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 134, topBarHeader.scss */
+.ecatalog .topBarHeader .icon.create-order-icon {
+  background: url("../images/topBarHeader/create-order.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 139, topBarHeader.scss */
+.ecatalog .topBarHeader .icon.search-icon {
+  background: url("../images/topBarHeader/search.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 144, topBarHeader.scss */
+.ecatalog .topBarHeader .ui-button .ui-icon.grid-icon {
+  background-image: url("../images/topBarHeader/grid.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -16px;
+  margin-left: -16px;
+  width: 32px;
+  height: 32px;
+}
+/* line 154, topBarHeader.scss */
+.ecatalog .topBarHeader .ui-button .ui-icon.fullScreen {
+  background-image: url("../images/topBarHeader/crop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -16px;
+  margin-left: -16px;
+  width: 32px;
+  height: 32px;
+}
+/* line 164, topBarHeader.scss */
+.ecatalog .topBarHeader .textNavLink {
+  color: #FFF;
+  font-size: 1.2em;
+  line-height: 32px;
+}
+/* line 170, topBarHeader.scss */
+.ecatalog .topBarHeader .ui-button.ui-state-active.ui-button.ui-button-icon-only {
+  border: 1px solid #666666;
+  background: #555555 url(images/ui-bg_glass_20_555555_1x400.png) 50% 50% repeat-x;
+  opacity: .5;
+}
+/* line 176, topBarHeader.scss */
+.ecatalog .topBarHeader .ui-button.ui-state-active.ui-button.ui-button-icon-only.ui-state-hover {
+  border: 1px solid #59b4d4;
+  background: #0078a3 url(images/ui-bg_glass_40_0078a3_1x400.png) 50% 50% repeat-x;
+}
+
+/* line 182, topBarHeader.scss */
+.ecatalog .toggleHeaderButton {
+  z-index: 2101;
+  top: 10px;
+  right: 15px;
+  position: absolute;
+  background-image: url("../images/topBarHeader/arrow-up-down-sprite.png");
+  background-position: 0px;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+}

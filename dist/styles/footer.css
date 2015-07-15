@@ -1,0 +1,172 @@
+/* line 1, footer.scss */
+.footer {
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  height: 50px;
+  background-color: rgba(51, 51, 51, 0.9);
+  z-index: 2001;
+}
+/* line 13, footer.scss */
+.footer .user-dropdown {
+  position: absolute;
+}
+/* line 17, footer.scss */
+.footer .menu-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+/* line 46, footer.scss */
+.footer ul.menu-dropdown li a[class="ng-binding"] {
+  display: block;
+  font-size: 1.28571em;
+  line-height: 1;
+  padding: 0.22222em 18px 0.22222em 14px;
+  color: #333;
+}
+/* line 59, footer.scss */
+.footer ul.menu-dropdown li a[ng-click*="langme"] {
+  position: relative;
+  display: block;
+  color: #333;
+  font-size: 1.14286em;
+  line-height: 1;
+  padding: 0.25em 14px 0.25em 30px;
+}
+/* line 71, footer.scss */
+.footer ul.menu-dropdown li a[ng-click*="langme"] i {
+  position: absolute;
+  margin: 0;
+  top: 0.3125em;
+  left: 8px;
+}
+/* line 82, footer.scss */
+.footer ul.menu-dropdown li:hover > a {
+  color: #fff;
+}
+/* line 85, footer.scss */
+.footer ul.menu-dropdown li:hover > a .icon-ok, .footer ul.menu-dropdown li:hover > a .icon-off {
+  background-image: url("/images/glyphicons-halflings-white.png?1375306332");
+}
+/* line 94, footer.scss */
+.footer .menu-dropdown li > a:hover, .footer .menu-dropdown li > a:focus, .footer .dropdown-submenu:hover > a {
+  text-decoration: none;
+  color: white;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0085c7', endColorstr='#0074ad', GradientType=0);
+}
+/* line 108, footer.scss */
+.footer .dropdown-submenu > .menu-dropdown {
+  bottom: 0;
+  left: 162px;
+  -webkit-border-radius: 6px 6px 6px 0;
+  -moz-border-radius: 6px 6px 6px 0;
+  border-radius: 6px 6px 6px 0;
+}
+/* line 118, footer.scss */
+.footer .dropdown-submenu:hover > a:after {
+  border-left-color: white;
+}
+/* line 122, footer.scss */
+.footer .dropdown-submenu > a:after {
+  border-left-color: #333;
+  border-width: 6px 0 6px 6px;
+  margin-top: 6/18em;
+}
+/* line 129, footer.scss */
+.footer .icon-off, .footer .icon-globe {
+  margin: 5px 8px 0 0;
+}
+/* line 133, footer.scss */
+.footer a.toggle-dropdown {
+  display: block;
+  font-size: 1.28571em;
+  line-height: 1;
+  padding: 0.22222em 14px 0.22222em 0;
+}
+/* line 143, footer.scss */
+.footer a.toggle-dropdown .icon-user {
+  margin-right: 4px;
+}
+/* line 147, footer.scss */
+.footer a.toggle-dropdown .icon-chevron-up {
+  margin-left: 8px;
+}
+/* line 154, footer.scss */
+.footer .assortment-name span {
+  display: block;
+  font-size: 1.28571em;
+  line-height: 1;
+  padding: 0.33333em 14px 0.33333em 0;
+}
+/* line 167, footer.scss */
+.footer .product-styles-count span {
+  display: block;
+  font-size: 1.28571em;
+  line-height: 1;
+  padding: 0.22222em 14px 0.22222em 0;
+}
+/* line 178, footer.scss */
+.footer .product-styles-count .icon-tag {
+  margin-right: 6px;
+}
+/* line 183, footer.scss */
+.footer .container-fluid {
+  padding-top: 10px;
+}
+/* line 187, footer.scss */
+.footer .assortment-name {
+  text-align: center;
+  overflow: hidden;
+}
+/* line 192, footer.scss */
+.footer .product-styles-count {
+  text-align: right;
+}
+/* line 196, footer.scss */
+.footer i {
+  margin-top: 4px;
+}
+/* line 200, footer.scss */
+.footer .menu-dropdown {
+  bottom: 30px;
+  top: auto;
+}
+/* line 206, footer.scss */
+.footer a, .footer a:hover {
+  color: white;
+}
+
+/* line 211, footer.scss */
+.footer.assortment {
+  background-color: rgba(0, 136, 204, 0.9);
+}
